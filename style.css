@@ -1,0 +1,31 @@
+body{
+    background-color: #D8D7D7;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;    
+}
+
+/*********** NAVBAR ***********/
+.navbar{
+    min-height: 117px;
+    background-color: #ffffff;
+    padding-top: 20px;
+}
+
+.navbar-right{
+    padding-top: 10px;
+}
+
+a.dashoard-signup-link{
+    background-color: #F05A22;
+    color: #ffffff;
+    border-radius: 100px;
+}
+
+.navbar-default .navbar-nav > li > a.dashoard-signup-link:hover,
+.navbar-default .navbar-nav > li > a.dashoard-signup-link:focus {
+    color: #ffffff;
+    background-color: #F05A22;    
+}
+
+a.dashoard-signup-link{
+    color:#ffffff !important;
+}
