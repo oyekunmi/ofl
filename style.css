@@ -1,13 +1,29 @@
 body{
     background-color: #D8D7D7;
+    color:#ffffff;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;    
 }
+
+html{
+    font-size: 18px;
+}
+
+li {
+    text-decoration: none;
+    display: inline;
+}
+ul{
+    text-align: left;
+    padding: 0px;
+}
+
 
 /*********** NAVBAR ***********/
 .navbar{
     min-height: 117px;
     background-color: #ffffff;
     padding-top: 20px;
+    /* height: 200rem; */
 }
 
 .navbar-right{
@@ -28,4 +44,93 @@ a.dashoard-signup-link{
 
 a.dashoard-signup-link{
     color:#ffffff !important;
+}
+
+section{
+    width:300px;
+    background: rgb(21, 36, 41);
+}
+
+/* footer section */
+footer {
+    height: auto;
+    background: rgb(37, 35, 35);
+    clear: both; 
+    margin-top: 60px;
+}
+
+footer div div{
+    padding: 0rem 1.3rem;
+    margin-top: .2rem;
+}
+
+footer div img, .social{
+    margin-left:8rem;
+    margin-top:5rem;
+    margin-bottom: -5rem;
+}
+
+.left h4{
+    text-transform: uppercase;
+    font-family:  sans-serif;
+    line-height: 1.5em;
+    font-size: 15px; 
+    display: inline; 
+    margin: 0 5rem 0 0 ;   
+    font-weight: bold;
+    padding-bottom: .3rem;
+    border-bottom: 1px solid #5abae0;
+}
+
+.social h4{
+    text-transform: uppercase;
+    font-family:  sans-serif;
+    line-height: 1.5em;
+    font-size: 15px; 
+    display: inline; 
+    margin: 0 2rem 0 0 ;   
+    font-weight: bold;
+    padding-bottom: .3rem;
+    
+}
+.social li{
+    margin: 0 1.5rem 0 0 ;   
+}
+
+.footer-bottom{
+    margin:0 9rem;
+    padding: 1.3rem 0 0 0;
+    border-top: .1px solid white;
+    border-width: .1%;
+    border-top: 1px solid rgba(255,255,255,.25);
+    font-weight: normal;
+    letter-spacing: .5px;
+   
+}
+
+footer .left{
+    padding: 3.2rem 1.3rem;
+    font-weight: normal;
+}
+footer .left li{
+    display: block;
+    margin-top: .5rem;
+    color:rgb(207, 203, 203);
+   
+}
+footer .left a{
+    text-decoration: none;
+    color:rgb(207, 203, 203);
+}
+
+@media screen and (max-width: 740px) {
+    body {
+        background-color: lightgreen;
+    }
+
+    footer {
+     
+        padding: 50rem 10rem;
+    }
+
 }
