@@ -39,16 +39,39 @@ a.dashoard-signup-link{
     background-color: #F05A22;    
 }
 
-a.dashoard-signup-link{
+.navbar-nav > li > a.dashoard-signup-link{
     color:#ffffff !important;
 }
 
-section{
-    width:300px;
-    background: rgb(21, 36, 41);
+/*** END NAVBAR ***/
+
+/*** NEWSLETTER START ***/
+.newsletter{
+    background-image: url("img/newsletter_bg.png");
+    background-color: #00B7C9;
 }
 
+.newsletter .content{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
 
+.newsletter .content h2{
+    font-weight: bolder;    
+    font-size: 48px;
+}
+.newsletter .content p{
+    /* font-weight: bolder;     */
+    font-size: 24px;
+    padding: 20px;
+}
+
+.newsletter .content .form-group-lg input{
+    padding: 30px 32px;
+    border-radius: 48px;
+}
+
+/*** NEWSLETTER END ***/
 
 /* FOOTER START */
 footer {
