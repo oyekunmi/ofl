@@ -4,20 +4,6 @@ body{
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;    
 }
 
-html{
-    font-size: 18px;
-}
-
-li {
-    text-decoration: none;
-    display: inline;
-}
-ul{
-    text-align: left;
-    padding: 0px;
-}
-
-
 /*********** NAVBAR ***********/
 .navbar{
     min-height: 117px;
@@ -51,86 +37,59 @@ section{
     background: rgb(21, 36, 41);
 }
 
-/* footer section */
+
+
+/* FOOTER START */
 footer {
-    height: auto;
-    background: rgb(37, 35, 35);
-    clear: both; 
-    margin-top: 60px;
+    background-image: url("img/footer_bg.jpg");
 }
 
-footer div div{
-    padding: 0rem 1.3rem;
-    margin-top: .2rem;
+footer .content{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-bottom: rgba(236, 236, 236, 0.38) solid thin;
 }
 
-footer div img, .social{
-    margin-left:8rem;
-    margin-top:5rem;
-    margin-bottom: -5rem;
-}
-
-.left h4{
+footer .content .social p{
     text-transform: uppercase;
-    font-family:  sans-serif;
-    line-height: 1.5em;
-    font-size: 15px; 
-    display: inline; 
-    margin: 0 5rem 0 0 ;   
-    font-weight: bold;
-    padding-bottom: .3rem;
+    display: inline;
+}
+
+footer .content .social ul{
+    display: inline;
+    margin-left: 40px;
+}
+
+footer .content .social ul li{
+    padding: 20px;
+}
+
+footer .content .social ul li a{
+    color: #ffffff;
+}
+
+footer .content .links .links-container h4{
+    text-transform: uppercase;
+    padding-bottom: 10px;
     border-bottom: 1px solid #5abae0;
 }
 
-.social h4{
-    text-transform: uppercase;
-    font-family:  sans-serif;
-    line-height: 1.5em;
-    font-size: 15px; 
-    display: inline; 
-    margin: 0 2rem 0 0 ;   
-    font-weight: bold;
-    padding-bottom: .3rem;
-    
-}
-.social li{
-    margin: 0 1.5rem 0 0 ;   
+footer .content .links .links-container ul{
+    list-style: none;
+    padding-left:0;    
 }
 
-.footer-bottom{
-    margin:0 9rem;
-    padding: 1.3rem 0 0 0;
-    border-top: .1px solid white;
-    border-width: .1%;
-    border-top: 1px solid rgba(255,255,255,.25);
-    font-weight: normal;
-    letter-spacing: .5px;
-   
+footer .content .links .links-container ul li{
+    padding-top:15px;  
 }
 
-footer .left{
-    padding: 3.2rem 1.3rem;
-    font-weight: normal;
-}
-footer .left li{
-    display: block;
-    margin-top: .5rem;
-    color:rgb(207, 203, 203);
-   
-}
-footer .left a{
-    text-decoration: none;
-    color:rgb(207, 203, 203);
+footer .content .links .links-container ul li a{ 
+    color: #ffffff;
 }
 
-@media screen and (max-width: 740px) {
-    body {
-        background-color: lightgreen;
-    }
-
-    footer {
-     
-        padding: 50rem 10rem;
-    }
-
+footer .copyright{
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
+
+/**** END FOOTER **/
