@@ -1,7 +1,17 @@
 body{
     background-color: #D8D7D7;
-    color:#ffffff;
+    /* color:#ffffff; */
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;    
+}
+
+.btn-custom{
+    background-color: #F05A22;
+    color: #ffffff;
+}
+
+.btn-custom:hover{
+    background-color: #F05A22;
+    color: #ffffff;
 }
 
 /*********** NAVBAR ***********/
@@ -45,6 +55,35 @@ a.dashoard-signup-link{
 
 /*** END NAVBAR ***/
 
+/**** QUIZ SATRTS ***/
+.quiz{
+    background-image: url("img/quiz_bg.png");
+}
+
+.quiz .content{
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+.quiz .content p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.quiz .content a.btn{
+    border-radius: 48px;
+    width: 395px;
+    text-transform: uppercase;
+    height: 64px;
+    line-height: 40px;
+}
+
+.quiz .content a.btn i{
+    line-height: 40px;
+    margin-right: 20px;
+}
+/**** END QUIZ ***/
+
 /*** NEWSLETTER START ***/
 .newsletter{
     background-image: url("img/newsletter_bg.png");
@@ -76,6 +115,7 @@ a.dashoard-signup-link{
 /* FOOTER START */
 footer {
     background-image: url("img/footer_bg.jpg");
+    color: #ffffff;
 }
 
 footer .content{
