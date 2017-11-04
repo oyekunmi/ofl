@@ -13,7 +13,7 @@ body{
 }
 
 .navbar-right{
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 a.dashoard-signup-link{
@@ -22,8 +22,19 @@ a.dashoard-signup-link{
     border-radius: 100px;
 }
 
-.navbar-default .navbar-nav > li > a.dashoard-signup-link:hover,
-.navbar-default .navbar-nav > li > a.dashoard-signup-link:focus {
+.navbar-nav > li > a{
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar-nav > li:last-child{
+    padding-left: 50px;
+    text-align: right;
+}
+
+.navbar-nav > li > a.dashoard-signup-link:hover,
+.navbar-nav > li > a.dashoard-signup-link:focus {
     color: #ffffff;
     background-color: #F05A22;    
 }
