@@ -55,6 +55,37 @@ a.dashoard-signup-link{
 
 /*** END NAVBAR ***/
 
+/***** QUESTION *****/
+.question{
+    color: #ffffff;
+    background-image: url("img/newsletter_bg.png");
+    background-color: #F05A22;
+    background-color: -webkit-gradient(top, #F05A22, #FDAC61 100%);
+    /* background-color: gradient(linear, 0 0.55%, 0 100%, from(#FDAC61), to(#F05A22)); */
+}
+
+.question .content{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.question .content h2{
+    font-weight: bolder;    
+    font-size: 48px;
+}
+.question .content p{
+    color: rgba(242, 238, 238, 0.66);
+    font-size: 24px;
+    padding: 20px;
+}
+
+.question .content .form-group-lg input{
+    padding: 30px 32px;
+    border-radius: 48px;
+}
+
+/**** END QUESTION ***/
+
 /**** QUIZ SATRTS ***/
 .quiz{
     background-image: url("img/quiz_bg.png");
@@ -88,6 +119,7 @@ a.dashoard-signup-link{
 .newsletter{
     background-image: url("img/newsletter_bg.png");
     background-color: #00B7C9;
+    color: #ffffff;
 }
 
 .newsletter .content{
@@ -158,7 +190,7 @@ footer .content .links .links-container ul li{
 }
 
 footer .content .links .links-container ul li a{ 
-    color: #ffffff;
+    color: rgba(255, 255, 255, 0.71);
 }
 
 footer .copyright{
