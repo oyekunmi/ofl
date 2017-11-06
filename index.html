@@ -10,9 +10,11 @@
 
   <!-- Bootstrap -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bxslider/jquery.bxslider.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="vendor/bootstrap/css/font-awesome.min.css">
+  
   <link href="style.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="vendor/bootstrap/css/font-awesome.min.css">
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -63,6 +65,21 @@
         <!--/.nav-collapse -->
       </div>
     </nav>
+
+    <div class="partners">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="content">
+              <h2>We work with</h2>
+              <div class="links">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <section class="question">
       <div class="container">
@@ -207,6 +224,12 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="vendor/bxslider/jquery.bxslider.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.bxslider').bxSlider();
+    });
+  </script>
 </body>
 
 </html>
