@@ -71,21 +71,55 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-12">
+              
               <div class="content text-center">
+                
                 <h2>We work with</h2>
-                <div class="links">
-                  <div class="row">
-                    <div class="col-sm-2"><img src="img/access_logo.png" /></div>
-                    <div class="col-sm-2"><img src="img/unity_logo.png" /></div>
-                    <div class="col-sm-2"><img src="img/gtb_logo.png" /></div>
-                    <div class="col-sm-2"><img src="img/uba_logo.png" /></div>
-                    <div class="col-sm-2"><img src="img/custodian_logo.png" /></div>
-                    <div class="col-sm-2"><img src="img/skye_logo.png" /></div>
-                    <div class="col-sm-2"><img src="img/standard_logo.png" /></div>
-                    
-                  </div>
-                </div>
+                
+
+                <ul class="bxslider">
+
+                  <li>
+                      <div class="links">
+                        <div class="row">
+                          <div class="col-sm-2 col-sm-offset-1"><img src="img/access_logo.png" /></div>
+                          <div class="col-sm-2"><img src="img/unity_logo.png" /></div>
+                          <div class="col-sm-2"><img src="img/gtb_logo.png" /></div>
+                          <div class="col-sm-2"><img src="img/uba_logo.png" /></div>
+                          <div class="col-sm-2"><img src="img/custodian_logo.png" /></div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-2 col-sm-offset-1"><img src="img/skye_logo.png" /></div>
+                          <div class="col-sm-2"><img src="img/standard_logo.png" /></div>
+                          <div class="col-sm-2"><img src="img/wema_logo.png" /></div>
+                          <div class="col-sm-2"><img src="img/first_logo.png" /></div>
+                          <div class="col-sm-2"><img src="img/mansard_logo.png" /></div>
+                        </div>
+                      </div>
+                  </li>
+                  <li>
+                    <div class="links">
+                      <div class="row">
+                        <div class="col-sm-2 col-sm-offset-1"><img src="img/access_logo.png" /></div>
+                        <div class="col-sm-2"><img src="img/unity_logo.png" /></div>
+                        <div class="col-sm-2"><img src="img/gtb_logo.png" /></div>
+                        <div class="col-sm-2"><img src="img/uba_logo.png" /></div>
+                        <div class="col-sm-2"><img src="img/custodian_logo.png" /></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-2 col-sm-offset-1"><img src="img/skye_logo.png" /></div>
+                        <div class="col-sm-2"><img src="img/standard_logo.png" /></div>
+                        <div class="col-sm-2"><img src="img/wema_logo.png" /></div>
+                        <div class="col-sm-2"><img src="img/first_logo.png" /></div>
+                        <div class="col-sm-2"><img src="img/mansard_logo.png" /></div>
+                      </div>
+                    </div>
+                  </li>
+
+                </ul>
+               
               </div>
+
             </div>
           </div>
         </div>
@@ -237,7 +271,9 @@
   <script src="vendor/bxslider/jquery.bxslider.min.js"></script>
   <script>
     $(document).ready(function(){
-      $('.bxslider').bxSlider();
+      $('.bxslider').bxSlider({
+        pager: false
+      });
     });
   </script>
 </body>
