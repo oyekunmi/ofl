@@ -83,13 +83,20 @@ a.dashoard-signup-link{
 
 .partners .content .links .row div img{
     max-height: 90px;
-    /* border: solid; */
 }
 
+/** 
+ * override the img style from bxslidder to 
+ * allow for centering of contents
+**/
 .bx-wrapper img {
     display: inline;
 }
 
+/**
+ * Removed the borders that comes by default
+ * with bxslider
+ */
 .partners .content .bx-wrapper{
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
