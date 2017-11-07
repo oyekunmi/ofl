@@ -166,6 +166,25 @@ a.dashoard-signup-link{
 }
 /**** END QUIZ ***/
 
+/*** TESTIMONIES ****/
+.testimonies{
+    background-image: url("img/testimonies_bg.png");
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.testimonies .content{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.testimonies .content h2{
+    font-weight: bolder;    
+    /* font-size: 48px;  */
+}
+
+/** END PEOPLE ***/
+
 /*** NEWSLETTER START ***/
 .newsletter{
     background-image: url("img/newsletter_bg.png");
