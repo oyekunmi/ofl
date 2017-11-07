@@ -101,7 +101,8 @@ a.dashoard-signup-link{
  * Removed the borders that comes by default
  * with bxslider
  */
-.partners .content .bx-wrapper{
+.partners .content .bx-wrapper, 
+.testimonies .content .bx-wrapper{
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow:none;
