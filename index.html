@@ -65,6 +65,55 @@
         <!--/.nav-collapse -->
       </div>
     </nav>
+    
+    <section class="partners">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            
+            <div class="content text-center">
+              
+              <h2>We work with</h2>
+              
+
+              <ul class="bxslider">
+
+                <li>
+                    <div class="links">
+                      <div class="row">
+                        <div class="col-sm-2 col-sm-offset-1"><img src="img/access_logo.png" /></div>
+                        <div class="col-sm-2"><img src="img/unity_logo.png" /></div>
+                        <div class="col-sm-2"><img src="img/gtb_logo.png" /></div>
+                        <div class="col-sm-2"><img src="img/uba_logo.png" /></div>
+                        <div class="col-sm-2"><img src="img/custodian_logo.png" /></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-2 col-sm-offset-1"><img src="img/skye_logo.png" /></div>
+                        <div class="col-sm-2"><img src="img/standard_logo.png" /></div>
+                        <div class="col-sm-2"><img src="img/wema_logo.png" /></div>
+                        <div class="col-sm-2"><img src="img/first_logo.png" /></div>
+                        <div class="col-sm-2"><img src="img/mansard_logo.png" /></div>
+                      </div>
+                    </div>
+                </li>
+                <li>
+                  <div class="links">
+                    <div class="row">
+                      <div class="col-sm-2 col-sm-offset-1"><img src="img/access_logo.png" /></div>
+                      <div class="col-sm-2"><img src="img/unity_logo.png" /></div>
+                      <div class="col-sm-2"><img src="img/gtb_logo.png" /></div>
+                      <div class="col-sm-2"><img src="img/uba_logo.png" /></div>
+                      <div class="col-sm-2"><img src="img/custodian_logo.png" /></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-2 col-sm-offset-1"><img src="img/skye_logo.png" /></div>
+                      <div class="col-sm-2"><img src="img/standard_logo.png" /></div>
+                      <div class="col-sm-2"><img src="img/wema_logo.png" /></div>
+                      <div class="col-sm-2"><img src="img/first_logo.png" /></div>
+                      <div class="col-sm-2"><img src="img/mansard_logo.png" /></div>
+                    </div>
+                  </div>
+                </li>
 
     <section class="assesment">
       <div class="container-fluid">
@@ -86,12 +135,12 @@
                   start assesment <i class="pull-right fa fa-angle-right fa-2x"></i>
                 </a>
               </p>
+            </div>              
             </div>
           </div>
         </div>
-      </div>
     </section>
-    
+
 
     <section class="question">
       <div class="container">
@@ -125,6 +174,48 @@
                   Take a Quiz <i class="pull-right fa fa-angle-right fa-2x"></i>
                 </a>
               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonies">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1">
+            <div class="content">
+              <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <h2>What people say</h2>
+                    <img src="img/quotes.png" />
+                    <ul class="bxslider2">
+                      <li>
+                        <p>
+                          Same-day or next-day priority payments in major
+                          currencies. The receiving account has to be held in 
+                          the chosen currencies.
+                        </p>
+                        <div class="person">
+                          <img src="img/testimony_1.png" alt="..." class="img-circle">          
+                          <span>Lekan Abeeb</span>              
+                        </div>
+                      </li>
+                      <li>
+                        <p>
+                          Same-day or next-day priority payments in major
+                          currencies. The receiving account has to be held in 
+                          the chosen currencies.
+                        </p>
+                        <div class="person">
+                          <img src="img/testimony_1.png" alt="..." class="img-circle">          
+                          <span>Lekan Abeeb</span>              
+                        </div>
+                      </li>
+                    </ul>
+                
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -239,8 +330,17 @@
   <script src="vendor/bxslider/jquery.bxslider.min.js"></script>
   <script>
     $(document).ready(function(){
-      $('.bxslider').bxSlider();
+      $('.bxslider').bxSlider({
+        pager: false
+      });
+      $('.bxslider2').bxSlider({
+        controls:false,
+        auto:true,
+        autoStart:true,
+        autoHover:true
+      });
     });
+    
   </script>
 </body>
 
