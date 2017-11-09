@@ -14,6 +14,23 @@ body{
     color: #ffffff;
 }
 
+.content h2{
+    font-weight: bold;
+}
+
+/*** PLUGINS ***/
+
+/** 
+ * override the img style from bxslidder to 
+ * allow for centering of contents
+**/
+.bx-wrapper img {
+    display: inline;
+}
+
+
+/*** END PLUGINS **/
+
 /*********** NAVBAR ***********/
 .navbar{
     min-height: 117px;
@@ -59,6 +76,48 @@ a.dashoard-signup-link{
 
 /*** END NAVBAR ***/
 
+/***** ENGAGE **/
+.engage{
+    background-color: #ffffff;
+    background-image: url("img/engage_bg.png");
+    padding-top: 50px;
+    /* text-align: center; */
+}
+
+.engage .content .review{
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+
+.engage .content a.btn{
+    width: 273px;
+    height: 55px;
+}
+.engage .content .partners-img, 
+.engage .content .review {
+    /* padding-top: 100px; */
+    padding-bottom: 60px;
+}
+
+.engage .content .review{
+    /* padding-left: 150px; */
+}
+
+.engage .content .compare{
+    padding-left: 150px;    
+}
+
+.engage .content .partners-img img{
+    height: 300px;
+}
+
+.engage .content .options-img img{
+    height: 500px;
+}
+
+/*** END ENGAGE **/
+
 /*** PARTNERS ***/
 .partners{
     padding-top: 50px;
@@ -87,14 +146,6 @@ a.dashoard-signup-link{
 
 .partners .content .links .row div img{
     max-height: 90px;
-}
-
-/** 
- * override the img style from bxslidder to 
- * allow for centering of contents
-**/
-.bx-wrapper img {
-    display: inline;
 }
 
 /**
@@ -158,21 +209,26 @@ a.dashoard-signup-link{
     padding-bottom: 100px;
 }
 
-.quiz .content p{
+.quiz .content p, 
+.engage .content p{
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.quiz .content a.btn{
+.quiz .content a.btn, 
+.engage .content a.btn{
     border-radius: 48px;
     -moz-border-radius: 48px;
     -webkit-border-radius: 48px;
     -khtml-border-radius: 48px; 
-
-    width: 395px;
     text-transform: uppercase;
-    height: 64px;
+    
     line-height: 40px;
+}
+
+.quiz .content a.btn{
+    height: 64px;
+    width: 395px;
 }
 
 .quiz .content a.btn i{
