@@ -81,7 +81,7 @@ a.dashoard-signup-link{
     background-color: #ffffff;
     background-image: url("img/engage_bg.png");
     padding-top: 50px;
-    /* text-align: center; */
+    background-repeat: no-repeat;
 }
 
 .engage .content .review{
