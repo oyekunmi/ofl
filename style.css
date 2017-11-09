@@ -118,6 +118,27 @@ a.dashoard-signup-link{
 
 /*** END ENGAGE **/
 
+/** PRODUCT **/
+.products{
+    background-color: #ffffff;
+    background-image: url("img/products_packages_1.png");
+    background-size: 50%;
+
+    /* height: 800px; */
+    background-repeat: no-repeat;
+}
+
+.products .bg_right{
+    background-position: right;
+    background-image: url("img/products_packages_2.png");
+    background-position-y: 10%;
+    background-size: 30%;
+    background-repeat: no-repeat;    
+}
+
+
+/*** END PRODUCT **/
+
 /*** PARTNERS ***/
 .partners{
     padding-top: 50px;
@@ -204,19 +225,21 @@ a.dashoard-signup-link{
     background-image: url("img/quiz_bg.png");
 }
 
-.quiz .content{
+.quiz .content, .products .content{
     padding-top: 80px;
     padding-bottom: 100px;
 }
 
 .quiz .content p, 
-.engage .content p{
+.engage .content p,
+.products .content p{
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 .quiz .content a.btn, 
-.engage .content a.btn{
+.engage .content a.btn,
+.products .content a.btn{
     border-radius: 48px;
     -moz-border-radius: 48px;
     -webkit-border-radius: 48px;
@@ -226,14 +249,19 @@ a.dashoard-signup-link{
     line-height: 40px;
 }
 
-.quiz .content a.btn{
+.quiz .content a.btn,
+.products .content a.btn{
     height: 64px;
-    width: 395px;
+    padding-left: 5rem;
+    
+    /* width: 395px; */
 }
 
-.quiz .content a.btn i{
+.quiz .content a.btn i, 
+.products .content a.btn i{
     line-height: 40px;
-    margin-right: 20px;
+    margin-right: 2rem;
+    margin-left: 10rem;
 }
 /**** END QUIZ ***/
 
@@ -268,7 +296,7 @@ a.dashoard-signup-link{
     margin-bottom: 10px;
 }
 
-.testimonies .content p{
+.testimonies .content p, .products .content p{
     margin-top: 20px;
     margin-bottom: 20px;
     color: #9D9D9D;
