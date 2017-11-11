@@ -398,3 +398,98 @@ footer .copyright{
 }
 
 /**** END FOOTER **/
+
+/***** CATEGORY **/
+.category{
+     background-color: rgb(216, 215, 215); 
+    /* background: #FFFFFF; */
+    padding-top: 50px;
+    background-repeat: no-repeat;
+}
+
+.category .well{
+    height: 120px; 
+    width: 271px;
+    height: 125px;
+    left: 117px;
+    top: 490px;
+    box-shadow: 0px 10px 40px rgba(229, 225, 225, 0.25);  
+}
+
+.btnn{
+    width: 187px;
+    height: 50px;
+    left: 1073px;
+    top: 415px;  
+    background: #FFFFFF;
+    border: 1px solid #ECECEC;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;    
+}
+
+
+.fine {
+    letter-spacing: 10.63%;
+    font-size: 14px;
+    background: rgb(216, 215, 215);
+    color: #F0561C;
+    display: inline-block;
+    padding: 5px 11px;
+    box-shadow: 0px 10px 40px rgba(229, 225, 225, 0.25);
+    border-radius: 21px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+.v_line {
+    transform: rotate(90deg);
+    width: 123.5px;
+    border: 1.5px solid rgba(229, 225, 225, 0.25);;
+    margin: 0;
+    position: relative;
+    top: 41px;
+    left: 10.5em;
+}
+
+.saving-account{
+    /* position: absolute; */
+    width: 104px;
+    height: 17px;
+    left: 166px;
+    top: 578px;
+    
+    font-family: SF Compact Display;
+    line-height: normal;
+    font-size: 14px;
+    text-align: center;
+    text-transform: capitalize;
+    
+    color: #B8B8B8;
+}
+
+.angel{
+    /* Rectangle 5.12 */
+
+position: absolute;
+width: 271px;
+height: 125px;
+left: 117px;
+top: 490px;
+
+background: #FFFFFF;
+box-shadow: 0px 10px 40px rgba(229, 225, 225, 0.25);
+border-radius: 8px;
+}
+
+.category .content a.btn{
+    width: 273px;
+    height: 55px;
+}
+
+
+/*** END CATEGORY **/
