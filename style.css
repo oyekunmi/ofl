@@ -4,6 +4,60 @@ body{
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;    
 }
 
+
+/**
+ * Removed the borders that comes by default
+ * with bxslider
+ */
+ .bx-wrapper{
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow:none;
+    border: none;
+    border: none;
+    background: inherit;
+}
+
+/*** GENERAL COLORS **/
+p.light-black{
+    color: #9D9D9D;
+}
+
+a.light-red{
+    color: #F05A22;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/** END GENERAL COLORS **/
+
+/*** BUTTON SCHEMES ***/
+a.btn-light-blue{
+    background-color: #0FC6DA;
+}
+
+a.btn-light-red{
+    background-color: #F05A22;
+}
+
+a.btn-light-blue, a.btn-light-blue:hover, a.btn-light-blue:active, a.btn-light-blue:focus,
+a.btn-light-red, a.btn-light-red:hover, a.btn-light-red:active, a.btn-light-red:focus{
+    color: #ffffff;    
+    text-transform: uppercase;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;    
+}
+
+a.btn-with-radius{
+    border-radius: 48px;
+    -moz-border-radius: 48px;
+    -webkit-border-radius: 48px;
+    -khtml-border-radius: 48px; 
+}
+
+/** END BUTTON SCHEMES ***/
 .btn-custom{
     background-color: #F05A22;
     color: #ffffff;
@@ -119,8 +173,39 @@ a.dashoard-signup-link{
 /*** END ENGAGE **/
 
 /*** ARTICLES ***/
-.articles .content{
+.articles{
+}
 
+.articles .content{
+    padding-top:2rem;
+    padding-bottom: 2rem;
+}
+
+.articles-item{
+
+}
+
+.articles .articles-item h2{
+    font-size: 20px;
+}
+
+
+.articles-item .group-1{
+    padding: 3rem;    
+}
+
+.articles-item .group-1,
+.articles-item .group-2{
+    margin-top: 3rem;
+    background-color: #ffffff;    
+}
+
+.group-2 .group-1{
+    margin-top: 0px;
+}
+
+.articles-item .group-2 img{
+    width: 100%;
 }
 
 .articles .content a.btn-custom{
@@ -177,19 +262,6 @@ a.dashoard-signup-link{
 .partners .content .links .row div img{
     max-height: 90px;
 }
-
-/**
- * Removed the borders that comes by default
- * with bxslider
- */
-.partners .content .bx-wrapper, 
-.testimonies .content .bx-wrapper{
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    box-shadow:none;
-    border: none;
-}
-/*** END PARTNERS ***/
 
 
 /***** QUESTION *****/
@@ -249,8 +321,7 @@ a.dashoard-signup-link{
 
 .quiz .content a.btn, 
 .engage .content a.btn,
-.products .content a.btn,
-.articles .content a.btn{
+.products .content a.btn{
     border-radius: 48px;
     -moz-border-radius: 48px;
     -webkit-border-radius: 48px;
@@ -261,8 +332,8 @@ a.dashoard-signup-link{
 }
 
 .quiz .content a.btn,
-.products .content a.btn,
-.articles .content a.btn{
+.products .content a.btn
+{
     height: 64px;
     padding-left: 5rem;
     
