@@ -177,6 +177,35 @@ a.dashoard-signup-link{
     background:#F9F9FB;
 }
 
+.articles .nav-tabs{
+    border: none;
+}
+
+.articles .nav-tabs>li>a{
+    border: none;
+    text-transform: uppercase;
+    color: #555555;
+    font-weight: bold;
+}
+
+.articles .nav-tabs>li.active>a, 
+.articles .nav-tabs>li.active>a:focus, 
+.articles .nav-tabs>li.active>a:hover {
+    color: #000000;
+    cursor: default;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #0FC6DA;
+}
+
+.articles .header {
+    border-bottom: 1px solid #ddd;
+}
+
+.articles .header h2{
+    margin-bottom: 0px;
+}
+
 .articles .content{
     padding-top:2rem;
     padding-bottom: 2rem;
