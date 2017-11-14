@@ -4,6 +4,60 @@ body{
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;    
 }
 
+
+/**
+ * Removed the borders that comes by default
+ * with bxslider
+ */
+ .bx-wrapper{
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow:none;
+    border: none;
+    border: none;
+    background: inherit;
+}
+
+/*** GENERAL COLORS **/
+p.light-black{
+    color: #9D9D9D;
+}
+
+a.light-red{
+    color: #F05A22;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/** END GENERAL COLORS **/
+
+/*** BUTTON SCHEMES ***/
+a.btn-light-blue{
+    background-color: #0FC6DA;
+}
+
+a.btn-light-red{
+    background-color: #F05A22;
+}
+
+a.btn-light-blue, a.btn-light-blue:hover, a.btn-light-blue:active, a.btn-light-blue:focus,
+a.btn-light-red, a.btn-light-red:hover, a.btn-light-red:active, a.btn-light-red:focus{
+    color: #ffffff;    
+    text-transform: uppercase;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;    
+}
+
+a.btn-with-radius{
+    border-radius: 48px;
+    -moz-border-radius: 48px;
+    -webkit-border-radius: 48px;
+    -khtml-border-radius: 48px; 
+}
+
+/** END BUTTON SCHEMES ***/
 .btn-custom{
     background-color: #F05A22;
     color: #ffffff;
@@ -81,7 +135,7 @@ a.dashoard-signup-link{
     background-color: #ffffff;
     background-image: url("img/engage_bg.png");
     padding-top: 50px;
-    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .engage .content .review{
@@ -118,6 +172,149 @@ a.dashoard-signup-link{
 
 /*** END ENGAGE **/
 
+/*** ARTICLES ***/
+.articles{
+    background:#F9F9FB;
+}
+
+.articles .nav-tabs{
+    border: none;
+}
+
+.articles .nav-tabs>li>a{
+    border: none;
+    text-transform: uppercase;
+    color: #555555;
+    font-weight: bold;
+}
+
+.articles .nav-tabs>li.active>a, 
+.articles .nav-tabs>li.active>a:focus, 
+.articles .nav-tabs>li.active>a:hover {
+    color: #000000;
+    cursor: default;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #0FC6DA;
+}
+
+.articles .header {
+    border-bottom: 1px solid #ddd;
+}
+
+.articles .header h2{
+    margin-bottom: 0px;
+}
+
+.articles .content{
+    padding-top:2rem;
+    padding-bottom: 2rem;
+}
+
+.articles-item{
+
+}
+
+.articles .articles-item h2{
+    font-size: 20px;
+}
+
+
+.articles-item .group-1{
+    padding: 3rem;    
+}
+
+.articles-item .group-1,
+.articles-item .group-2{
+    margin-top: 3rem;
+    background-color: #ffffff;    
+}
+
+.group-2 .group-1{
+    margin-top: 0px;
+}
+
+.articles-item .group-2 img{
+    width: 100%;
+}
+
+.articles .content a.btn-custom{
+    padding-right: 5rem;
+}
+
+.articles .social {
+    position: fixed;
+    top: 20px;
+  }
+.articles .social ul {
+    padding: 0px;
+    -webkit-transform: translate(-270px, 0);
+    -moz-transform: translate(-270px, 0);
+    -ms-transform: translate(-270px, 0);
+    -o-transform: translate(-270px, 0);
+    transform: translate(-270px, 0);
+  }
+.articles .social ul li {
+    display: block;
+    margin: 5px;
+    background: rgba(0, 0, 0, 0.36);
+    width: 300px;
+    text-align: right;
+    padding: 10px;
+    -webkit-border-radius: 0 30px 30px 0;
+    -moz-border-radius: 0 30px 30px 0;
+    border-radius: 0 30px 30px 0;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+  }
+.articles  .social ul li:hover {
+    -webkit-transform: translate(110px, 0);
+    -moz-transform: translate(110px, 0);
+    -ms-transform: translate(110px, 0);
+    -o-transform: translate(110px, 0);
+    transform: translate(110px, 0);
+    background: rgba(255, 255, 255, 0.4);
+  }
+.articles .social ul li:hover a {
+    color: #000;
+  }
+.articles .social ul li:hover i {
+    color: #fff;
+    background: red;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+  }
+.articles .social ul li i {
+    margin-left: 10px;
+    color: #000;
+    background: #fff;
+    padding: 10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    background: #ffffff;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  
 /** PRODUCT **/
 .products{
     background-color: #ffffff;
@@ -169,19 +366,6 @@ a.dashoard-signup-link{
     max-height: 90px;
 }
 
-/**
- * Removed the borders that comes by default
- * with bxslider
- */
-.partners .content .bx-wrapper, 
-.testimonies .content .bx-wrapper{
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    box-shadow:none;
-    border: none;
-}
-/*** END PARTNERS ***/
-
 
 /***** QUESTION *****/
 .question{
@@ -189,7 +373,7 @@ a.dashoard-signup-link{
     background-image: url("img/newsletter_bg.png");
     background-color: #F05A22;
     background-color: -webkit-gradient(top, #F05A22, #FDAC61 100%);
-    /* background-color: gradient(linear, 0 0.55%, 0 100%, from(#FDAC61), to(#F05A22)); */
+    background-size: cover;
 }
 
 .question .content{
@@ -223,6 +407,7 @@ a.dashoard-signup-link{
 /**** QUIZ SATRTS ***/
 .quiz{
     background-image: url("img/quiz_bg.png");
+    background-size: cover;
 }
 
 .quiz .content, .products .content{
@@ -250,7 +435,8 @@ a.dashoard-signup-link{
 }
 
 .quiz .content a.btn,
-.products .content a.btn{
+.products .content a.btn
+{
     height: 64px;
     padding-left: 5rem;
     
@@ -270,6 +456,7 @@ a.dashoard-signup-link{
     background-image: url("img/testimonies_bg.png");
     background-position: center;
     background-repeat: no-repeat;
+    /* background-size: cover; */
     text-align: center;
     background-color: #ffffff;
 }
@@ -315,12 +502,13 @@ a.dashoard-signup-link{
 .newsletter{
     background-image: url("img/newsletter_bg.png");
     background-color: #00B7C9;
+    background-size: cover;
     color: #ffffff;
 }
 
 .newsletter .content{
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 10rem;
+    padding-bottom: 15rem;
 }
 
 .newsletter .content h2{
@@ -333,19 +521,68 @@ a.dashoard-signup-link{
     padding: 20px;
 }
 
-.newsletter .content .form-group-lg input{
+.newsletter .content .submit {
+    width: 20%;
+    float: left;
+    margin-left: -17%;
+    text-transform: uppercase;
+}
+
+.newsletter .content .field {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.newsletter .content .field input {
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    background: #fff;
+    border-top: none;
+    border-left: none;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    border: 2px solid #fff;
+    font-size: 16px;
+    color: #999;
+    float: left;
+    padding: 15px 5%;
+    width: 86%;
+}
+
+.newsletter .content .submit input {
+    background-image: -moz-linear-gradient( 90deg, rgb(82,146,0) 0%, rgb(96,165,7) 38%, rgb(109,184,13) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(82,146,0) 0%, rgb(96,165,7) 38%, rgb(109,184,13) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(82,146,0) 0%, rgb(96,165,7) 38%, rgb(109,184,13) 100%);
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.078), inset 0px 2px 0px 0px rgba(255, 255, 255, 0.098);
+    border-radius: 25px;
+    width: 100%;
+    float: left;
+    font-size: 19px;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 12px 0;
+    margin-top: 4px;
+    display: block;
+    border: none;
+}
+
+/* .newsletter .content .form-group-lg input{
     padding: 30px 32px;
     border-radius: 48px;
     -moz-border-radius: 48px;
     -webkit-border-radius: 48px;
     -khtml-border-radius: 48px; 
-}
+} */
 
 /*** NEWSLETTER END ***/
 
 /* FOOTER START */
 footer {
     background-image: url("img/footer_bg.jpg");
+    background-size: cover;
     color: #ffffff;
 }
 
