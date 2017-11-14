@@ -427,12 +427,13 @@ footer .copyright{
     background: #FFFFFF;
     box-shadow: 0px 10px 40px rgba(229, 225, 225, 0.25); 
     border-radius: 8px; 
+    padding: 19px 14px 19px 19px !important;
 }
 
 .category .banking-main { 
     display:inline-block;
     margin-top:0;
-    font-family: SF Compact Display;
+    /* font-family: SF Compact Display; */
     line-height: normal;
     font-size: 28px; 
     color: #000000;
@@ -445,12 +446,52 @@ footer .copyright{
     box-sizing: border-box;
     border-radius: 5px;
     font-weight: bold;
-    letter-spacing: 0.2em;
-    text-transform: uppercase; 
     width: 187px;
     height: 50px;
     left: 1073px;
     top: 415px;   
+    line-height: normal;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 5.6px;
+    text-transform: uppercase;  
+    color: #424242;
+}
+
+.line_tru {
+    height: 0;
+    width: 53px;
+    border-top: 3px #5AE1E6 solid;
+    display: inline-block;
+    position: relative;
+    top: 48px;
+    left: -8px;
+}
+
+.saved {
+    position: relative;
+    width: 467px;
+    height: 43px;
+    left: 63px;
+    top: 7px;
+    /* font-family: SF Compact Display; */
+    line-height: normal;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: -1.08px;
+    color: #000000;
+}
+.category h4 > i{
+    height: 2px;
+    width:2px;
+}
+
+.font-r{
+    color:#F0561C;
+}
+
+.font-bank{
+    color:#DADADA;; 
 }
 
 .category .v_line {
@@ -480,19 +521,21 @@ footer .copyright{
     left: 70px;
 }
 
-.category .savings{ 
-    width: 144px;
+.category .savings {
+    display: inline-block;
+    width: 87%;
     height: 20px;
     left: 50px;
     top: 100px;
-    font-family: SF Compact Display;
     line-height: 19px;
-    font-size: 20px;
+    font-size: 17px;
     letter-spacing: -0.666667px;
     color: #4F4D4D;
-    text-align: right;
-    font-weight: bold;   
+    font-weight: bold;
+    padding-left: 17px;
 }
+
+
 
 .category .saving-account{
     width: 104px;
@@ -509,24 +552,10 @@ footer .copyright{
     font-weight: bold; 
 }
 
-.angel{
-    /* Rectangle 5.12 */
-
-position: absolute;
-width: 271px;
-height: 125px;
-left: 117px;
-top: 490px;
-
-background: #FFFFFF;
-box-shadow: 0px 10px 40px rgba(229, 225, 225, 0.25);
-border-radius: 8px;
+.search-background{
+    background: linear-gradient(90.54deg, #28B0B5 -1.49%, #65E6EA 99.97%); 
+    mix-blend-mode: multiply;
+    height: 122px;
 }
-
-.category .content a.btn{
-    width: 273px;
-    height: 55px;
-}
-
 
 /*** END CATEGORY **/
