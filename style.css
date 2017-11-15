@@ -19,6 +19,10 @@ body{
 }
 
 /*** GENERAL COLORS **/
+.light-red{
+    color: #F05A22;
+}
+
 p.light-black{
     color: #9D9D9D;
 }
@@ -64,6 +68,14 @@ a.btn-light-red, a.btn-light-red:hover, a.btn-light-red:active, a.btn-light-red:
     padding-bottom: 2rem;    
 }
 
+a.btn-small, 
+a.btn-small:hover{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem; 
+}
+
 a.btn-with-radius{
     border-radius: 48px;
     -moz-border-radius: 48px;
@@ -105,7 +117,7 @@ a.btn-with-radius{
     min-height: 117px;
     background-color: #ffffff;
     padding-top: 20px;
-    /* height: 200rem; */
+    margin-bottom: 0px;
 }
 
 .navbar-right{
@@ -144,6 +156,28 @@ a.dashoard-signup-link{
 }
 
 /*** END NAVBAR ***/
+
+
+/*** BANNER SECTION ***/
+.banner{
+    background-color: #ffffff;
+    background-image: url("img/banner-bg.jpg");
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-size: cover;
+    background-position: center;
+    /* height: 700px; */
+}
+
+.banner .title{
+    font-size: 5rem;
+}
+
+.banner .sub-title{
+    font-size: 2rem;
+    color: rgba(136, 136, 136, 0.75);
+}
+/*** END BANNER SECTION **/
 
 /***** ENGAGE **/
 .engage{
@@ -188,15 +222,19 @@ a.dashoard-signup-link{
 /*** END ENGAGE **/
 
 /*** ARTICLES ***/
-.articles{
+.articles,
+.featured{
     background:#F9F9FB;
 }
 
-.articles .nav-tabs{
+.articles .nav-tabs,
+.featured .nav-tabs{
     border: none;
 }
 
-.articles .nav-tabs>li>a{
+.articles .nav-tabs>li>a,
+.featured .nav-tabs>li>a
+{
     border: none;
     text-transform: uppercase;
     color: #555555;
@@ -205,7 +243,12 @@ a.dashoard-signup-link{
 
 .articles .nav-tabs>li.active>a, 
 .articles .nav-tabs>li.active>a:focus, 
-.articles .nav-tabs>li.active>a:hover {
+.articles .nav-tabs>li.active>a:hover,
+.featured .nav-tabs>li.active>a, 
+.featured .nav-tabs>li.active>a:focus, 
+.featured .nav-tabs>li.active>a:hover 
+
+{
     color: #000000;
     cursor: default;
     background-color: transparent;
@@ -213,15 +256,21 @@ a.dashoard-signup-link{
     border-bottom: 1px solid #0FC6DA;
 }
 
-.articles .header {
+.articles .header,
+.featured .header
+{
     border-bottom: 1px solid #ddd;
 }
 
-.articles .header h2{
+.articles .header h2, 
+.featured .header h2
+{
     margin-bottom: 0px;
 }
 
-.articles .content{
+.articles .content,
+.articles .content
+{
     padding-top:2rem;
     padding-bottom: 2rem;
 }
@@ -432,7 +481,8 @@ a.dashoard-signup-link{
 
 .quiz .content p, 
 .engage .content p,
-.products .content p{
+.products .content p,
+.banner p{
     padding-top: 10px;
     padding-bottom: 10px;
 }
