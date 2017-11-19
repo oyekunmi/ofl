@@ -558,4 +558,20 @@ footer .copyright{
     height: 122px;
 }
 
+.panel-title > a:before {
+    float: left !important;
+    font-family: FontAwesome;
+    content:"\f055";
+    padding-right: 5px;
+}
+.panel-title > a.collapsed:before {
+    float: left !important;
+    content:"\f056";
+}
+.panel-title > a:hover, 
+.panel-title > a:active, 
+.panel-title > a:focus  {
+    text-decoration:none;
+}
+
 /*** END CATEGORY **/
