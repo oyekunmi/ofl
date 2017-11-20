@@ -23,7 +23,7 @@ body{
     color: #F05A22;
 }
 
-p.light-black{
+p.light-black, .light-black{
     color: #9D9D9D;
 }
 
@@ -176,6 +176,29 @@ a.dashoard-signup-link{
 .banner .sub-title{
     font-size: 2rem;
     color: rgba(136, 136, 136, 0.75);
+    padding-top: 20px;
+}
+
+.banner .search{
+    padding-top: 40px;
+}
+
+.banner .glyphicon{
+    color: #cccccc;
+}
+
+.banner input{
+    /* border-radius: 30px; */
+    /* background: #fff; */
+    /* border-top: none; */
+    /* border-left: none; */
+    /* font-family: 'Lora', serif; */
+    font-weight: 400;
+    /* border: 2px solid #fff; */
+    /* font-size: 16px; */
+    color: #999;
+    /* float: left; */
+    /* padding: 15px 5%; */
 }
 /*** END BANNER SECTION **/
 
@@ -222,8 +245,55 @@ a.dashoard-signup-link{
 /*** END ENGAGE **/
 
 /*** ARTICLES ***/
-.articles,
+.featured .featured-item .list-group{
+    /* border: none; */
+    box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.01);
+    -moz-box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.01);
+    -webkit-box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.01);
+}
+
+.featured .featured-item .list-group .list-group-item{
+    border: none;
+    border-bottom: rgba(236, 236, 236, 0.8) solid thin;
+    margin-bottom: 0px;
+}
+
+.featured .featured-item .list-group .list-group-item:first-child{
+    padding-left: 40px;
+}    
+
+/* #A4A4A4 */
+
+
+.featured .featured-item .list-group .list-group-item .badge{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: #FAF7F7;
+    padding: 10px;
+}
+
+.featured .featured-item .list-group .list-group-item h3{
+    font-weight: bold;
+}
+
+.featured .featured-item .list-group .list-group-item h4{
+    color: #A4A4A4;
+}    
+
+.featured .featured-item .section{
+   /* padding: 50px; */
+   padding-top: 50px;
+   padding-bottom: 50px;
+   /* border-bottom: 1px solid #dddddd; */
+   border-bottom: rgba(236, 236, 236, 0.8) solid thin;
+   
+}
+
 .featured{
+    background: #ffffff;
+}
+
+.articles{
     background:#F9F9FB;
 }
 
@@ -269,7 +339,7 @@ a.dashoard-signup-link{
 }
 
 .articles .content,
-.articles .content
+.featured .content
 {
     padding-top:2rem;
     padding-bottom: 2rem;
@@ -288,6 +358,7 @@ a.dashoard-signup-link{
     padding: 3rem;    
 }
 
+.featured .featured-item .item,
 .articles-item .group-1,
 .articles-item .group-2{
     margin-top: 3rem;
