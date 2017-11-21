@@ -552,10 +552,35 @@ footer .copyright{
     font-weight: bold; 
 }
 
-.search-background{
-    background: linear-gradient(90.54deg, #28B0B5 -1.49%, #65E6EA 99.97%); 
+.search-background {
+    background: linear-gradient(90.54deg, #28B0B5 -1.49%, #65E6EA 99.97%);
     mix-blend-mode: multiply;
     height: 122px;
+}
+
+.search-background .search {
+    position: relative;
+}
+
+.search-background .search input {
+    text-indent: 30px;
+    height: 39px;
+}
+
+.search-background .search ::-webkit-input-placeholder {
+    line-height: normal;
+    font-size: 16px;
+    text-align: center; 
+    color: #000000;
+}
+
+.search-background .search .fa-search {
+    position: absolute;
+    top: 11px;
+    right: 9.71%;
+    left: 92%;
+    font-size: 17px;
+    color: #F05A22;    
 }
 
 .panel-title > a:before {
