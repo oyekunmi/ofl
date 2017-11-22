@@ -86,22 +86,23 @@
           </div>
           
           <div class="row">
-            <!-- <div class="col-sm-4">
-              <div class="form-group">
-                <select class="selectpicker form-control">
-                  <option>All Categories</option>
-                  <option>Banking</option>
-                  <option>Telecomm</option>
-                  <option>Insurance</option>
-                </select>
-              </div>
-            </div> -->
 
             <div class="col-sm-12 search">
-              <div class="form-group has-feedback form-group-lg ">
-                <input type="text" class="form-control" placeholder="Search..." />
-                <i class="glyphicon glyphicon-search form-control-feedback"></i>
-              </div>
+              <form class="form-div">
+                <select id="field" name="select" data-name="select" class="form-control">
+                  <option value="">All Categories</option>
+                  <option value="First">Banking</option>
+                  <option value="Second">Telecommunictions</option>
+                  <option value="Third">Insurance</option>
+                </select>
+                
+                <input type="text" class="form-control" maxlength="256" name="field-2" data-name="Field 2" placeholder="Search...." id="field-2" required="">
+                <!-- <input type="submit" class="search-button w-button"> -->
+                <button type="submit" class="btn">
+                  <i class="glyphicon glyphicon-search"></i>
+                </button>
+                
+              </form>
             </div>
 
           </div>
