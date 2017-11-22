@@ -67,14 +67,28 @@
         </div>
     </nav>
 
-    <section class="search-background" style="display:flex;flex-direction:column;justify-content:center;align-items:center;">
-        <div class="container">
-            <div class="row" style="display:flex;flex-direction:column;justify-content:center;">
+    <section class="search-background">
+        <div class="container-fluid">
+            <div class="row" style="display:flex;flex-direction:column;justify-content:center; background-color:rgba(40, 176, 181,0.5); height:122px;">
                 <div class="col-sm-6" style="align-self:center;">
-                    <div class="search">
+                        <div class="input-group input-group-lg">
+                                <div class="input-group-btn btn-left">
+                                    <button type="button" class="btn btn-default" data-toggle="dropdown">All Categories <span class="caret"></span></button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Banking</a></li>
+                                        <li><a href="#">Telecommunictions</a></li>
+                                        <li><a href="#">Insurance</a></li>
+                                    </ul>
+                            </div>
+                                <input type="text" name"search" class="form-control search" placeholder="Saving Accounts" />
+                                <span class="fa fa-search"></span>        
+                        </div>
+
+
+                    <!-- <div class="search">
                         <input type="text" class="form-control" style="border-radius: 10px;" placeholder="Saving Accounts" />
                         <span class="fa fa-search"></span>
-                    </div>
+                    </div> -->
                 </div>
                 <!--/col-12-->
             </div>
@@ -102,10 +116,7 @@
         <!--container-->
     </section>
 
-    <div>
-
-    </div>
-
+  
     <section class="category">
         <div class="container">
             <div style="margin-bottom:2em;">
@@ -114,7 +125,7 @@
                     <span class="label">870</span>
                 </h2>
                 <button class=" show-all btn pull-right"> Show All
-                    <i class="fa fa-angle-right font-r" style="font-weight: bold; font-size:18px;"></i>
+                    <i class="fa fa-angle-right" style="font-weight: bold; font-size:18px;  color: #F0561C;"></i>
                 </button>
             </div>
             <div class="row">
@@ -181,7 +192,7 @@
                     <span class="label">870</span>
                 </h2>
                 <button class=" show-all btn pull-right"> Show All
-                    <i class="fa fa-angle-right font-r" style="font-weight: bold; font-size:18px;"></i>
+                    <i class="fa fa-angle-right" style="font-weight: bold; font-size:18px; color: #F0561C;"></i>
                 </button>
             </div>
             <div class="row">
@@ -249,7 +260,7 @@
                     <span class="label">870</span>
                 </h2>
                 <button class=" show-all btn pull-right"> Show All
-                    <i class="fa fa-angle-right font-r" style="font-weight: bold; font-size:18px;"></i>
+                    <i class="fa fa-angle-right" style="font-weight: bold; font-size:18px; color: #F0561C;"></i>
                 </button>
             </div>
             <div class="row">

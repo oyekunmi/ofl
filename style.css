@@ -487,7 +487,9 @@ footer .copyright{
 }
 
 .font-r{
-    color:#F0561C;
+    color: #F0561C;
+    float: right;
+    margin-top: -25px;
 }
 
 .font-bank{
@@ -553,7 +555,11 @@ footer .copyright{
 }
 
 .search-background {
-    background: linear-gradient(90.54deg, #28B0B5 -1.49%, #65E6EA 99.97%);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-image:  url("img/fuse-brussels.png");
     mix-blend-mode: multiply;
     height: 122px;
 }
@@ -567,20 +573,27 @@ footer .copyright{
     height: 39px;
 }
 
-.search-background .search ::-webkit-input-placeholder {
+ ::-webkit-input-placeholder {
     line-height: normal;
     font-size: 16px;
     text-align: center; 
     color: #000000;
 }
 
-.search-background .search .fa-search {
+.fa-search {
     position: absolute;
-    top: 11px;
+    top: 15px;
     right: 9.71%;
-    left: 92%;
+    left: 93%;
     font-size: 17px;
-    color: #F05A22;    
+    color: #F05A22;
+    z-index: 100000;    
+}
+
+.caret{
+    width: 10px;
+    color: #0FC6DA;
+    transform: matrix(1, 0, 0, -1, 0);
 }
 
 .panel-title > a:before {
