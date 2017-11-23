@@ -11,7 +11,8 @@
   <!-- Bootstrap -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="vendor/bxslider/jquery.bxslider.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="vendor/bootstrap/css/font-awesome.min.css">
+  <link href="vendor/bootstrap/css/font-awesome.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet">
   
   <link href="style.css" rel="stylesheet">
 
@@ -26,147 +27,1825 @@
 
 <body>
 
-    <nav class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-            aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">
-            <img alt="Brand" src="img/logo-colored.png">
-          </a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-              <a href="categories.html">Categories</a>
-            </li>
-            <li>
-              <a href="#">About Us</a>
-            </li>
-            <li>
-              <a href="#">Quiz & Polls</a>
-            </li>
-            <li>
-              <a href="#">Blog</a>
-            </li>
-            <li>
-              <a class="dashoard-signup-link" href="#">Sign Up</a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-search"></i>&nbsp;</a>
-            </li>
-          </ul>
-        </div>
-        <!--/.nav-collapse -->
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+          aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" src="img/logo-colored.png">
+        </a>
       </div>
-    </nav>
+      <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#">Categories</a>
+          </li>
+          <li>
+            <a href="#">About Us</a>
+          </li>
+          <li>
+            <a href="#">Quiz & Polls</a>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+          </li>
+          <li>
+            <a class="dashoard-signup-link" href="#">Sign Up</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-search"></i>&nbsp;</a>
+          </li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </nav>
 
-    <section class="engage">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="content">
+  <section class="banner">
+    <div class="container">
 
-              <div class="row">
-                <div class="col-sm-5 col-sm-offset-1 review">
-                  <h2>Review and Engage</h2>
-                  <p>
-                    Same-day or next-day priority payments in major
-                    currencies. The receiving account has to be held in 
-                    the chosen currencies.
-                  </p>
-                  <p>
-                    <a class="btn btn-custom btn-lg" href="">Discover More</a>
-                  </p>
-                </div>
-                <div class="col-sm-5 options-img">
-                  <img src="img/engage_options.png" />
-                </div>
-              </div>
+      <div class="row">
 
-              <div class="row">
-                <div class="col-sm-5 col-sm-offset-1 partners-img">
-                  <img src="img/engage_partners.png" />
-                </div>
-                <div class="col-sm-5 compare">
-                  <h2>Search & compare</h2>
-                  <p>
-                    Same-day or next-day priority payments in major
-                    currencies. The receiving account has to be held in 
-                    the chosen currencies.
-                  </p>
-                  <p>
-                    <a class="btn btn-custom btn-lg" href="">Discover More</a>
-                  </p>
-                </div>
-              </div>
-
-            </div>
+        <div class="col-sm-5">
+  
+          <div class="title">
+              Make <span class="light-red">Smart</span> <br />
+              financial decisions
           </div>
-        </div>
-      </div>
-    </section>
-    
-    <section class="products">
-      <div class="bg_right">
-        <div class="container">
+          <div class="sub-title">
+            <p>
+              Compare products & packages to find the best solution for your 
+              lifestyle
+            </p>
+          </div>
+          
           <div class="row">
-            <div class="col-sm-6 col-sm-offset-6">
-                <div class="content">
-                    <h2>Get Matches with the best products & packages</h2>
-                    <p>
-                        Same-day or next-day priority payments in major
-                        currencies. The receiving account has to be held in 
-                        the chosen currencies.
-                    </p>
-                    <p>
-                      <a class="btn btn-custom btn-lg" href="">
-                        Start Assessment <i class="pull-right fa fa-angle-right fa-2x"></i>
-                      </a>
-                    </p>
-                  </div>
+
+            <div class="col-sm-12 search">
+              <form class="form-div">
+                <select id="field" name="select" data-name="select" class="form-control">
+                  <option value="">All Categories</option>
+                  <option value="First">Banking</option>
+                  <option value="Second">Telecommunictions</option>
+                  <option value="Third">Insurance</option>
+                </select>
+                
+                <input type="text" class="form-control" maxlength="256" name="field-2" data-name="Field 2" placeholder="Search...." id="field-2" required="">
+                <!-- <input type="submit" class="search-button w-button"> -->
+                <button type="submit" class="btn">
+                  <i class="glyphicon glyphicon-search"></i>
+                </button>
+                
+              </form>
             </div>
+
           </div>
+
+       
+
         </div>
+        
       </div>
-    </section>
 
-    <section class="partners">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
+    </div>
+  </section>
+
+  <section class="featured">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="content">
+
+            <div class="row">
+
+              <div class="col-sm-12">
+
+                <div class="header">
+                  <div class="navbar-left">
+                    <h2>Featured</h2>
+                  </div>
+                                      <!-- Nav tabs -->
+                  <ul class="nav nav-tabs navbar-right" role="tablist">
+                    <li role="presentation" class="active"><a href="#tab-featured-one" aria-controls="tab-one" role="tab" data-toggle="tab">Products</a></li>
+                    <li role="presentation"><a href="#tab-featured-two" aria-controls="tab-featured-two" role="tab" data-toggle="tab">Deals</a></li>
+                    <li role="presentation"><a href="#tab-featured-three" aria-controls="tab-featured-three" role="tab" data-toggle="tab">Promotions</a></li>
+                  </ul>
+                  <div class="clearfix"></div>
+                </div>
+                  
+              </div>
+              
+                
+              <div class="col-sm-12">
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  
+                  <div role="tabpanel" class="tab-pane active" id="tab-one">
+    
+                      <div class="content-1">
+                        <div class="row">
             
-            <div class="content text-center">
-              
-              <h2>We work with</h2>
-              
+                          <ul class="bxslider pagination-sm">
 
-              <ul class="bxslider">
+                            <li>
 
-                <li>
-                    <div class="links">
+                              <div class="">
+
+                                  <div class="col-sm-4 featured-item">
+
+                                    <ul class="list-group item">
+                                      
+                                      <li class="list-group-item item-1">
+                                        
+                                        <span class="badge light-black">
+                                            <i class="fa fa-bank"></i>                                                
+                                        </span>
+                                        <div class="title">
+                                          <h3>Corportate Account</h3>
+                                          <h4>Current Account</h4>
+                                        </div>
+                                      </li>
+                                      
+                                    </ul>
+                                      
+                                  </div>
+
+                                  <div class="col-sm-4 featured-item">
+                                      
+                                    <ul class="list-group item">
+                                      
+                                      <li class="list-group-item item-1">
+                                        
+                                        <span class="badge light-black">
+                                            <i class="fa fa-bank"></i>                                                
+                                        </span>
+                                        <div class="title">
+                                          <h3>Essential Savings</h3>
+                                          <h4>Savings Account</h4>
+                                        </div>
+                                      </li>
+                                      
+                                    </ul>
+                                      
+                                  </div>
+
+                                  <div class="col-sm-4 featured-item">
+                                      
+                                    <ul class="list-group item">
+                                      
+                                      <li class="list-group-item item-1">
+                                        
+                                        <span class="badge light-black">
+                                            <i class="fa fa-bank"></i>                                                
+                                        </span>
+                                        <div class="title">
+                                          <h3>Diaspora Tariff</h3>
+                                          <h4>Current Account</h4>
+                                        </div>
+                                      </li>
+                                      
+                                    </ul>
+                                      
+                                  </div>
+                                                                        
+                    
+                              </div>
+                            </li>
+
+                          </ul>
+                          
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-4 col-sm-offset-4 text-center">
+                            <p>
+                              <a href="" class="btn btn-light-red btn-with-radius">Visit Blog</a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>  
+    
+                  </div>
+    
+                  <div role="tabpanel" class="tab-pane" id="tab-two">
+    
+                    <div class="content-2">
                       <div class="row">
-                        <div class="col-sm-2 col-sm-offset-1"><img src="img/access_logo.png" /></div>
-                        <div class="col-sm-2"><img src="img/unity_logo.png" /></div>
-                        <div class="col-sm-2"><img src="img/gtb_logo.png" /></div>
-                        <div class="col-sm-2"><img src="img/uba_logo.png" /></div>
-                        <div class="col-sm-2"><img src="img/custodian_logo.png" /></div>
+                          <ul class="bxslider4 pagination-sm">
+                              <li>
+                                <div class="">
+                                    <div class="col-sm-4 articles-item">
+                                      <div class="group-1">
+                      
+                                        <div class="item-btn ">
+                                          <a href="" class="btn btn-light-blue btn-with-radius btn-small">Current Account</a>
+                                        </div>
+                                        <div class="item-content">
+                                          <h2>Which banks allows free ATM withdrawals</h2>
+                                          <p class="light-black">
+                                            ANZ, NAB and Westpac responded later that day by also removing ATM
+                                            fees for non-customers. <br />
+                                            Since then, other banks have done the same....
+                                          </p>
+                                        </div>
+                                        <div class="item-link text-right">
+                                          <a href="" class="light-red">Read more</a>
+                                        </div>
+                      
+                                      </div>
+                      
+                                      <div class="group-2">
+                                        <img src="img/articles-1.png" alt="..." class="">
+                                          
+                                        <div class="group-1">
+                                            
+                                          <div class="item-btn ">
+                                            <a href="" class="btn btn-light-blue btn-with-radius btn-small">Credit Card</a>
+                                          </div>
+                                          <div class="item-content">
+                                            <h2>Big changes coming for competition laws</h2>
+                                            <p class="light-black">
+                                              ANZ, NAB and Westpac responded later that day by also removing ATM
+                                              fees for non-customers. <br />
+                                              Since then, other banks have done the same....
+                                            </p>
+                                          </div>
+                                          <div class="item-link text-right">
+                                            <a href="" class="light-red">Read more</a>
+                                          </div>
+                      
+                                        </div>
+                      
+                                      </div>
+                                      
+                                    </div>
+                      
+                                    <div class="col-sm-4 articles-item">
+                                      <div class="group-2">
+                                        <img src="img/articles-2.png" alt="..." class="">
+                                          
+                                        <div class="group-1">
+                                            
+                                          <div class="item-btn ">
+                                            <a href="" class="btn btn-light-blue btn-with-radius btn-small">Car Loan</a>
+                                          </div>
+                                          <div class="item-content">
+                                            <h2>Research reveals which car gives drivers the 'most satisfaction'</h2>
+                                            <p class="light-black">
+                                              Roy morgan's automotive satisfaction report is based on over 450,000 interviews 
+                                              per annum with car divers
+                                            </p>
+                                          </div>
+                                          <div class="item-link text-right">
+                                            <a href="" class="light-red">Read more</a>
+                                          </div>
+                      
+                                        </div>
+                        
+                                      </div>
+                                        <div class="group-1">
+                                          <div class="item-btn ">
+                                            <a href="" class="btn btn-light-blue btn-with-radius btn-small">Current Account</a>
+                                          </div>
+                                          <div class="item-content">
+                                            <h2>Which banks allows free ATM withdrawals</h2>
+                                            <p class="light-black">
+                                              ANZ, NAB and Westpac responded later that day by also removing ATM
+                                              fees for non-customers. <br />
+                                              Since then, other banks have done the same....
+                                            </p>
+                                          </div>
+                                          <div class="item-link text-right">
+                                            <a href="" class="light-red">Read more</a>
+                                          </div>
+                        
+                                        </div>
+                                      </div>
+                        
+                                      <div class="col-sm-4 articles-item">
+                        
+                                        <div class="group-1">
+                                            
+                                          <div class="item-btn ">
+                                            <a href="" class="btn btn-light-blue btn-with-radius btn-small">Credit Card</a>
+                                          </div>
+                                          <div class="item-content">
+                                            <h2>Big changes coming for competition laws</h2>
+                                            <p class="light-black">
+                                              ANZ, NAB and Westpac responded later that day by also removing ATM
+                                              fees for non-customers. <br />
+                                              Since then, other banks have done the same....
+                                            </p>
+                                          </div>
+                                          <div class="item-link text-right">
+                                            <a href="" class="light-red">Read more</a>
+                                          </div>
+                        
+                                        </div>
+                                        
+                                        <div class="group-2">
+                                          <img src="img/articles-3.png" alt="..." class="">
+                                            
+                                          <div class="group-1">
+                                            <div class="item-btn ">
+                                              <a href="" class="btn btn-light-blue btn-with-radius btn-small">Current Account</a>
+                                            </div>
+                                            <div class="item-content">
+                                              <h2>Which banks allows free ATM withdrawals</h2>
+                                              <p class="light-black">
+                                                ANZ, NAB and Westpac responded later that day by also removing ATM
+                                                fees for non-customers. <br />
+                                                Since then, other banks have done the same....
+                                              </p>
+                                            </div>
+                                            <div class="item-link text-right">
+                                              <a href="" class="light-red">Read more</a>
+                                            </div>
+                        
+                                          </div>
+                                        </div>
+                                          
+                                      </div>
+                        
+                                </div>
+                              </li>
+              
+                              <li>
+                                <div class="">
+                                    <div class="col-sm-4 articles-item">
+                                        <div class="group-1">
+                        
+                                          <div class="item-btn ">
+                                            <a href="" class="btn btn-light-blue btn-with-radius btn-small">Current Account</a>
+                                          </div>
+                                          <div class="item-content">
+                                            <h2>Which banks allows free ATM withdrawals</h2>
+                                            <p class="light-black">
+                                              ANZ, NAB and Westpac responded later that day by also removing ATM
+                                              fees for non-customers. <br />
+                                              Since then, other banks have done the same....
+                                            </p>
+                                          </div>
+                                          <div class="item-link text-right">
+                                            <a href="" class="light-red">Read more</a>
+                                          </div>
+                        
+                                        </div>
+                        
+                                        <div class="group-2">
+                                          <img src="img/articles-1.png" alt="..." class="">
+                                            
+                                          <div class="group-1">
+                                              
+                                            <div class="item-btn ">
+                                              <a href="" class="btn btn-light-blue btn-with-radius btn-small">Credit Card</a>
+                                            </div>
+                                            <div class="item-content">
+                                              <h2>Big changes coming for competition laws</h2>
+                                              <p class="light-black">
+                                                ANZ, NAB and Westpac responded later that day by also removing ATM
+                                                fees for non-customers. <br />
+                                                Since then, other banks have done the same....
+                                              </p>
+                                            </div>
+                                            <div class="item-link text-right">
+                                              <a href="" class="light-red">Read more</a>
+                                            </div>
+                        
+                                          </div>
+                        
+                                        </div>
+                                        
+                                      </div>
+                        
+                                      <div class="col-sm-4 articles-item">
+                                        <div class="group-2">
+                                          <img src="img/articles-2.png" alt="..." class="">
+                                            
+                                          <div class="group-1">
+                                              
+                                            <div class="item-btn ">
+                                              <a href="" class="btn btn-light-blue btn-with-radius btn-small">Car Loan</a>
+                                            </div>
+                                            <div class="item-content">
+                                              <h2>Research reveals which car gives drivers the 'most satisfaction'</h2>
+                                              <p class="light-black">
+                                                Roy morgan's automotive satisfaction report is based on over 450,000 interviews 
+                                                per annum with car divers
+                                              </p>
+                                            </div>
+                                            <div class="item-link text-right">
+                                              <a href="" class="light-red">Read more</a>
+                                            </div>
+                        
+                                          </div>
+                        
+                                        </div>
+                                        <div class="group-1">
+                                          <div class="item-btn ">
+                                            <a href="" class="btn btn-light-blue btn-with-radius btn-small">Current Account</a>
+                                          </div>
+                                          <div class="item-content">
+                                            <h2>Which banks allows free ATM withdrawals</h2>
+                                            <p class="light-black">
+                                              ANZ, NAB and Westpac responded later that day by also removing ATM
+                                              fees for non-customers. <br />
+                                              Since then, other banks have done the same....
+                                            </p>
+                                          </div>
+                                          <div class="item-link text-right">
+                                            <a href="" class="light-red">Read more</a>
+                                          </div>
+                        
+                                        </div>
+                                      </div>
+                        
+                                      <div class="col-sm-4 articles-item">
+                        
+                                        <div class="group-1">
+                                            
+                                          <div class="item-btn ">
+                                            <a href="" class="btn btn-light-blue btn-with-radius btn-small">Credit Card</a>
+                                          </div>
+                                          <div class="item-content">
+                                            <h2>Big changes coming for competition laws</h2>
+                                            <p class="light-black">
+                                              ANZ, NAB and Westpac responded later that day by also removing ATM
+                                              fees for non-customers. <br />
+                                              Since then, other banks have done the same....
+                                            </p>
+                                          </div>
+                                          <div class="item-link text-right">
+                                            <a href="" class="light-red">Read more</a>
+                                          </div>
+                        
+                                        </div>
+                                        
+                                        <div class="group-2">
+                                          <img src="img/articles-3.png" alt="..." class="">
+                                            
+                                          <div class="group-1">
+                                            <div class="item-btn ">
+                                              <a href="" class="btn btn-light-blue btn-with-radius btn-small">Current Account</a>
+                                            </div>
+                                            <div class="item-content">
+                                              <h2>Which banks allows free ATM withdrawals</h2>
+                                              <p class="light-black">
+                                                ANZ, NAB and Westpac responded later that day by also removing ATM
+                                                fees for non-customers. <br />
+                                                Since then, other banks have done the same....
+                                              </p>
+                                            </div>
+                                            <div class="item-link text-right">
+                                              <a href="" class="light-red">Read more</a>
+                                            </div>
+                        
+                                          </div>
+                                        </div>
+                                          
+                                      </div>
+                        
+                                </div>
+                              </li>
+                            </ul>
+                            
                       </div>
                       <div class="row">
-                        <div class="col-sm-2 col-sm-offset-1"><img src="img/skye_logo.png" /></div>
-                        <div class="col-sm-2"><img src="img/standard_logo.png" /></div>
-                        <div class="col-sm-2"><img src="img/wema_logo.png" /></div>
-                        <div class="col-sm-2"><img src="img/first_logo.png" /></div>
-                        <div class="col-sm-2"><img src="img/mansard_logo.png" /></div>
+                        <div class="col-sm-4 col-sm-offset-4 text-center">
+                          <p>
+                            <a href="" class="btn btn-light-red btn-with-radius">Visit Blog</a>
+                          </p>
+                        </div>
                       </div>
                     </div>
-                </li>
-                <li>
+    
+                  </div>
+
+                  <div role="tabpanel" class="tab-pane" id="tab-three">
+    
+                    <div class="content-3">
+                      <div class="row">
+                          <ul class="bxslider5 pagination-sm">
+                              <li>
+                                <div class="">
+                                    <div class="col-sm-4 articles-item">
+                                      <div class="group-1">
+                      
+                                        <div class="item-btn ">
+                                          <a href="" class="btn btn-light-blue btn-with-radius btn-small">Current Account</a>
+                                        </div>
+                                        <div class="item-content">
+                                          <h2>Which banks allows free ATM withdrawals</h2>
+                                          <p class="light-black">
+                                            ANZ, NAB and Westpac responded later that day by also removing ATM
+                                            fees for non-customers. <br />
+                                            Since then, other banks have done the same....
+                                          </p>
+                                        </div>
+                                        <div class="item-link text-right">
+                                          <a href="" class="light-red">Read more</a>
+                                        </div>
+                      
+                                      </div>
+                      
+                                      <div class="group-2">
+                                        <img src="img/articles-1.png" alt="..." class="">
+                                          
+                                        <div class="group-1">
+                                            
+                                          <div class="item-btn ">
+                                            <a href="" class="btn btn-light-blue btn-with-radius btn-small">Credit Card</a>
+                                          </div>
+                                          <div class="item-content">
+                                            <h2>Big changes coming for competition laws</h2>
+                                            <p class="light-black">
+                                              ANZ, NAB and Westpac responded later that day by also removing ATM
+                                              fees for non-customers. <br />
+                                              Since then, other banks have done the same....
+                                            </p>
+                                          </div>
+                                          <div class="item-link text-right">
+                                            <a href="" class="light-red">Read more</a>
+                                          </div>
+                      
+                                        </div>
+                      
+                                      </div>
+                                      
+                                    </div>
+                      
+                                    <div class="col-sm-4 articles-item">
+                                      <div class="group-2">
+                                        <img src="img/articles-2.png" alt="..." class="">
+                                          
+                                        <div class="group-1">
+                                            
+                                          <div class="item-btn ">
+                                            <a href="" class="btn btn-light-blue btn-with-radius btn-small">Car Loan</a>
+                                          </div>
+                                          <div class="item-content">
+                                            <h2>Research reveals which car gives drivers the 'most satisfaction'</h2>
+                                            <p class="light-black">
+                                              Roy morgan's automotive satisfaction report is based on over 450,000 interviews 
+                                              per annum with car divers
+                                            </p>
+                                          </div>
+                                          <div class="item-link text-right">
+                                            <a href="" class="light-red">Read more</a>
+                                          </div>
+                      
+                                        </div>
+                        
+                                      </div>
+                                        <div class="group-1">
+                                          <div class="item-btn ">
+                                            <a href="" class="btn btn-light-blue btn-with-radius btn-small">Current Account</a>
+                                          </div>
+                                          <div class="item-content">
+                                            <h2>Which banks allows free ATM withdrawals</h2>
+                                            <p class="light-black">
+                                              ANZ, NAB and Westpac responded later that day by also removing ATM
+                                              fees for non-customers. <br />
+                                              Since then, other banks have done the same....
+                                            </p>
+                                          </div>
+                                          <div class="item-link text-right">
+                                            <a href="" class="light-red">Read more</a>
+                                          </div>
+                        
+                                        </div>
+                                      </div>
+                        
+                                      <div class="col-sm-4 articles-item">
+                        
+                                        <div class="group-1">
+                                            
+                                          <div class="item-btn ">
+                                            <a href="" class="btn btn-light-blue btn-with-radius btn-small">Credit Card</a>
+                                          </div>
+                                          <div class="item-content">
+                                            <h2>Big changes coming for competition laws</h2>
+                                            <p class="light-black">
+                                              ANZ, NAB and Westpac responded later that day by also removing ATM
+                                              fees for non-customers. <br />
+                                              Since then, other banks have done the same....
+                                            </p>
+                                          </div>
+                                          <div class="item-link text-right">
+                                            <a href="" class="light-red">Read more</a>
+                                          </div>
+                        
+                                        </div>
+                                        
+                                        <div class="group-2">
+                                          <img src="img/articles-3.png" alt="..." class="">
+                                            
+                                          <div class="group-1">
+                                            <div class="item-btn ">
+                                              <a href="" class="btn btn-light-blue btn-with-radius btn-small">Current Account</a>
+                                            </div>
+                                            <div class="item-content">
+                                              <h2>Which banks allows free ATM withdrawals</h2>
+                                              <p class="light-black">
+                                                ANZ, NAB and Westpac responded later that day by also removing ATM
+                                                fees for non-customers. <br />
+                                                Since then, other banks have done the same....
+                                              </p>
+                                            </div>
+                                            <div class="item-link text-right">
+                                              <a href="" class="light-red">Read more</a>
+                                            </div>
+                        
+                                          </div>
+                                        </div>
+                                          
+                                      </div>
+                        
+                                </div>
+                              </li>
+              
+                              <li>
+                                <div class="">
+                                    <div class="col-sm-4 articles-item">
+                                        <div class="group-1">
+                        
+                                          <div class="item-btn ">
+                                            <a href="" class="btn btn-light-blue btn-with-radius btn-small">Current Account</a>
+                                          </div>
+                                          <div class="item-content">
+                                            <h2>Which banks allows free ATM withdrawals</h2>
+                                            <p class="light-black">
+                                              ANZ, NAB and Westpac responded later that day by also removing ATM
+                                              fees for non-customers. <br />
+                                              Since then, other banks have done the same....
+                                            </p>
+                                          </div>
+                                          <div class="item-link text-right">
+                                            <a href="" class="light-red">Read more</a>
+                                          </div>
+                        
+                                        </div>
+                        
+                                        <div class="group-2">
+                                          <img src="img/articles-1.png" alt="..." class="">
+                                            
+                                          <div class="group-1">
+                                              
+                                            <div class="item-btn ">
+                                              <a href="" class="btn btn-light-blue btn-with-radius btn-small">Credit Card</a>
+                                            </div>
+                                            <div class="item-content">
+                                              <h2>Big changes coming for competition laws</h2>
+                                              <p class="light-black">
+                                                ANZ, NAB and Westpac responded later that day by also removing ATM
+                                                fees for non-customers. <br />
+                                                Since then, other banks have done the same....
+                                              </p>
+                                            </div>
+                                            <div class="item-link text-right">
+                                              <a href="" class="light-red">Read more</a>
+                                            </div>
+                        
+                                          </div>
+                        
+                                        </div>
+                                        
+                                      </div>
+                        
+                                      <div class="col-sm-4 articles-item">
+                                        <div class="group-2">
+                                          <img src="img/articles-2.png" alt="..." class="">
+                                            
+                                          <div class="group-1">
+                                              
+                                            <div class="item-btn ">
+                                              <a href="" class="btn btn-light-blue btn-with-radius btn-small">Car Loan</a>
+                                            </div>
+                                            <div class="item-content">
+                                              <h2>Research reveals which car gives drivers the 'most satisfaction'</h2>
+                                              <p class="light-black">
+                                                Roy morgan's automotive satisfaction report is based on over 450,000 interviews 
+                                                per annum with car divers
+                                              </p>
+                                            </div>
+                                            <div class="item-link text-right">
+                                              <a href="" class="light-red">Read more</a>
+                                            </div>
+                        
+                                          </div>
+                        
+                                        </div>
+                                        <div class="group-1">
+                                          <div class="item-btn ">
+                                            <a href="" class="btn btn-light-blue btn-with-radius btn-small">Current Account</a>
+                                          </div>
+                                          <div class="item-content">
+                                            <h2>Which banks allows free ATM withdrawals</h2>
+                                            <p class="light-black">
+                                              ANZ, NAB and Westpac responded later that day by also removing ATM
+                                              fees for non-customers. <br />
+                                              Since then, other banks have done the same....
+                                            </p>
+                                          </div>
+                                          <div class="item-link text-right">
+                                            <a href="" class="light-red">Read more</a>
+                                          </div>
+                        
+                                        </div>
+                                      </div>
+                        
+                                      <div class="col-sm-4 articles-item">
+                        
+                                        <div class="group-1">
+                                            
+                                          <div class="item-btn ">
+                                            <a href="" class="btn btn-light-blue btn-with-radius btn-small">Credit Card</a>
+                                          </div>
+                                          <div class="item-content">
+                                            <h2>Big changes coming for competition laws</h2>
+                                            <p class="light-black">
+                                              ANZ, NAB and Westpac responded later that day by also removing ATM
+                                              fees for non-customers. <br />
+                                              Since then, other banks have done the same....
+                                            </p>
+                                          </div>
+                                          <div class="item-link text-right">
+                                            <a href="" class="light-red">Read more</a>
+                                          </div>
+                        
+                                        </div>
+                                        
+                                        <div class="group-2">
+                                          <img src="img/articles-3.png" alt="..." class="">
+                                            
+                                          <div class="group-1">
+                                            <div class="item-btn ">
+                                              <a href="" class="btn btn-light-blue btn-with-radius btn-small">Current Account</a>
+                                            </div>
+                                            <div class="item-content">
+                                              <h2>Which banks allows free ATM withdrawals</h2>
+                                              <p class="light-black">
+                                                ANZ, NAB and Westpac responded later that day by also removing ATM
+                                                fees for non-customers. <br />
+                                                Since then, other banks have done the same....
+                                              </p>
+                                            </div>
+                                            <div class="item-link text-right">
+                                              <a href="" class="light-red">Read more</a>
+                                            </div>
+                        
+                                          </div>
+                                        </div>
+                                          
+                                      </div>
+                        
+                                </div>
+                              </li>
+                            </ul>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-4 col-sm-offset-4 text-center">
+                          <p>
+                            <a href="" class="btn btn-light-red btn-with-radius">Visit Blog</a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+    
+                  </div>
+
+                </div>
+                
+              </div>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  
+  <section class="engage">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="content">
+
+            <div class="row">
+              <div class="col-sm-5 col-sm-offset-1 review">
+                <h2>Review and Engage</h2>
+                <p>
+                  Same-day or next-day priority payments in major
+                  currencies. The receiving account has to be held in 
+                  the chosen currencies.
+                </p>
+                <p>
+                  <a class="btn btn-custom btn-lg" href="">Discover More</a>
+                </p>
+              </div>
+              <div class="col-sm-5 options-img">
+                <img src="img/engage_options.png" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-5 col-sm-offset-1 partners-img">
+                <img src="img/engage_partners.png" />
+              </div>
+              <div class="col-sm-5 compare">
+                <h2>Search & compare</h2>
+                <p>
+                  Same-day or next-day priority payments in major
+                  currencies. The receiving account has to be held in 
+                  the chosen currencies.
+                </p>
+                <p>
+                  <a class="btn btn-custom btn-lg" href="">Discover More</a>
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="articles">
+
+    <!-- <nav class="social">
+        <ul>
+            <li><a href="https://twitter.com/gian_michelle">Twitter <i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://facebook.com/">Facebook <i class="fa fa-facebook"></i></a></li>
+            <li><a href="http://dribbble.com/gian_michelle">Dribbble <i class="fa fa-dribbble"></i></a></li>
+            <li><a href="http://behance.net/gianm">Behance <i class="fa fa-behance"></i></a></li>
+        </ul>
+    </nav> -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="content">
+
+            <div class="row">
+              <div class="col-sm-12">
+
+                <div class="header">
+                  <div class="navbar-left">
+                    <h2>Artilce & Guides</h2>
+                  </div>
+                                      <!-- Nav tabs -->
+                  <ul class="nav nav-tabs navbar-right" role="tablist">
+                    <li role="presentation" class="active"><a href="#tab-one" aria-controls="tab-one" role="tab" data-toggle="tab">Banking</a></li>
+                    <li role="presentation"><a href="#tab-two" aria-controls="tab-two" role="tab" data-toggle="tab">Telecomms</a></li>
+                    <li role="presentation"><a href="#tab-three" aria-controls="tab-three" role="tab" data-toggle="tab">Insruance</a></li>
+                  </ul>
+      
+                  <div class="clearfix"></div>
+                </div>
+                  
+              </div>
+              
+              
+              <div class="col-sm-12">
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  
+                  <div role="tabpanel" class="tab-pane active" id="tab-one">
+    
+                      <div class="content-1">
+                        <div class="row">
+            
+                          <ul class="bxslider3 pagination-sm">
+                            <li>
+                              <div class="">
+                                  <div class="col-sm-4 articles-item">
+                                    <div class="group-1">
+                    
+                                      <div class="item-btn ">
+                                        <a href="" class="btn btn-light-blue btn-with-radius btn-small btn-small">Current Account</a>
+                                      </div>
+                                      <div class="item-content">
+                                        <h2>Which banks allows free ATM withdrawals</h2>
+                                        <p class="light-black">
+                                          ANZ, NAB and Westpac responded later that day by also removing ATM
+                                          fees for non-customers. <br />
+                                          Since then, other banks have done the same....
+                                        </p>
+                                      </div>
+                                      <div class="item-link text-right">
+                                        <a href="" class="light-red">Read more</a>
+                                      </div>
+                    
+                                    </div>
+                    
+                                    <div class="group-2">
+                                      <img src="img/articles-1.png" alt="..." class="">
+                                        
+                                      <div class="group-1">
+                                          
+                                        <div class="item-btn ">
+                                          <a href="" class="btn btn-light-blue btn-with-radius btn-small btn-small">Credit Card</a>
+                                        </div>
+                                        <div class="item-content">
+                                          <h2>Big changes coming for competition laws</h2>
+                                          <p class="light-black">
+                                            ANZ, NAB and Westpac responded later that day by also removing ATM
+                                            fees for non-customers. <br />
+                                            Since then, other banks have done the same....
+                                          </p>
+                                        </div>
+                                        <div class="item-link text-right">
+                                          <a href="" class="light-red">Read more</a>
+                                        </div>
+                    
+                                      </div>
+                    
+                                    </div>
+                                    
+                                  </div>
+                    
+                                  <div class="col-sm-4 articles-item">
+                                    <div class="group-2">
+                                      <img src="img/articles-2.png" alt="..." class="">
+                                        
+                                      <div class="group-1">
+                                          
+                                        <div class="item-btn ">
+                                          <a href="" class="btn btn-light-blue btn-with-radius btn-small btn-small">Car Loan</a>
+                                        </div>
+                                        <div class="item-content">
+                                          <h2>Research reveals which car gives drivers the 'most satisfaction'</h2>
+                                          <p class="light-black">
+                                            Roy morgan's automotive satisfaction report is based on over 450,000 interviews 
+                                            per annum with car divers
+                                          </p>
+                                        </div>
+                                        <div class="item-link text-right">
+                                          <a href="" class="light-red">Read more</a>
+                                        </div>
+                    
+                                      </div>
+                      
+                                    </div>
+                                      <div class="group-1">
+                                        <div class="item-btn ">
+                                          <a href="" class="btn btn-light-blue btn-with-radius btn-small btn-small">Current Account</a>
+                                        </div>
+                                        <div class="item-content">
+                                          <h2>Which banks allows free ATM withdrawals</h2>
+                                          <p class="light-black">
+                                            ANZ, NAB and Westpac responded later that day by also removing ATM
+                                            fees for non-customers. <br />
+                                            Since then, other banks have done the same....
+                                          </p>
+                                        </div>
+                                        <div class="item-link text-right">
+                                          <a href="" class="light-red">Read more</a>
+                                        </div>
+                      
+                                      </div>
+                                    </div>
+                      
+                                    <div class="col-sm-4 articles-item">
+                      
+                                      <div class="group-1">
+                                          
+                                        <div class="item-btn ">
+                                          <a href="" class="btn btn-light-blue btn-with-radius btn-small btn-small">Credit Card</a>
+                                        </div>
+                                        <div class="item-content">
+                                          <h2>Big changes coming for competition laws</h2>
+                                          <p class="light-black">
+                                            ANZ, NAB and Westpac responded later that day by also removing ATM
+                                            fees for non-customers. <br />
+                                            Since then, other banks have done the same....
+                                          </p>
+                                        </div>
+                                        <div class="item-link text-right">
+                                          <a href="" class="light-red">Read more</a>
+                                        </div>
+                      
+                                      </div>
+                                      
+                                      <div class="group-2">
+                                        <img src="img/articles-3.png" alt="..." class="">
+                                          
+                                        <div class="group-1">
+                                          <div class="item-btn ">
+                                            <a href="" class="btn btn-light-blue btn-with-radius btn-small btn-small">Current Account</a>
+                                          </div>
+                                          <div class="item-content">
+                                            <h2>Which banks allows free ATM withdrawals</h2>
+                                            <p class="light-black">
+                                              ANZ, NAB and Westpac responded later that day by also removing ATM
+                                              fees for non-customers. <br />
+                                              Since then, other banks have done the same....
+                                            </p>
+                                          </div>
+                                          <div class="item-link text-right">
+                                            <a href="" class="light-red">Read more</a>
+                                          </div>
+                      
+                                        </div>
+                                      </div>
+                                        
+                                    </div>
+                      
+                              </div>
+                            </li>
+            
+                            <li>
+                              <div class="">
+                                  <div class="col-sm-4 articles-item">
+                                      <div class="group-1">
+                      
+                                        <div class="item-btn ">
+                                          <a href="" class="btn btn-light-blue btn-with-radius btn-small btn-small">Current Account</a>
+                                        </div>
+                                        <div class="item-content">
+                                          <h2>Which banks allows free ATM withdrawals</h2>
+                                          <p class="light-black">
+                                            ANZ, NAB and Westpac responded later that day by also removing ATM
+                                            fees for non-customers. <br />
+                                            Since then, other banks have done the same....
+                                          </p>
+                                        </div>
+                                        <div class="item-link text-right">
+                                          <a href="" class="light-red">Read more</a>
+                                        </div>
+                      
+                                      </div>
+                      
+                                      <div class="group-2">
+                                        <img src="img/articles-1.png" alt="..." class="">
+                                          
+                                        <div class="group-1">
+                                            
+                                          <div class="item-btn ">
+                                            <a href="" class="btn btn-light-blue btn-with-radius btn-small btn-small">Credit Card</a>
+                                          </div>
+                                          <div class="item-content">
+                                            <h2>Big changes coming for competition laws</h2>
+                                            <p class="light-black">
+                                              ANZ, NAB and Westpac responded later that day by also removing ATM
+                                              fees for non-customers. <br />
+                                              Since then, other banks have done the same....
+                                            </p>
+                                          </div>
+                                          <div class="item-link text-right">
+                                            <a href="" class="light-red">Read more</a>
+                                          </div>
+                      
+                                        </div>
+                      
+                                      </div>
+                                      
+                                    </div>
+                      
+                                    <div class="col-sm-4 articles-item">
+                                      <div class="group-2">
+                                        <img src="img/articles-2.png" alt="..." class="">
+                                          
+                                        <div class="group-1">
+                                            
+                                          <div class="item-btn ">
+                                            <a href="" class="btn btn-light-blue btn-with-radius btn-small btn-small">Car Loan</a>
+                                          </div>
+                                          <div class="item-content">
+                                            <h2>Research reveals which car gives drivers the 'most satisfaction'</h2>
+                                            <p class="light-black">
+                                              Roy morgan's automotive satisfaction report is based on over 450,000 interviews 
+                                              per annum with car divers
+                                            </p>
+                                          </div>
+                                          <div class="item-link text-right">
+                                            <a href="" class="light-red">Read more</a>
+                                          </div>
+                      
+                                        </div>
+                      
+                                      </div>
+                                      <div class="group-1">
+                                        <div class="item-btn ">
+                                          <a href="" class="btn btn-light-blue btn-with-radius btn-small">Current Account</a>
+                                        </div>
+                                        <div class="item-content">
+                                          <h2>Which banks allows free ATM withdrawals</h2>
+                                          <p class="light-black">
+                                            ANZ, NAB and Westpac responded later that day by also removing ATM
+                                            fees for non-customers. <br />
+                                            Since then, other banks have done the same....
+                                          </p>
+                                        </div>
+                                        <div class="item-link text-right">
+                                          <a href="" class="light-red">Read more</a>
+                                        </div>
+                      
+                                      </div>
+                                    </div>
+                      
+                                    <div class="col-sm-4 articles-item">
+                      
+                                      <div class="group-1">
+                                          
+                                        <div class="item-btn ">
+                                          <a href="" class="btn btn-light-blue btn-with-radius btn-small">Credit Card</a>
+                                        </div>
+                                        <div class="item-content">
+                                          <h2>Big changes coming for competition laws</h2>
+                                          <p class="light-black">
+                                            ANZ, NAB and Westpac responded later that day by also removing ATM
+                                            fees for non-customers. <br />
+                                            Since then, other banks have done the same....
+                                          </p>
+                                        </div>
+                                        <div class="item-link text-right">
+                                          <a href="" class="light-red">Read more</a>
+                                        </div>
+                      
+                                      </div>
+                                      
+                                      <div class="group-2">
+                                        <img src="img/articles-3.png" alt="..." class="">
+                                          
+                                        <div class="group-1">
+                                          <div class="item-btn ">
+                                            <a href="" class="btn btn-light-blue btn-with-radius btn-small">Current Account</a>
+                                          </div>
+                                          <div class="item-content">
+                                            <h2>Which banks allows free ATM withdrawals</h2>
+                                            <p class="light-black">
+                                              ANZ, NAB and Westpac responded later that day by also removing ATM
+                                              fees for non-customers. <br />
+                                              Since then, other banks have done the same....
+                                            </p>
+                                          </div>
+                                          <div class="item-link text-right">
+                                            <a href="" class="light-red">Read more</a>
+                                          </div>
+                      
+                                        </div>
+                                      </div>
+                                        
+                                    </div>
+                      
+                              </div>
+                            </li>
+                          </ul>
+                          
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-4 col-sm-offset-4 text-center">
+                            <p>
+                              <a href="" class="btn btn-light-red btn-with-radius">Visit Blog</a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>  
+    
+                  </div>
+    
+                  <div role="tabpanel" class="tab-pane" id="tab-two">
+    
+                    <div class="content-2">
+                      <div class="row">
+                          <ul class="bxslider4 pagination-sm">
+                              <li>
+                                <div class="">
+                                    <div class="col-sm-4 articles-item">
+                                      <div class="group-1">
+                      
+                                        <div class="item-btn ">
+                                          <a href="" class="btn btn-light-blue btn-with-radius btn-small">Current Account</a>
+                                        </div>
+                                        <div class="item-content">
+                                          <h2>Which banks allows free ATM withdrawals</h2>
+                                          <p class="light-black">
+                                            ANZ, NAB and Westpac responded later that day by also removing ATM
+                                            fees for non-customers. <br />
+                                            Since then, other banks have done the same....
+                                          </p>
+                                        </div>
+                                        <div class="item-link text-right">
+                                          <a href="" class="light-red">Read more</a>
+                                        </div>
+                      
+                                      </div>
+                      
+                                      <div class="group-2">
+                                        <img src="img/articles-1.png" alt="..." class="">
+                                          
+                                        <div class="group-1">
+                                            
+                                          <div class="item-btn ">
+                                            <a href="" class="btn btn-light-blue btn-with-radius btn-small">Credit Card</a>
+                                          </div>
+                                          <div class="item-content">
+                                            <h2>Big changes coming for competition laws</h2>
+                                            <p class="light-black">
+                                              ANZ, NAB and Westpac responded later that day by also removing ATM
+                                              fees for non-customers. <br />
+                                              Since then, other banks have done the same....
+                                            </p>
+                                          </div>
+                                          <div class="item-link text-right">
+                                            <a href="" class="light-red">Read more</a>
+                                          </div>
+                      
+                                        </div>
+                      
+                                      </div>
+                                      
+                                    </div>
+                      
+                                    <div class="col-sm-4 articles-item">
+                                      <div class="group-2">
+                                        <img src="img/articles-2.png" alt="..." class="">
+                                          
+                                        <div class="group-1">
+                                            
+                                          <div class="item-btn ">
+                                            <a href="" class="btn btn-light-blue btn-with-radius btn-small">Car Loan</a>
+                                          </div>
+                                          <div class="item-content">
+                                            <h2>Research reveals which car gives drivers the 'most satisfaction'</h2>
+                                            <p class="light-black">
+                                              Roy morgan's automotive satisfaction report is based on over 450,000 interviews 
+                                              per annum with car divers
+                                            </p>
+                                          </div>
+                                          <div class="item-link text-right">
+                                            <a href="" class="light-red">Read more</a>
+                                          </div>
+                      
+                                        </div>
+                        
+                                      </div>
+                                        <div class="group-1">
+                                          <div class="item-btn ">
+                                            <a href="" class="btn btn-light-blue btn-with-radius btn-small">Current Account</a>
+                                          </div>
+                                          <div class="item-content">
+                                            <h2>Which banks allows free ATM withdrawals</h2>
+                                            <p class="light-black">
+                                              ANZ, NAB and Westpac responded later that day by also removing ATM
+                                              fees for non-customers. <br />
+                                              Since then, other banks have done the same....
+                                            </p>
+                                          </div>
+                                          <div class="item-link text-right">
+                                            <a href="" class="light-red">Read more</a>
+                                          </div>
+                        
+                                        </div>
+                                      </div>
+                        
+                                      <div class="col-sm-4 articles-item">
+                        
+                                        <div class="group-1">
+                                            
+                                          <div class="item-btn ">
+                                            <a href="" class="btn btn-light-blue btn-with-radius btn-small">Credit Card</a>
+                                          </div>
+                                          <div class="item-content">
+                                            <h2>Big changes coming for competition laws</h2>
+                                            <p class="light-black">
+                                              ANZ, NAB and Westpac responded later that day by also removing ATM
+                                              fees for non-customers. <br />
+                                              Since then, other banks have done the same....
+                                            </p>
+                                          </div>
+                                          <div class="item-link text-right">
+                                            <a href="" class="light-red">Read more</a>
+                                          </div>
+                        
+                                        </div>
+                                        
+                                        <div class="group-2">
+                                          <img src="img/articles-3.png" alt="..." class="">
+                                            
+                                          <div class="group-1">
+                                            <div class="item-btn ">
+                                              <a href="" class="btn btn-light-blue btn-with-radius btn-small">Current Account</a>
+                                            </div>
+                                            <div class="item-content">
+                                              <h2>Which banks allows free ATM withdrawals</h2>
+                                              <p class="light-black">
+                                                ANZ, NAB and Westpac responded later that day by also removing ATM
+                                                fees for non-customers. <br />
+                                                Since then, other banks have done the same....
+                                              </p>
+                                            </div>
+                                            <div class="item-link text-right">
+                                              <a href="" class="light-red">Read more</a>
+                                            </div>
+                        
+                                          </div>
+                                        </div>
+                                          
+                                      </div>
+                        
+                                </div>
+                              </li>
+              
+                              <li>
+                                <div class="">
+                                    <div class="col-sm-4 articles-item">
+                                        <div class="group-1">
+                        
+                                          <div class="item-btn ">
+                                            <a href="" class="btn btn-light-blue btn-with-radius btn-small">Current Account</a>
+                                          </div>
+                                          <div class="item-content">
+                                            <h2>Which banks allows free ATM withdrawals</h2>
+                                            <p class="light-black">
+                                              ANZ, NAB and Westpac responded later that day by also removing ATM
+                                              fees for non-customers. <br />
+                                              Since then, other banks have done the same....
+                                            </p>
+                                          </div>
+                                          <div class="item-link text-right">
+                                            <a href="" class="light-red">Read more</a>
+                                          </div>
+                        
+                                        </div>
+                        
+                                        <div class="group-2">
+                                          <img src="img/articles-1.png" alt="..." class="">
+                                            
+                                          <div class="group-1">
+                                              
+                                            <div class="item-btn ">
+                                              <a href="" class="btn btn-light-blue btn-with-radius btn-small">Credit Card</a>
+                                            </div>
+                                            <div class="item-content">
+                                              <h2>Big changes coming for competition laws</h2>
+                                              <p class="light-black">
+                                                ANZ, NAB and Westpac responded later that day by also removing ATM
+                                                fees for non-customers. <br />
+                                                Since then, other banks have done the same....
+                                              </p>
+                                            </div>
+                                            <div class="item-link text-right">
+                                              <a href="" class="light-red">Read more</a>
+                                            </div>
+                        
+                                          </div>
+                        
+                                        </div>
+                                        
+                                      </div>
+                        
+                                      <div class="col-sm-4 articles-item">
+                                        <div class="group-2">
+                                          <img src="img/articles-2.png" alt="..." class="">
+                                            
+                                          <div class="group-1">
+                                              
+                                            <div class="item-btn ">
+                                              <a href="" class="btn btn-light-blue btn-with-radius btn-small">Car Loan</a>
+                                            </div>
+                                            <div class="item-content">
+                                              <h2>Research reveals which car gives drivers the 'most satisfaction'</h2>
+                                              <p class="light-black">
+                                                Roy morgan's automotive satisfaction report is based on over 450,000 interviews 
+                                                per annum with car divers
+                                              </p>
+                                            </div>
+                                            <div class="item-link text-right">
+                                              <a href="" class="light-red">Read more</a>
+                                            </div>
+                        
+                                          </div>
+                        
+                                        </div>
+                                        <div class="group-1">
+                                          <div class="item-btn ">
+                                            <a href="" class="btn btn-light-blue btn-with-radius btn-small">Current Account</a>
+                                          </div>
+                                          <div class="item-content">
+                                            <h2>Which banks allows free ATM withdrawals</h2>
+                                            <p class="light-black">
+                                              ANZ, NAB and Westpac responded later that day by also removing ATM
+                                              fees for non-customers. <br />
+                                              Since then, other banks have done the same....
+                                            </p>
+                                          </div>
+                                          <div class="item-link text-right">
+                                            <a href="" class="light-red">Read more</a>
+                                          </div>
+                        
+                                        </div>
+                                      </div>
+                        
+                                      <div class="col-sm-4 articles-item">
+                        
+                                        <div class="group-1">
+                                            
+                                          <div class="item-btn ">
+                                            <a href="" class="btn btn-light-blue btn-with-radius btn-small">Credit Card</a>
+                                          </div>
+                                          <div class="item-content">
+                                            <h2>Big changes coming for competition laws</h2>
+                                            <p class="light-black">
+                                              ANZ, NAB and Westpac responded later that day by also removing ATM
+                                              fees for non-customers. <br />
+                                              Since then, other banks have done the same....
+                                            </p>
+                                          </div>
+                                          <div class="item-link text-right">
+                                            <a href="" class="light-red">Read more</a>
+                                          </div>
+                        
+                                        </div>
+                                        
+                                        <div class="group-2">
+                                          <img src="img/articles-3.png" alt="..." class="">
+                                            
+                                          <div class="group-1">
+                                            <div class="item-btn ">
+                                              <a href="" class="btn btn-light-blue btn-with-radius btn-small">Current Account</a>
+                                            </div>
+                                            <div class="item-content">
+                                              <h2>Which banks allows free ATM withdrawals</h2>
+                                              <p class="light-black">
+                                                ANZ, NAB and Westpac responded later that day by also removing ATM
+                                                fees for non-customers. <br />
+                                                Since then, other banks have done the same....
+                                              </p>
+                                            </div>
+                                            <div class="item-link text-right">
+                                              <a href="" class="light-red">Read more</a>
+                                            </div>
+                        
+                                          </div>
+                                        </div>
+                                          
+                                      </div>
+                        
+                                </div>
+                              </li>
+                            </ul>
+                            
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-4 col-sm-offset-4 text-center">
+                          <p>
+                            <a href="" class="btn btn-light-red btn-with-radius">Visit Blog</a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+    
+                  </div>
+
+                  <div role="tabpanel" class="tab-pane" id="tab-three">
+    
+                    <div class="content-3">
+                      <div class="row">
+                          <ul class="bxslider5 pagination-sm">
+                              <li>
+                                <div class="">
+                                    <div class="col-sm-4 articles-item">
+                                      <div class="group-1">
+                      
+                                        <div class="item-btn ">
+                                          <a href="" class="btn btn-light-blue btn-with-radius btn-small">Current Account</a>
+                                        </div>
+                                        <div class="item-content">
+                                          <h2>Which banks allows free ATM withdrawals</h2>
+                                          <p class="light-black">
+                                            ANZ, NAB and Westpac responded later that day by also removing ATM
+                                            fees for non-customers. <br />
+                                            Since then, other banks have done the same....
+                                          </p>
+                                        </div>
+                                        <div class="item-link text-right">
+                                          <a href="" class="light-red">Read more</a>
+                                        </div>
+                      
+                                      </div>
+                      
+                                      <div class="group-2">
+                                        <img src="img/articles-1.png" alt="..." class="">
+                                          
+                                        <div class="group-1">
+                                            
+                                          <div class="item-btn ">
+                                            <a href="" class="btn btn-light-blue btn-with-radius btn-small">Credit Card</a>
+                                          </div>
+                                          <div class="item-content">
+                                            <h2>Big changes coming for competition laws</h2>
+                                            <p class="light-black">
+                                              ANZ, NAB and Westpac responded later that day by also removing ATM
+                                              fees for non-customers. <br />
+                                              Since then, other banks have done the same....
+                                            </p>
+                                          </div>
+                                          <div class="item-link text-right">
+                                            <a href="" class="light-red">Read more</a>
+                                          </div>
+                      
+                                        </div>
+                      
+                                      </div>
+                                      
+                                    </div>
+                      
+                                    <div class="col-sm-4 articles-item">
+                                      <div class="group-2">
+                                        <img src="img/articles-2.png" alt="..." class="">
+                                          
+                                        <div class="group-1">
+                                            
+                                          <div class="item-btn ">
+                                            <a href="" class="btn btn-light-blue btn-with-radius btn-small">Car Loan</a>
+                                          </div>
+                                          <div class="item-content">
+                                            <h2>Research reveals which car gives drivers the 'most satisfaction'</h2>
+                                            <p class="light-black">
+                                              Roy morgan's automotive satisfaction report is based on over 450,000 interviews 
+                                              per annum with car divers
+                                            </p>
+                                          </div>
+                                          <div class="item-link text-right">
+                                            <a href="" class="light-red">Read more</a>
+                                          </div>
+                      
+                                        </div>
+                        
+                                      </div>
+                                        <div class="group-1">
+                                          <div class="item-btn ">
+                                            <a href="" class="btn btn-light-blue btn-with-radius btn-small">Current Account</a>
+                                          </div>
+                                          <div class="item-content">
+                                            <h2>Which banks allows free ATM withdrawals</h2>
+                                            <p class="light-black">
+                                              ANZ, NAB and Westpac responded later that day by also removing ATM
+                                              fees for non-customers. <br />
+                                              Since then, other banks have done the same....
+                                            </p>
+                                          </div>
+                                          <div class="item-link text-right">
+                                            <a href="" class="light-red">Read more</a>
+                                          </div>
+                        
+                                        </div>
+                                      </div>
+                        
+                                      <div class="col-sm-4 articles-item">
+                        
+                                        <div class="group-1">
+                                            
+                                          <div class="item-btn ">
+                                            <a href="" class="btn btn-light-blue btn-with-radius btn-small">Credit Card</a>
+                                          </div>
+                                          <div class="item-content">
+                                            <h2>Big changes coming for competition laws</h2>
+                                            <p class="light-black">
+                                              ANZ, NAB and Westpac responded later that day by also removing ATM
+                                              fees for non-customers. <br />
+                                              Since then, other banks have done the same....
+                                            </p>
+                                          </div>
+                                          <div class="item-link text-right">
+                                            <a href="" class="light-red">Read more</a>
+                                          </div>
+                        
+                                        </div>
+                                        
+                                        <div class="group-2">
+                                          <img src="img/articles-3.png" alt="..." class="">
+                                            
+                                          <div class="group-1">
+                                            <div class="item-btn ">
+                                              <a href="" class="btn btn-light-blue btn-with-radius btn-small">Current Account</a>
+                                            </div>
+                                            <div class="item-content">
+                                              <h2>Which banks allows free ATM withdrawals</h2>
+                                              <p class="light-black">
+                                                ANZ, NAB and Westpac responded later that day by also removing ATM
+                                                fees for non-customers. <br />
+                                                Since then, other banks have done the same....
+                                              </p>
+                                            </div>
+                                            <div class="item-link text-right">
+                                              <a href="" class="light-red">Read more</a>
+                                            </div>
+                        
+                                          </div>
+                                        </div>
+                                          
+                                      </div>
+                        
+                                </div>
+                              </li>
+              
+                              <li>
+                                <div class="">
+                                    <div class="col-sm-4 articles-item">
+                                        <div class="group-1">
+                        
+                                          <div class="item-btn ">
+                                            <a href="" class="btn btn-light-blue btn-with-radius btn-small">Current Account</a>
+                                          </div>
+                                          <div class="item-content">
+                                            <h2>Which banks allows free ATM withdrawals</h2>
+                                            <p class="light-black">
+                                              ANZ, NAB and Westpac responded later that day by also removing ATM
+                                              fees for non-customers. <br />
+                                              Since then, other banks have done the same....
+                                            </p>
+                                          </div>
+                                          <div class="item-link text-right">
+                                            <a href="" class="light-red">Read more</a>
+                                          </div>
+                        
+                                        </div>
+                        
+                                        <div class="group-2">
+                                          <img src="img/articles-1.png" alt="..." class="">
+                                            
+                                          <div class="group-1">
+                                              
+                                            <div class="item-btn ">
+                                              <a href="" class="btn btn-light-blue btn-with-radius btn-small">Credit Card</a>
+                                            </div>
+                                            <div class="item-content">
+                                              <h2>Big changes coming for competition laws</h2>
+                                              <p class="light-black">
+                                                ANZ, NAB and Westpac responded later that day by also removing ATM
+                                                fees for non-customers. <br />
+                                                Since then, other banks have done the same....
+                                              </p>
+                                            </div>
+                                            <div class="item-link text-right">
+                                              <a href="" class="light-red">Read more</a>
+                                            </div>
+                        
+                                          </div>
+                        
+                                        </div>
+                                        
+                                      </div>
+                        
+                                      <div class="col-sm-4 articles-item">
+                                        <div class="group-2">
+                                          <img src="img/articles-2.png" alt="..." class="">
+                                            
+                                          <div class="group-1">
+                                              
+                                            <div class="item-btn ">
+                                              <a href="" class="btn btn-light-blue btn-with-radius btn-small">Car Loan</a>
+                                            </div>
+                                            <div class="item-content">
+                                              <h2>Research reveals which car gives drivers the 'most satisfaction'</h2>
+                                              <p class="light-black">
+                                                Roy morgan's automotive satisfaction report is based on over 450,000 interviews 
+                                                per annum with car divers
+                                              </p>
+                                            </div>
+                                            <div class="item-link text-right">
+                                              <a href="" class="light-red">Read more</a>
+                                            </div>
+                        
+                                          </div>
+                        
+                                        </div>
+                                        <div class="group-1">
+                                          <div class="item-btn ">
+                                            <a href="" class="btn btn-light-blue btn-with-radius btn-small">Current Account</a>
+                                          </div>
+                                          <div class="item-content">
+                                            <h2>Which banks allows free ATM withdrawals</h2>
+                                            <p class="light-black">
+                                              ANZ, NAB and Westpac responded later that day by also removing ATM
+                                              fees for non-customers. <br />
+                                              Since then, other banks have done the same....
+                                            </p>
+                                          </div>
+                                          <div class="item-link text-right">
+                                            <a href="" class="light-red">Read more</a>
+                                          </div>
+                        
+                                        </div>
+                                      </div>
+                        
+                                      <div class="col-sm-4 articles-item">
+                        
+                                        <div class="group-1">
+                                            
+                                          <div class="item-btn ">
+                                            <a href="" class="btn btn-light-blue btn-with-radius btn-small">Credit Card</a>
+                                          </div>
+                                          <div class="item-content">
+                                            <h2>Big changes coming for competition laws</h2>
+                                            <p class="light-black">
+                                              ANZ, NAB and Westpac responded later that day by also removing ATM
+                                              fees for non-customers. <br />
+                                              Since then, other banks have done the same....
+                                            </p>
+                                          </div>
+                                          <div class="item-link text-right">
+                                            <a href="" class="light-red">Read more</a>
+                                          </div>
+                        
+                                        </div>
+                                        
+                                        <div class="group-2">
+                                          <img src="img/articles-3.png" alt="..." class="">
+                                            
+                                          <div class="group-1">
+                                            <div class="item-btn ">
+                                              <a href="" class="btn btn-light-blue btn-with-radius btn-small">Current Account</a>
+                                            </div>
+                                            <div class="item-content">
+                                              <h2>Which banks allows free ATM withdrawals</h2>
+                                              <p class="light-black">
+                                                ANZ, NAB and Westpac responded later that day by also removing ATM
+                                                fees for non-customers. <br />
+                                                Since then, other banks have done the same....
+                                              </p>
+                                            </div>
+                                            <div class="item-link text-right">
+                                              <a href="" class="light-red">Read more</a>
+                                            </div>
+                        
+                                          </div>
+                                        </div>
+                                          
+                                      </div>
+                        
+                                </div>
+                              </li>
+                            </ul>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-4 col-sm-offset-4 text-center">
+                          <p>
+                            <a href="" class="btn btn-light-red btn-with-radius">Visit Blog</a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+    
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>  
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="products">
+    <div class="bg_right">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-6">
+              <div class="content">
+                  <h2>Get Matches with the best products & packages</h2>
+                  <p>
+                      Same-day or next-day priority payments in major
+                      currencies. The receiving account has to be held in 
+                      the chosen currencies.
+                  </p>
+                  <p>
+                    <a class="btn btn-custom btn-lg" href="">
+                      Start Assessment <i class="pull-right fa fa-angle-right fa-2x"></i>
+                    </a>
+                  </p>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="partners">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          
+          <div class="content text-center">
+            
+            <h2>We work with</h2>
+            
+
+            <ul class="bxslider">
+
+              <li>
                   <div class="links">
                     <div class="row">
                       <div class="col-sm-2 col-sm-offset-1"><img src="img/access_logo.png" /></div>
@@ -183,196 +1862,215 @@
                       <div class="col-sm-2"><img src="img/mansard_logo.png" /></div>
                     </div>
                   </div>
-                </li>
+              </li>
+              <li>
+                <div class="links">
+                  <div class="row">
+                    <div class="col-sm-2 col-sm-offset-1"><img src="img/access_logo.png" /></div>
+                    <div class="col-sm-2"><img src="img/unity_logo.png" /></div>
+                    <div class="col-sm-2"><img src="img/gtb_logo.png" /></div>
+                    <div class="col-sm-2"><img src="img/uba_logo.png" /></div>
+                    <div class="col-sm-2"><img src="img/custodian_logo.png" /></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-2 col-sm-offset-1"><img src="img/skye_logo.png" /></div>
+                    <div class="col-sm-2"><img src="img/standard_logo.png" /></div>
+                    <div class="col-sm-2"><img src="img/wema_logo.png" /></div>
+                    <div class="col-sm-2"><img src="img/first_logo.png" /></div>
+                    <div class="col-sm-2"><img src="img/mansard_logo.png" /></div>
+                  </div>
+                </div>
+              </li>
 
-              </ul>
-              
-            </div>
-
+            </ul>
+            
           </div>
+
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="question">
-      <div class="container">
-        <div class="col-sm-6 col-sm-offset-3 text-center">
+  <section class="question">
+    <div class="container">
+      <div class="col-sm-6 col-sm-offset-3 text-center">
+        <div class="content">
+          <h2>Ask us anything</h2>
+          <p>
+            Same-day or next-day priority payments in major 
+            currencies. The receiving account has
+          </p>
+          <a href="#" class="btn btn-transparent btn-with-radius">Contact Support</a> 
+            &nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="#" class="btn btn-transparent btn-with-radius">Get in Touch</a>               
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quiz">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
           <div class="content">
-            <h2>Ask us anything</h2>
+            <h2>How well do you know your industries</h2>
             <p>
-              Same-day or next-day priority payments in major 
-              currencies. The receiving account has
+              Same-day or next-day priority payments in major currentcies.
+              The receiving account has to be held in the chosen currency.
             </p>
-            <a href="#" class="btn btn-large btn-default">Contact Support</a> 
-              &nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="#" class="btn btn-large btn-default">Get in Touch</a>               
+            <p>
+              <a class="btn btn-custom btn-lg" href="">
+                Take a Quiz <i class="pull-right fa fa-angle-right fa-2x"></i>
+              </a>
+            </p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="quiz">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="content">
-              <h2>How well do you know your industries</h2>
-              <p>
-                Same-day or next-day priority payments in major currentcies.
-                The receiving account has to be held in the chosen currency.
-              </p>
-              <p>
-                <a class="btn btn-custom btn-lg" href="">
-                  Take a Quiz <i class="pull-right fa fa-angle-right fa-2x"></i>
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="testimonies">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-10 col-sm-offset-1">
-            <div class="content">
-              <div class="row">
-                <div class="col-sm-6 col-sm-offset-3">
-                    <h2>What people say</h2>
-                    <img src="img/quotes.png" />
-                    <ul class="bxslider2">
-                      <li>
-                        <p>
-                          Same-day or next-day priority payments in major
-                          currencies. The receiving account has to be held in 
-                          the chosen currencies.
-                        </p>
-                        <div class="person">
-                          <img src="img/testimony_1.png" alt="..." class="img-circle">          
-                          <span>Lekan Abeeb</span>              
-                        </div>
-                      </li>
-                      <li>
-                        <p>
-                          Same-day or next-day priority payments in major
-                          currencies. The receiving account has to be held in 
-                          the chosen currencies.
-                        </p>
-                        <div class="person">
-                          <img src="img/testimony_1.png" alt="..." class="img-circle">          
-                          <span>Lekan Abeeb</span>              
-                        </div>
-                      </li>
-                    </ul>
-                
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-   
-    <section class="newsletter">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-8 col-sm-offset-2 text-center">
-            <div class="content">
-              <h2>Subscribe to our Newsletter</h2>
-              <p>
-                Be the first to know everything, updates and promotions
-              </p>
-              <form class="form-horizontal">
-                <div class="form-group form-group-lg">
-                  <input type="text" class="form-control input-lg" id="email" placeholder="Your email address">
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      
-      <div class="content">
-        <div class="container">
-
-          <div class="row">
-
-            <div class="col-md-6 col-sm-12 logo">
-              <p>
-                <img alt="Brand" src="img/logo-white.png">
-              </p>
-              <div class="social">
-                <p>Follow</p> 
-                <ul class="list-inline">
-                  <li><a href=""><i class="fa fa-facebook-square fa-2x"></i></a></li>
-                  <li><a href=""><i class="fa fa-twitter-square fa-2x" ></i></a></li>
-                  <li><a href=""><i class="fa fa-instagram fa-2x"></i></a></li>
-                </ul>             
-              </div>
-            </div>
-            
-            <div class="col-md-6 col-sm-12 links">
-
-              <div class="row">
-                
-                <div class="col-sm-4 col-sm-12">
-                  <div class="links-container">
-                    <h4>Categories</h4>
-                    <ul>
-                      <li><a href="#" >Banking</a></li></li>
-                      <li><a href="#" >Telecommunication</a></li>
-                      <li><a href="#" >Insurance</a></li>
-                    </ul>
-                  </div>
-                 
-                </div>
-        
-                <div class="col-md-4 col-sm-12">
-                  <div class="links-container">
-                    <h4>About Us</h4>
-                    <ul>
-                      <li><a href="#" >Contact Us</a></li>
-                      <li><a href="#" >About Us</a></li>
-                      <li><a href="#" >Live Support</a></li>
-                    </ul>
-                  </div>
-                </div>
-        
-                <div class="col-sm-4 col-sm-12">
-                  <div class="links-container">
-                    <h4>Press</h4>
-                    <ul>
-                      <li><a href="#" >News Letter</a></li>
-                      <li><a href="#" >Blog</a></li>
-                      <li><a href="#" >Guides</a></li>
-                    </ul>
-                  </div>
-                </div>      
-
-              </div>
-
-            </div>
-            
-          </div>
-
-        </div>
-      </div>
-
-      <div class="copyright">
-        <div class="container ">
+  <section class="testimonies">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-10 col-sm-offset-1">
+          <div class="content">
             <div class="row">
-              <div class="col-sm-12">
-                <p>&copy;&nbsp;2017 Options Finders Limited. All Right Reserved.</p>              
+              <div class="col-sm-6 col-sm-offset-3">
+                  <h2>What people say</h2>
+                  <img src="img/quotes.png" />
+                  <ul class="bxslider2">
+                    <li>
+                      <p>
+                        Same-day or next-day priority payments in major
+                        currencies. The receiving account has to be held in 
+                        the chosen currencies.
+                      </p>
+                      <div class="person">
+                        <img src="img/testimony_1.png" alt="..." class="img-circle">          
+                        <span>Lekan Abeeb</span>              
+                      </div>
+                    </li>
+                    <li>
+                      <p>
+                        Same-day or next-day priority payments in major
+                        currencies. The receiving account has to be held in 
+                        the chosen currencies.
+                      </p>
+                      <div class="person">
+                        <img src="img/testimony_1.png" alt="..." class="img-circle">          
+                        <span>Lekan Abeeb</span>              
+                      </div>
+                    </li>
+                  </ul>
+              
               </div>
             </div>
-          </div>      
+          </div>
+        </div>
       </div>
+    </div>
+  </section>
+  
+  <section class="newsletter">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 text-center">
+          <div class="content">
+            <h2>Subscribe to our Newsletter</h2>
+            <p>
+              Be the first to know everything, updates and promotions
+            </p>
+            <form class="form-horizontal">
+                <div class="mainform">
+                  <div class="field"><input type="text" class="field" id="test" placeholder="example@youremail.com"></div>
+                  <div class="submit"><a href="#" class="submit btn btn-light-red btn-with-radius" type="button">Subscribe</a>				
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
     
-    </footer>
+    <div class="content">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-6 col-sm-12 logo">
+            <p>
+              <img alt="Brand" src="img/logo-white.png">
+            </p>
+            <div class="social">
+              <p>Follow</p> 
+              <ul class="list-inline">
+                <li><a href=""><i class="fa fa-facebook-square fa-2x"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter-square fa-2x" ></i></a></li>
+                <li><a href=""><i class="fa fa-instagram fa-2x"></i></a></li>
+              </ul>             
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-sm-12 links">
+
+            <div class="row">
+              
+              <div class="col-sm-4 col-sm-12">
+                <div class="links-container">
+                  <h4>Categories</h4>
+                  <ul>
+                    <li><a href="#" >Banking</a></li></li>
+                    <li><a href="#" >Telecommunication</a></li>
+                    <li><a href="#" >Insurance</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+      
+              <div class="col-md-4 col-sm-12">
+                <div class="links-container">
+                  <h4>About Us</h4>
+                  <ul>
+                    <li><a href="#" >Contact Us</a></li>
+                    <li><a href="#" >About Us</a></li>
+                    <li><a href="#" >Live Support</a></li>
+                  </ul>
+                </div>
+              </div>
+      
+              <div class="col-sm-4 col-sm-12">
+                <div class="links-container">
+                  <h4>Press</h4>
+                  <ul>
+                    <li><a href="#" >News Letter</a></li>
+                    <li><a href="#" >Blog</a></li>
+                    <li><a href="#" >Guides</a></li>
+                  </ul>
+                </div>
+              </div>      
+
+            </div>
+
+          </div>
+          
+        </div>
+
+      </div>
+    </div>
+
+    <div class="copyright">
+      <div class="container ">
+          <div class="row">
+            <div class="col-sm-12">
+              <p>&copy;&nbsp;2017 Options Finders Limited. All Right Reserved.</p>              
+            </div>
+          </div>
+        </div>      
+    </div>
+  
+  </footer>
 
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -380,17 +2078,44 @@
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
   <script src="vendor/bxslider/jquery.bxslider.min.js"></script>
+  <script src="vendor/twbsPagination/jquery.twbsPagination.min.js"></script>
+  <script src="vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+  
   <script>
     $(document).ready(function(){
       $('.bxslider').bxSlider({
         pager: false
       });
-      $('.bxslider2').bxSlider({
+      $('.bxslider2, .bxslider3').bxSlider({
         controls:false,
         auto:true,
         autoStart:true,
         autoHover:true
       });
+
+      $('a[href="#tab-two"]').one('shown.bs.tab', function (e) {
+        $('.bxslider4').bxSlider({
+          controls:false,
+          auto:true,
+          autoStart:true,
+          autoHover:true
+        });
+      });
+
+      $('a[href="#tab-three"]').one('shown.bs.tab', function (e) {
+        $('.bxslider5').bxSlider({
+          controls:false,
+          auto:true,
+          autoStart:true,
+          autoHover:true
+        });
+      });
+
+    // $('.selectpicker').selectpicker({
+    //   style: 'btn-info',
+    //   size: 3
+    // });
+  
     });
     
   </script>
