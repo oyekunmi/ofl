@@ -1,7 +1,28 @@
+
+@font-face {
+    font-family: 'Sfcompacttext';
+    src: url('fonts/SFCompactText-Light.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Sfcompactdisplay';
+    src: url('fonts/SFCompactDisplay-Light.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Sfcompactdisplay';
+    src: url('fonts/SFCompactDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+
 body{
     background-color: #D8D7D7;
     /* color:#ffffff; */
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;    
+    font-family: Sfcompacttext, sans-serif;
 }
 
 
@@ -183,17 +204,22 @@ a.dashoard-signup-link{
 }
 
 .banner .title{
-    font-size: 5rem;
+    font-family: Sfcompactdisplay, sans-serif;
+    color: #585757;
+    font-size: 44px;
+    line-height: 43px;
+    letter-spacing: -2px;
 }
 
 .banner .sub-title{
     font-size: 2rem;
     color: rgba(136, 136, 136, 0.75);
     padding-top: 20px;
+    font-family:  Sfcompactdisplay, sans-serif;
 }
 
 .banner .search{
-    padding-top: 40px;
+    padding-top: 10px;
 }
 
 .banner .form-div {
@@ -212,6 +238,7 @@ a.dashoard-signup-link{
     /* padding-top: 0px; */
     padding-left: 11px;
     /* box-shadow: 0 28px 33px -5px rgba(0, 0, 0, .1); */
+    font-size: 16px;
   } 
 
 .banner input.form-control{
@@ -375,9 +402,46 @@ a.dashoard-signup-link{
     margin-bottom: 0px;
 }
 
+.featured .featured-item .list-group .list-group-item .row{
+    border-bottom: 1px solid #F2F1F1;
+}
+
+.featured .featured-item .list-group .list-group-item .row .percent{
+    background: #E5651B;
+    /* padding: 5px; */
+    opacity: 60%;
+    color: #ffffff;
+    line-height: 20px;
+    /* margin-top: 30px; */
+}
+
+.featured .featured-item .list-group .list-group-item .row .values{
+    text-align: right;
+}
+
+.featured .featured-item .list-group .list-group-item .row .percent-2{
+   font-size: 30px;
+   font-weight: 500;
+   font-family: Sfcompactdisplay, sans-serif;
+}
+
+.featured .featured-item .list-group .list-group-item .row .per-annum{
+    font-size: 16;
+    font-weight: 500;
+    font-family: Sfcompactdisplay, sans-serif;
+ }
+ 
+
+
+/* .featured .featured-item .list-group .list-group-item .row .pad-top, 
+{
+    padding-top: 20px;
+} */
+
+/* 
 .featured .featured-item .list-group .list-group-item:first-child{
     padding-left: 40px;
-}    
+}     */
 
 /* #A4A4A4 */
 
@@ -792,7 +856,7 @@ a.dashoard-signup-link{
     background: #fff;
     border-top: none;
     border-left: none;
-    font-family: 'Lora', serif;
+    /* font-family: 'Lora', serif; */
     font-weight: 400;
     border: 2px solid #fff;
     font-size: 16px;
@@ -811,7 +875,7 @@ a.dashoard-signup-link{
     width: 100%;
     float: left;
     font-size: 19px;
-    font-family: 'Lora', serif;
+    /* font-family: 'Lora', serif; */
     font-weight: 400;
     cursor: pointer;
     color: #fff;
