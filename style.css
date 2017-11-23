@@ -806,6 +806,7 @@ footer .copyright{
 
 .search-background{
     background: linear-gradient(90.54deg, #28B0B5 -1.49%, #65E6EA 99.97%); 
+
     mix-blend-mode: multiply;
     height: 122px;
 }
