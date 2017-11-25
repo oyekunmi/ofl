@@ -1218,10 +1218,72 @@ footer .copyright{
     color: #F05A22;
 }
 
-.contact-form{
-    margin-top: 68px;
-    height: 380px;
-    border-bottom: 1px solid #F5F5F5;
+.contact-form {
+    padding: 20px 20px 70px;
+}
+
+.contact-form .form-control {
+    background-color: transparent;
+     box-shadow: none;
+     border-top: 0;
+     border-left: 0;
+     border-right: 0;
+     border-bottom: 1px solid #ccc;
+     border-radius: 0;
+     resize: none;
+ }
+ 
+ .contact-form .line_tru{
+    top: 40px;
+    left: -62px;
+}
+
+textarea.form-control {
+    height: 35px;
+}
+
+.contact-form h2{
+    line-height: normal;
+    font-size: 36px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.contact-form h6{
+    line-height: normal;
+    font-size: 20px;
+    color: #ADACAC;
+}
+
+ .contact-form p {
+     margin-top: 20px;
+     padding: 5px;
+     line-height: normal;
+     font-size: 14px;
+     letter-spacing: 0.3em;
+     text-transform: uppercase;
+     color: #F05A22;
+ }
+
+ .contact-form label {
+    line-height: normal;
+    font-size: 14px;
+    letter-spacing: 0.0125em;
+    text-transform: uppercase;
+    color: #B7B7B7;
+}
+
+.contact-form .btn-custom {
+    background-color: #49CCD1;
+    border-radius: 100px;
+    text-transform: lowercase;
+    height: 50px;
+    padding-left: 10rem;
+}
+
+.contact-form .fa-2x {
+    font-size: 1em;
+    margin-top: 3px;
 }
 
 
