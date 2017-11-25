@@ -953,6 +953,12 @@ footer .copyright{
     color: #424242;
 }
 
+.category .fa-arrow-circle-o-right{
+    margin-top: -21px;
+    color: #F0561C;
+    float: right;
+}
+
 .line_tru {
     height: 0;
     width: 53px;
@@ -1130,3 +1136,94 @@ footer .copyright{
 }
 
 /*** END CATEGORY **/
+
+/*** CONTACT **/
+.contact{
+    background: #F5F5F5; 
+    height: 250px;
+    display:flex;
+    justify-content:space-around;
+}
+
+.contact h2{
+    font-size: 48px;
+    top:48px;
+    letter-spacing: -0.03em;
+}
+
+.contact .line_tru{
+    top: 102px;
+    left: -8px;
+}
+
+/* .contact p:before{
+   content:url(img/bPolygon.svg);
+} */
+
+.contact p{
+    font-size: 18px;  
+    color: #484747;
+}
+
+.contact p i{
+    font-size: 18px;
+    color: #F05A22;
+ }
+
+ .contact-detail{
+    margin-top: 68px;
+    height: 380px;
+    border-bottom: 1px solid #F5F5F5;
+ }
+
+.contact-detail .line_tru{
+    top: 17px;
+    left: -61px;
+}
+
+.contact-detail p{
+    line-height: normal;
+    font-size: 14px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #F05A22;
+}
+
+.contact-detail h2{
+    line-height: normal;
+    font-size: 36px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.contact-detail h5{
+    line-height: normal;
+    font-size: 20px;
+    color: #8C8888;
+}
+
+.contact-detail h6{
+    line-height: normal;
+    font-size: 20px;
+    color: #000000;
+}
+
+.contact-detail .social{
+    line-height: normal;
+    font-size: 20px;
+    color: #F05A22;
+}
+
+.contact-detail .social .fa{
+    color: #F05A22;
+}
+
+.contact-form{
+    margin-top: 68px;
+    height: 380px;
+    border-bottom: 1px solid #F5F5F5;
+}
+
+
+
+/*** END CONTACT **/
