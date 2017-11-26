@@ -68,33 +68,25 @@
     </nav>
 
     <section class="search-background">
-            <div class="container-fluid">
-                <div class="row" style="display:flex;flex-direction:column;justify-content:center; background-color:rgba(40, 176, 181,0.5); height:122px;">
-                    <div class="col-sm-6" style="align-self:center;">
-                            <div class="input-group input-group-lg">
-                                    <div class="input-group-btn btn-left">
-                                        <button type="button" class="btn btn-default" data-toggle="dropdown">All Categories <span class="caret"></span></button>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#">Banking</a></li>
-                                            <li><a href="#">Telecommunictions</a></li>
-                                            <li><a href="#">Insurance</a></li>
-                                        </ul>
-                                </div>
-                                    <input type="text" name"search" class="form-control search" placeholder="Saving Accounts" />
-                                    <span class="fa fa-search"></span>        
-                            </div>
-    
-    
-                        <!-- <div class="search">
-                            <input type="text" class="form-control" style="border-radius: 10px;" placeholder="Saving Accounts" />
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <form class="form-div">
+                            <select name="select" data-name="select" class="form-control select-tag">
+                                <option value="">All Categories</option>
+                                <option value="First">Banking</option>
+                                <option value="Second">Telecommunictions</option>
+                                <option value="Third">Insurance</option>
+                            </select>
+                    
+                            <input type="text" class="form-control input-tag" maxlength="256" name="field-2" data-name="Field 2" placeholder="Search...." required="">
                             <span class="fa fa-search"></span>
-                        </div> -->
+                    
+                        </form>
                     </div>
-                    <!--/col-12-->
+    
                 </div>
-                <!--/row-->
             </div>
-            <!--container-->
         </section>
 
     <section style="background: #F5F5F5; height: 137px;">

@@ -923,11 +923,16 @@ footer .copyright{
 .category .banking-main { 
     display:inline-block;
     margin-top:0;
-    /* font-family: SF Compact Display; */
     line-height: normal;
     font-size: 28px; 
     color: #000000;
     font-weight: bold;
+}
+
+.category .fa-angle-right{
+    font-weight: bold; 
+    font-size:18px;  
+    color: #F0561C;
 }
 
  .category .show-all{
@@ -1049,41 +1054,63 @@ footer .copyright{
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    background-image:  url("img/fuse-brussels.png");
+    background: linear-gradient(rgba(21, 161, 167,0.5),rgba(21, 161, 167,0.5)), url("img/fuse-brussels.png");
     mix-blend-mode: multiply;
     height: 122px;
 }
 
-.search-background .search {
-    position: relative;
+.search-background .fa-search{
+    position: absolute;
+    top: 27px;
+    right: 9.71%;
+    left: 90%;
+    font-size: 17px;
+    color: #F05A22;
+    z-index: 100000;
 }
 
-.search-background .search input {
-    text-indent: 30px;
-    height: 39px;
+.search-background .form-div{
+    border: 1px solid #f1eeee;
+    height:70px;
+    border-radius:12px;
+    background-color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.search-background .row{
+    display:flex;
+    justify-content:center; 
+}
+
+.search-background .input-tag{
+    display:inline-block !important;
+    width:60%;
+    border:0; 
+    box-shadow: none; 
+    border-left: 1px solid #E5E1E1;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    margin-left: 19px;
+}
+
+.search-background .select-tag{
+    display:inline-block !important;
+    width:20%;
+    border:1px solid #fff; 
+    box-shadow: none;
+    -webkit-appearance: none !important;
+    background-image: url(img/bPolygon.svg);
+    background-repeat: no-repeat;
+    background-position: 88%;
 }
 
  ::-webkit-input-placeholder {
     line-height: normal;
-    font-size: 16px;
+    font-size: 18px;
     text-align: center; 
     color: #000000;
-}
-
-.fa-search {
-    position: absolute;
-    top: 15px;
-    right: 9.71%;
-    left: 93%;
-    font-size: 17px;
-    color: #F05A22;
-    z-index: 100000;    
-}
-
-.caret{
-    width: 10px;
-    color: #0FC6DA;
-    transform: matrix(1, 0, 0, -1, 0);
 }
 
 .panel-title > a:before {
