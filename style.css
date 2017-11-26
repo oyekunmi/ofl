@@ -888,3 +888,245 @@ footer .copyright{
 }
 
 /**** END FOOTER **/
+
+/***** CATEGORY **/
+.category{
+    background-color: #F9F9F9; 
+    padding-top: 50px;
+    background-repeat: no-repeat;
+}
+
+.category .label {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 60% !important; 
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color:#5BE3E8;
+    border-radius: 10px; 
+}
+.category .well{
+    width: 271px;
+    height: 125px;
+    left: 117px;
+    top: 490px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 40px rgba(229, 225, 225, 0.25); 
+    border-radius: 8px; 
+    padding: 19px 14px 19px 19px !important;
+}
+
+.category .banking-main { 
+    display:inline-block;
+    margin-top:0;
+    line-height: normal;
+    font-size: 28px; 
+    color: #000000;
+    font-weight: bold;
+}
+
+.category .fa-angle-right{
+    font-weight: bold; 
+    font-size:18px;  
+    color: #F0561C;
+}
+
+ .category .show-all{
+    background: #FFFFFF;
+    border: 1px solid #ECECEC;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 187px;
+    height: 50px;
+    left: 1073px;
+    top: 415px;   
+    line-height: normal;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 5.6px;
+    text-transform: uppercase;  
+    color: #424242;
+}
+
+.line_tru {
+    height: 0;
+    width: 53px;
+    border-top: 3px #5AE1E6 solid;
+    display: inline-block;
+    position: relative;
+    top: 48px;
+    left: -8px;
+}
+
+.saved {
+    position: relative;
+    width: 467px;
+    height: 43px;
+    left: 63px;
+    top: 7px;
+    /* font-family: SF Compact Display; */
+    line-height: normal;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: -1.08px;
+    color: #000000;
+}
+.category h4 > i{
+    height: 2px;
+    width:2px;
+}
+
+.font-r{
+    color: #F0561C;
+    float: right;
+    margin-top: -25px;
+}
+
+.font-bank{
+    color:#DADADA;; 
+}
+
+.category .v_line {
+    transform: rotate(90deg);
+    width: 123.5px;
+    border: 1.5px solid rgba(229, 225, 225, 0.25);;
+    margin: 0;
+    position: relative;
+    top: 41px;
+    left: 10.5em;
+}
+
+.category .banking {
+    background: #F6F4F4;
+    color: #F0561C;
+    display: inline-block;
+    padding: 5px 11px;
+    box-shadow: 0px 10px 40px rgba(229, 225, 225, 0.25);
+    border-radius: 21px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    position: absolute;
+    top: 10px;
+    width: 92px;
+    left: 70px;
+}
+
+.category .savings {
+    display: inline-block;
+    width: 87%;
+    height: 20px;
+    left: 50px;
+    top: 100px;
+    line-height: 19px;
+    font-size: 17px;
+    letter-spacing: -0.666667px;
+    color: #4F4D4D;
+    font-weight: bold;
+    padding-left: 17px;
+}
+
+
+
+.category .saving-account{
+    width: 104px;
+    height: 17px;
+    left: 166px;
+    top: 578px;
+    font-family: SF Compact Display;
+    line-height: normal;
+    font-size: 14px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #B8B8B8;
+    margin-left: 2.5em;
+    font-weight: bold; 
+}
+
+.search-background {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(rgba(21, 161, 167,0.5),rgba(21, 161, 167,0.5)), url("img/fuse-brussels.png");
+    mix-blend-mode: multiply;
+    height: 122px;
+}
+
+.search-background .fa-search{
+    position: absolute;
+    top: 27px;
+    right: 9.71%;
+    left: 90%;
+    font-size: 17px;
+    color: #F05A22;
+    z-index: 100000;
+}
+
+.search-background .form-div{
+    border: 1px solid #f1eeee;
+    height:70px;
+    border-radius:12px;
+    background-color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.search-background .row{
+    display:flex;
+    justify-content:center; 
+}
+
+.search-background .input-tag{
+    display:inline-block !important;
+    width:60%;
+    border:0; 
+    box-shadow: none; 
+    border-left: 1px solid #E5E1E1;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    margin-left: 19px;
+}
+
+.search-background .select-tag{
+    display:inline-block !important;
+    width:20%;
+    border:1px solid #fff; 
+    box-shadow: none;
+    -webkit-appearance: none !important;
+    background-image: url(img/bPolygon.svg);
+    background-repeat: no-repeat;
+    background-position: 88%;
+}
+
+ ::-webkit-input-placeholder {
+    line-height: normal;
+    font-size: 18px;
+    text-align: center; 
+    color: #000000;
+}
+
+.panel-title > a:before {
+    float: left !important;
+    font-family: FontAwesome;
+    content:"\f055";
+    padding-right: 5px;
+}
+.panel-title > a.collapsed:before {
+    float: left !important;
+    content:"\f056";
+}
+.panel-title > a:hover, 
+.panel-title > a:active, 
+.panel-title > a:focus  {
+    text-decoration:none;
+}
+
+/*** END CATEGORY **/
