@@ -1,201 +1,7 @@
-
-@font-face {
-    font-family: 'Sfcompacttext';
-    src: url('fonts/SFCompactText-Light.ttf') format('truetype');
-    font-weight: 200;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Sfcompactdisplay';
-    src: url('fonts/SFCompactDisplay-Light.ttf') format('truetype');
-    font-weight: 200;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Sfcompactdisplay';
-    src: url('fonts/SFCompactDisplay-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-
-body{
-    background-color: #D8D7D7;
-    /* color:#ffffff; */
-    font-family: Sfcompacttext, sans-serif;
-}
-
-
-/**
- * Removed the borders that comes by default
- * with bxslider
- */
- .bx-wrapper{
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    box-shadow:none;
-    border: none;
-    border: none;
-    background: inherit;
-}
-
-/* .w-input, .w-select {
-    display: block;
-    width: 100%;
-    height: 38px;
-    padding: 8px 12px;
-    margin-bottom: 10px;
-    font-size: 14px;
-    line-height: 1.428571429;
-    color: #333333;
-    background-color: #ffffff;
-    border: 1px solid #cccccc;
-} */
-
-/*** GENERAL COLORS **/
-.light-red{
-    color: #F05A22;
-}
-
-p.light-black, .light-black{
-    color: #9D9D9D;
-}
-
-a.light-red{
-    color: #F05A22;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-/** END GENERAL COLORS **/
-
-/*** BUTTON SCHEMES ***/
-a.btn-light-blue{
-    background-color: #0FC6DA;
-}
-
-a.btn-light-red{
-    background-color: #F05A22;
-}
-
-a.btn-transparent{
-    background-color: transparent;
-    border: 1px solid #ffffff;
-}
-
-a.btn-transparent:hover,
-a.btn-transparent:active,
-a.btn-transparent:focus
-{
-    background-color: #ffffff;
-    color:#F05A22;
-}
-
-a.btn-transparent,
-a.btn-light-blue, a.btn-light-blue:hover, a.btn-light-blue:active, a.btn-light-blue:focus,
-a.btn-light-red, a.btn-light-red:hover, a.btn-light-red:active, a.btn-light-red:focus{
-    color: #ffffff;    
-    text-transform: uppercase;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;    
-}
-
-a.btn-small, 
-a.btn-small:hover{
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem; 
-}
-
-a.btn-with-radius{
-    border-radius: 48px;
-    -moz-border-radius: 48px;
-    -webkit-border-radius: 48px;
-    -khtml-border-radius: 48px; 
-}
-
-
-/** END BUTTON SCHEMES ***/
-.btn-custom{
-    background-color: #F05A22;
-    color: #ffffff;
-}
-
-.btn-custom:hover{
-    background-color: #F05A22;
-    color: #ffffff;
-}
-
-.content h2{
-    font-weight: bold;
-}
-
-/*** PLUGINS ***/
-
-/** 
- * override the img style from bxslidder to 
- * allow for centering of contents
-**/
-.bx-wrapper img {
-    display: inline;
-}
-
-
-/*** END PLUGINS **/
-
-/*********** NAVBAR ***********/
-.navbar{
-    min-height: 117px;
-    background-color: #ffffff;
-    padding-top: 20px;
-    margin-bottom: 0px;
-}
-
-.navbar-right{
-    padding-top: 20px;
-}
-
-a.dashoard-signup-link{
-    background-color: #F05A22;
-    color: #ffffff;
-
-    border-radius: 100px;
-    -moz-border-radius: 100px;
-    -webkit-border-radius: 100px;
-    -khtml-border-radius: 100px; 
-}
-
-.navbar-nav > li > a{
-    text-transform: uppercase;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.navbar-nav > li:last-child{
-    padding-left: 50px;
-    text-align: right;
-}
-
-.navbar-nav > li > a.dashoard-signup-link:hover,
-.navbar-nav > li > a.dashoard-signup-link:focus {
-    color: #ffffff;
-    background-color: #F05A22;    
-}
-
-.navbar-nav > li > a.dashoard-signup-link{
-    color:#ffffff !important;
-}
-
-/*** END NAVBAR ***/
-
-
 /*** BANNER SECTION ***/
 .banner{
     background-color: #fbfbfb;
-    background-image: url("img/banner-bg.png");
+    background-image: url("../img/banner-bg.png");
     background-size: cover;
     background-position: 100% 50%;
     padding-top: 150px;
@@ -310,7 +116,7 @@ a.dashoard-signup-link{
     border: none;
     box-shadow: none;
     border-radius: 0;
-    background-image: url('img/bPolygon.svg');
+    background-image: url('../img/bPolygon.svg');
     background-repeat: no-repeat;
     background-position: 88% ;
     /* 50%, 0px 0px; */
@@ -327,14 +133,14 @@ a.dashoard-signup-link{
     border-color: #fff hsla(0, 1%, 60%, .48) #fff #fff;
     border-radius: 0px;
     background-color: rgba(39, 26, 26, 0);
-    background-image: url('img/bPolygon.svg'), 
+    background-image: url('../img/bPolygon.svg'), 
     -webkit-linear-gradient(270deg, #fff, #fff), 
-    url('img/bLanding-Page-Option.png'), 
+    url('../img/bLanding-Page-Option.png'), 
     -webkit-linear-gradient(270deg, #fff, #fff), 
     -webkit-linear-gradient(270deg, #fff, #fff), 
     -webkit-linear-gradient(270deg, #fff, #fff), 
     -webkit-linear-gradient(270deg, #fff, #fff);
-    background-image: url('img/bPolygon.svg'), linear-gradient(180deg, #fff, #fff), url('img/bLanding-Page-Option.png'), linear-gradient(180deg, #fff, #fff), linear-gradient(180deg, #fff, #fff), linear-gradient(180deg, #fff, #fff), linear-gradient(180deg, #fff, #fff);
+    background-image: url('../img/bPolygon.svg'), linear-gradient(180deg, #fff, #fff), url('../img/bLanding-Page-Option.png'), linear-gradient(180deg, #fff, #fff), linear-gradient(180deg, #fff, #fff), linear-gradient(180deg, #fff, #fff), linear-gradient(180deg, #fff, #fff);
     background-position: 88% 50%, 0px 0px, 2% 50%, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
     background-size: 13px, auto, 400px, auto, auto, auto, auto;
     background-repeat: no-repeat, repeat, repeat, repeat, repeat, repeat, repeat;
@@ -349,7 +155,7 @@ a.dashoard-signup-link{
 /***** ENGAGE **/
 .engage{
     background-color: #ffffff;
-    background-image: url("img/engage_bg.png");
+    background-image: url("../img/engage_bg.png");
     padding-top: 50px;
     background-size: cover;
 }
@@ -634,7 +440,7 @@ a.dashoard-signup-link{
 /** PRODUCT **/
 .products{
     background-color: #ffffff;
-    background-image: url("img/products_packages_1.png");
+    background-image: url("../img/products_packages_1.png");
     background-size: 50%;
 
     /* height: 800px; */
@@ -643,7 +449,7 @@ a.dashoard-signup-link{
 
 .products .bg_right{
     background-position: right;
-    background-image: url("img/products_packages_2.png");
+    background-image: url("../img/products_packages_2.png");
     background-position-y: 10%;
     background-size: 30%;
     background-repeat: no-repeat;    
@@ -686,7 +492,7 @@ a.dashoard-signup-link{
 /***** QUESTION *****/
 .question{
     color: #ffffff;
-    background-image: url("img/newsletter_bg.png");
+    background-image: url("../img/newsletter_bg.png");
     background-color: #F05A22;
     background-color: -webkit-gradient(top, #F05A22, #FDAC61 100%);
     background-size: cover;
@@ -722,7 +528,7 @@ a.dashoard-signup-link{
 
 /**** QUIZ SATRTS ***/
 .quiz{
-    background-image: url("img/quiz_bg.png");
+    background-image: url("../img/quiz_bg.png");
     background-size: cover;
 }
 
@@ -770,7 +576,7 @@ a.dashoard-signup-link{
 
 /*** TESTIMONIES ****/
 .testimonies{
-    background-image: url("img/testimonies_bg.png");
+    background-image: url("../img/testimonies_bg.png");
     background-position: center;
     background-repeat: no-repeat;
     /* background-size: cover; */
@@ -817,7 +623,7 @@ a.dashoard-signup-link{
 
 /*** NEWSLETTER START ***/
 .newsletter{
-    background-image: url("img/newsletter_bg.png");
+    background-image: url("../img/newsletter_bg.png");
     background-color: #00B7C9;
     background-size: cover;
     color: #ffffff;

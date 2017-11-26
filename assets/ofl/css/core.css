@@ -1,7 +1,27 @@
+@font-face {
+    font-family: 'Sfcompacttext';
+    src: url('../fonts/SFCompactText-Light.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Sfcompactdisplay';
+    src: url('../fonts/SFCompactDisplay-Light.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Sfcompactdisplay';
+    src: url('../fonts/SFCompactDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+
 body{
     background-color: #D8D7D7;
     /* color:#ffffff; */
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;    
+    font-family: Sfcompacttext, sans-serif;
 }
 
 
@@ -167,7 +187,6 @@ a.dashoard-signup-link{
 .navbar-nav > li > a.dashoard-signup-link{
     color:#ffffff !important;
 }
-
 /*** END NAVBAR ***/
 
 
