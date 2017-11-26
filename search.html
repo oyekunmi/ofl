@@ -7,12 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Options Finder - Welcome</title>
-
-    <!-- Bootstrap -->
+    
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- <link href="assets/vendor/bxslider/jquery.bxslider.min.css" rel="stylesheet" /> -->
     <link href="assets/vendor/bootstrap/css/font-awesome.min.css" rel="stylesheet" >
-
+  
     <link href="assets/ofl/css/core.css" rel="stylesheet">
     <link href="assets/ofl/css/site.css" rel="stylesheet">
     
@@ -25,7 +23,7 @@
     <![endif]-->
 </head>
 
-<body>
+<body class="search-page">
 
     <nav class="navbar navbar-default">
         <div class="container">
@@ -37,14 +35,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <img alt="Brand" src="assets/ofl/img/logo-colored.png">
             </a>
             </div>
             <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                <a href="#">Categories</a>
+                <a href="categories.html">Categories</a>
                 </li>
                 <li>
                 <a href="#">About Us</a>
@@ -63,17 +61,60 @@
                 </li>
             </ul>
             </div>
-            <!--/.nav-collapse -->
         </div>
     </nav>
 
+    <section class="banner-section">
+        <div class="gradient">
+            <div class="container">
+                <div class="row">
+                    <div class="content">
+                        <div class="searh-bar">
+                            <div class="col-sm-8 col-sm-offset-2 search ">
+                                <form class="form-div" action="search.html" >
+                                    <select id="category" name="select" data-name="category" class="form-control">
+                                        <option value="all">All Categories</option>
+                                        <option value="banking">Banking</option>
+                                        <option value="telecomms">Telecommunictions</option>
+                                        <option value="insurance">Insurance</option>
+                                    </select>
+                                    
+                                    <input type="text" class="form-control" maxlength="256" name="keywords" data-name="keywords" placeholder="Search...." id="keywords" required="">
+                                    <!-- <input type="submit" class="search-button w-button"> -->
+                                    <button type="submit" class="btn">
+                                        <i class="glyphicon glyphicon-search"></i>
+                                    </button>
+                                    
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-title">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="saved"> <span class="light-black">We found</span> <strong>381</strong> <span class="light-black"> results for </span> <strong>Savings</strong></h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section">
+
+    </div>
+    
     <footer>
-        
+            
         <div class="content">
             <div class="container">
-
+    
             <div class="row">
-
+    
                 <div class="col-md-6 col-sm-12 logo">
                 <p>
                     <img alt="Brand" src="assets/ofl/img/logo-white.png">
@@ -89,7 +130,7 @@
                 </div>
                 
                 <div class="col-md-6 col-sm-12 links">
-
+    
                 <div class="row">
                     
                     <div class="col-sm-4 col-sm-12">
@@ -125,16 +166,16 @@
                         </ul>
                     </div>
                     </div>      
-
+    
                 </div>
-
+    
                 </div>
                 
             </div>
-
+    
             </div>
         </div>
-
+    
         <div class="copyright">
             <div class="container ">
                 <div class="row">
@@ -146,6 +187,7 @@
         </div>
         
     </footer>
+          
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>

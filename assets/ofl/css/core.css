@@ -60,6 +60,7 @@ p.light-black, .light-black{
     color: #9D9D9D;
 }
 
+
 a.light-red{
     color: #F05A22;
     text-transform: uppercase;
@@ -189,16 +190,77 @@ a.dashoard-signup-link{
 }
 /*** END NAVBAR ***/
 
+/*** SEARCH BAR ***/
 
-/* .newsletter .content .form-group-lg input{
-    padding: 30px 32px;
-    border-radius: 48px;
-    -moz-border-radius: 48px;
-    -webkit-border-radius: 48px;
-    -khtml-border-radius: 48px; 
-} */
 
-/*** NEWSLETTER END ***/
+.searh-bar .search{
+    padding-top: 10px;
+}
+
+.searh-bar .form-div {
+    display: flex;
+    flex: 0 auto;
+    flex-direction: row;
+    height: 70px;
+    padding-right: 15px;
+    justify-content: center;
+    align-items: center; 
+    border: 1px solid #f1eeee;
+    border-radius: 12px;
+    background-color: #fff; 
+
+    /* width: 70%; */
+    /* padding-top: 0px; */
+    padding-left: 11px;
+    /* box-shadow: 0 28px 33px -5px rgba(0, 0, 0, .1); */
+    font-size: 16px;
+  } 
+
+.searh-bar input.form-control{
+    border: none;
+    box-shadow:none;
+    border-left: 1px solid #c9c9c9;
+    border-radius: 0;
+}
+
+.searh-bar input.form-control:hover,
+.searh-bar input.form-control:active,
+.searh-bar input.form-control:focus
+{
+    border-left: 1px solid #00B7C9;
+}
+
+.searh-bar .btn
+{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    border-radius: none;
+}
+
+.searh-bar .btn:active,
+.searh-bar .btn:focus,
+.searh-bar .btn:hover
+{
+    color: #00B7C9;
+}
+
+.searh-bar select.form-control {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    background-image: url('../img/bPolygon.svg');
+    background-repeat: no-repeat;
+    background-position: 88% ;
+  }
+
+  /**** END OF SEARCHBAR ***/
 
 /* FOOTER START */
 footer {

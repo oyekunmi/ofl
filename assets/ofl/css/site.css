@@ -1,6 +1,47 @@
+.page-title{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #F5F5F5;
+}
+
+.banner-section{
+    background-size: cover;
+    background-position: 100% 15%;    
+}
+
+/*********** SEARCH PAGE **********/
+.search-page{
+    font-family: Sfcompactdisplay;
+}
+
+
+.search-page .banner-section{
+    background-image: url("../img/search-page-banner.jpg");
+}
+
+.search-page .banner-section .gradient{
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-image: linear-gradient(to bottom right,#28B0B5,#65E6EA);
+    opacity: .4;  
+}
+
+.search-page .page-title h2{
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.search-page .page-title h2:before{
+    content: '-------';
+    color: #28B0B5;
+}
+
+/******** END SEARCH PAGE *******/
 
 /***** CATEGORY **/
-.category{
+/* .category{
     background-color: #F9F9F9; 
     padding-top: 50px;
     background-repeat: no-repeat;
@@ -28,13 +69,13 @@
     box-shadow: 0px 10px 40px rgba(229, 225, 225, 0.25); 
     border-radius: 8px; 
     padding: 19px 14px 19px 19px !important;
-}
+} */
 
-.category .banking-main { 
+/* .category .banking-main { 
     display:inline-block;
-    margin-top:0;
+    margin-top:0; */
     /* font-family: SF Compact Display; */
-    line-height: normal;
+    /* line-height: normal;
     font-size: 28px; 
     color: #000000;
     font-weight: bold;
@@ -66,22 +107,22 @@
     position: relative;
     top: 48px;
     left: -8px;
-}
+} */
 
-.saved {
+/* .saved {
     position: relative;
     width: 467px;
     height: 43px;
     left: 63px;
-    top: 7px;
+    top: 7px; */
     /* font-family: SF Compact Display; */
-    line-height: normal;
+    /* line-height: normal;
     font-size: 30px;
     font-weight: bold;
     letter-spacing: -1.08px;
     color: #000000;
-}
-.category h4 > i{
+} */
+/* .category h4 > i{
     height: 2px;
     width:2px;
 }
@@ -119,9 +160,9 @@
     top: 10px;
     width: 92px;
     left: 70px;
-}
+} */
 
-.category .savings {
+/* .category .savings {
     display: inline-block;
     width: 87%;
     height: 20px;
@@ -156,6 +197,6 @@
     background: linear-gradient(90.54deg, #28B0B5 -1.49%, #65E6EA 99.97%); 
     mix-blend-mode: multiply;
     height: 122px;
-}
+} */
 
-/*** END CATEGORY **/
+/** END CATEGORY */
