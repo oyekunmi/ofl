@@ -888,3 +888,164 @@ footer .copyright{
 }
 
 /**** END FOOTER **/
+
+/***** CATEGORY **/
+.category{
+    background-color: #F9F9F9; 
+    padding-top: 50px;
+    background-repeat: no-repeat;
+}
+
+.category .label {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 60% !important; 
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color:#5BE3E8;
+    border-radius: 10px; 
+}
+.category .well{
+    width: 271px;
+    height: 125px;
+    left: 117px;
+    top: 490px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 40px rgba(229, 225, 225, 0.25); 
+    border-radius: 8px; 
+    padding: 19px 14px 19px 19px !important;
+}
+
+.category .banking-main { 
+    display:inline-block;
+    margin-top:0;
+    /* font-family: SF Compact Display; */
+    line-height: normal;
+    font-size: 28px; 
+    color: #000000;
+    font-weight: bold;
+}
+
+ .category .show-all{
+    background: #FFFFFF;
+    border: 1px solid #ECECEC;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 187px;
+    height: 50px;
+    left: 1073px;
+    top: 415px;   
+    line-height: normal;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 5.6px;
+    text-transform: uppercase;  
+    color: #424242;
+}
+
+.line_tru {
+    height: 0;
+    width: 53px;
+    border-top: 3px #5AE1E6 solid;
+    display: inline-block;
+    position: relative;
+    top: 48px;
+    left: -8px;
+}
+
+.saved {
+    position: relative;
+    width: 467px;
+    height: 43px;
+    left: 63px;
+    top: 7px;
+    /* font-family: SF Compact Display; */
+    line-height: normal;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: -1.08px;
+    color: #000000;
+}
+.category h4 > i{
+    height: 2px;
+    width:2px;
+}
+
+.font-r{
+    color:#F0561C;
+}
+
+.font-bank{
+    color:#DADADA;; 
+}
+
+.category .v_line {
+    transform: rotate(90deg);
+    width: 123.5px;
+    border: 1.5px solid rgba(229, 225, 225, 0.25);;
+    margin: 0;
+    position: relative;
+    top: 41px;
+    left: 10.5em;
+}
+
+.category .banking {
+    background: #F6F4F4;
+    color: #F0561C;
+    display: inline-block;
+    padding: 5px 11px;
+    box-shadow: 0px 10px 40px rgba(229, 225, 225, 0.25);
+    border-radius: 21px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    position: absolute;
+    top: 10px;
+    width: 92px;
+    left: 70px;
+}
+
+.category .savings {
+    display: inline-block;
+    width: 87%;
+    height: 20px;
+    left: 50px;
+    top: 100px;
+    line-height: 19px;
+    font-size: 17px;
+    letter-spacing: -0.666667px;
+    color: #4F4D4D;
+    font-weight: bold;
+    padding-left: 17px;
+}
+
+
+
+.category .saving-account{
+    width: 104px;
+    height: 17px;
+    left: 166px;
+    top: 578px;
+    font-family: SF Compact Display;
+    line-height: normal;
+    font-size: 14px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #B8B8B8;
+    margin-left: 2.5em;
+    font-weight: bold; 
+}
+
+.search-background{
+    background: linear-gradient(90.54deg, #28B0B5 -1.49%, #65E6EA 99.97%); 
+    mix-blend-mode: multiply;
+    height: 122px;
+}
+
+/*** END CATEGORY **/
