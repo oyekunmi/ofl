@@ -1177,7 +1177,7 @@ footer .copyright{
  }
 
 .contact-detail .line_tru{
-    top: 17px;
+    top: 14px;
     left: -61px;
 }
 
@@ -1216,6 +1216,7 @@ footer .copyright{
 
 .contact-detail .social .fa{
     color: #F05A22;
+    margin: 16px;    
 }
 
 .contact-form {
