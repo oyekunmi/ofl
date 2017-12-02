@@ -1273,17 +1273,27 @@ textarea.form-control {
     color: #B7B7B7;
 }
 
-.contact-form .btn-custom {
+.contact-form  .btn-default{
     background-color: #49CCD1;
     border-radius: 100px;
-    text-transform: lowercase;
     height: 50px;
-    padding-left: 10rem;
+    width:260px; 
+    color:#fff;
+}
+
+.contact-form  .btn2{
+    background-color: #F05A22;
 }
 
 .contact-form .fa-2x {
     font-size: 1em;
     margin-top: 3px;
+}
+
+.contact-form .glyphicon-envelope{
+    color: #DADADA;
+    top: -24px;
+    left: 345px;
 }
 
 
