@@ -25,7 +25,12 @@ body{
     line-height: 20px;
 }
 
-
+@media (max-width: 768px) {
+    html, body {
+    width: auto !important;
+    overflow-x: hidden !important;
+    }
+}
 /**
  * Removed the borders that comes by default
  * with bxslider

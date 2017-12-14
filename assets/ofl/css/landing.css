@@ -9,13 +9,6 @@
     height: 700px;
 }
 
-@media (max-width: 480px) { 
-    .banner{
-
-    }
-}
-
-
 .banner .title{
     font-family: Sfcompactdisplay, sans-serif;
     color: #585757;
