@@ -611,7 +611,9 @@
 /***** QUESTION *****/
 .question{
     color: #ffffff;
-    background-image: url("../img/newsletter_bg.png");
+    background-image: linear-gradient(180deg, #f05a22, hsla(0, 0%, 100%, .06)), url("http://uploads.webflow.com/5a14bb8012d5720001cf27e5/5a1f05682756760001da0cc4_Mask%20Group.jpg");
+    
+    /* background-image: url("../img/newsletter_bg.png"); */
     background-color: #F05A22;
     background-color: -webkit-gradient(top, #F05A22, #FDAC61 100%);
     background-size: cover;
@@ -728,11 +730,15 @@
 
 /*** TESTIMONIES ****/
 .testimonies{
-    background-image: linear-gradient(180deg, #f05a22, hsla(0, 0%, 100%, .06)), url("../img/testimonies_bg.png");
-    /* background-image: url("../img/testimonies_bg.png"); */
-    background-position: 0px 0px, 50% 50%;
+    background-image: linear-gradient(180deg, hsla(0, 0%, 100%, .71), hsla(0, 0%, 100%, .71)), url("http://uploads.webflow.com/5a14bb8012d5720001cf27e5/5a1f0e273361430001fca4da_Group%202.png");
+    /* background-position: 0px 0px, 50% 50%;
     background-size: auto, cover;
+    background-repeat: repeat, no-repeat;*/
+    background-color: #ffffff; 
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, contain;
     background-repeat: repeat, no-repeat;
+    text-align: center;
 }
 
 .testimonies .content{
@@ -774,7 +780,7 @@
 
 /*** NEWSLETTER START ***/
 .newsletter{
-    background-image: url("../img/newsletter_bg.png");
+    background-image:linear-gradient(180deg, #44bace, hsla(0, 0%, 100%, 0)), url("http://uploads.webflow.com/5a14bb8012d5720001cf27e5/5a1f14cf3361430001fcaeeb_Group%203.png");
     background-color: #00B7C9;
     background-size: cover;
     color: #ffffff;
@@ -786,13 +792,20 @@
 }
 
 .newsletter .content h2{
-    font-weight: bolder;    
-    font-size: 48px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    font-family: Sfcompactdisplay, sans-serif;
+    font-size: 38px;
+    line-height: 44px;
+    margin-top: 20px;
 }
 .newsletter .content p{
-    /* font-weight: bolder;     */
-    font-size: 24px;
-    padding: 20px;
+    padding: 12px 56px;
+    font-family: Sfcompacttext, sans-serif;
+    color: hsla(0, 0%, 100%, .83);
+    font-size: 20px;
+    text-align: center;
 }
 
 .newsletter .content .submit {
