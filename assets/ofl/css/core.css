@@ -53,15 +53,17 @@ body{
 } */
 
 /*** GENERAL COLORS **/
-.light-red{
-    color: #F05A22;
+.btn{
+    height: 55px;
+    line-height: 30px;
+    border-radius: 20px;
 }
 
-p.light-black, .light-black{
+.light-black{
     color: #9D9D9D;
 }
 
-a.light-red{
+.light-red{
     color: #F05A22;
     text-transform: uppercase;
     text-decoration: none;
@@ -70,19 +72,16 @@ a.light-red{
 /** END GENERAL COLORS **/
 
 /*** BUTTON SCHEMES ***/
-a.btn-light-blue{
+.btn-light-blue{
     background-color: #0FC6DA;
 }
 
-a.btn-light-red{
+.btn-light-red{
     background-color: #F05A22;
-    padding: 11px 24px;
-    border-radius: 20px;
-    background-color: #f05a22;
     color: #fff;
 }
 
-a.btn-transparent{
+.btn-transparent{
     background-color: transparent;
     border: 1px solid #ffffff;
 }
@@ -95,9 +94,11 @@ a.btn-transparent:focus
     color:#F05A22;
 }
 
-a.btn-transparent,
-a.btn-light-blue, a.btn-light-blue:hover, a.btn-light-blue:active, a.btn-light-blue:focus,
-a.btn-light-red, a.btn-light-red:hover, a.btn-light-red:active, a.btn-light-red:focus{
+.btn-transparent,
+.btn-light-blue, .btn-light-blue:hover, 
+.btn-light-blue:active, .btn-light-blue:focus,
+.btn-light-red, .btn-light-red:hover, 
+.btn-light-red:active, .btn-light-red:focus{
     color: #ffffff;    
     text-transform: uppercase;
     /* padding-left: 4rem;
@@ -109,7 +110,7 @@ a.btn-light-red, a.btn-light-red:hover, a.btn-light-red:active, a.btn-light-red:
     padding-right: 27px;
     padding-left: 27px;
 
-    box-shadow: 2px 16px 37px 0 #ddd8d8;
+    /* box-shadow: 2px 16px 37px 0 #ddd8d8; */
     font-family: Sfcompactdisplay, sans-serif;
     font-size: 13px;
     font-weight: 400;
@@ -120,15 +121,15 @@ a.btn-light-red, a.btn-light-red:hover, a.btn-light-red:active, a.btn-light-red:
 
 
 
-a.btn-small, 
-a.btn-small:hover{
+.btn-small, 
+.btn-small:hover{
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 1rem;
     padding-bottom: 1rem; 
 }
 
-a.btn-with-radius{
+.btn-with-radius{
     border-radius: 48px;
     -moz-border-radius: 48px;
     -webkit-border-radius: 48px;
@@ -137,15 +138,6 @@ a.btn-with-radius{
 
 
 /** END BUTTON SCHEMES ***/
-.btn-custom{
-    background-color: #F05A22;
-    color: #ffffff;
-}
-
-.btn-custom:hover{
-    background-color: #F05A22;
-    color: #ffffff;
-}
 
 .content h2{
     font-weight: bold;

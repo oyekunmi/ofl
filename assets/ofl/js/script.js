@@ -1,7 +1,7 @@
 
 $(document).ready(function () {
     $(document).ready(function(){
-        $('.bxslider').bxSlider({
+        $('.bxslider, .bxslider-featured-one').bxSlider({
           pager: false
         });
         $('.bxslider2, .bxslider3').bxSlider({
@@ -28,5 +28,20 @@ $(document).ready(function () {
             autoHover:true
             });
         });
+
+
+        $('a[href="#tab-featured-two"]').one('shown.bs.tab', function (e) {
+          $('.bxslider-featured-two').bxSlider({
+            pager: false            
+          });
+        });
+
+   
+        $('a[href="#tab-featured-three"]').one('shown.bs.tab', function (e) {
+          $('.bxslider-featured-three').bxSlider({
+            pager: false            
+          });
+        });
+
     });
 });
