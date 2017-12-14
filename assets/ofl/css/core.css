@@ -1,27 +1,28 @@
 @font-face {
     font-family: 'Sfcompacttext';
-    src: url('../fonts/SFCompactText-Light.ttf') format('truetype');
+    src: url('https://daks2k3a4ib2z.cloudfront.net/5a14bb8012d5720001cf27e5/5a14d8d6310d3d0001971d16_SFCompactText-Light.ttf') format('truetype');
     font-weight: 200;
     font-style: normal;
   }
   @font-face {
     font-family: 'Sfcompactdisplay';
-    src: url('../fonts/SFCompactDisplay-Light.ttf') format('truetype');
+    src: url('https://daks2k3a4ib2z.cloudfront.net/5a14bb8012d5720001cf27e5/5a14d8f84ce99a0001943ebb_SFCompactDisplay-Light.ttf') format('truetype');
     font-weight: 200;
     font-style: normal;
   }
   @font-face {
     font-family: 'Sfcompactdisplay';
-    src: url('../fonts/SFCompactDisplay-Medium.ttf') format('truetype');
+    src: url('https://daks2k3a4ib2z.cloudfront.net/5a14bb8012d5720001cf27e5/5a14d8e9310d3d0001971d21_SFCompactDisplay-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
   }
   
-
 body{
     background-color: #D8D7D7;
     /* color:#ffffff; */
     font-family: Sfcompacttext, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 
@@ -60,7 +61,6 @@ p.light-black, .light-black{
     color: #9D9D9D;
 }
 
-
 a.light-red{
     color: #F05A22;
     text-transform: uppercase;
@@ -76,6 +76,10 @@ a.btn-light-blue{
 
 a.btn-light-red{
     background-color: #F05A22;
+    padding: 11px 24px;
+    border-radius: 20px;
+    background-color: #f05a22;
+    color: #fff;
 }
 
 a.btn-transparent{
@@ -96,11 +100,25 @@ a.btn-light-blue, a.btn-light-blue:hover, a.btn-light-blue:active, a.btn-light-b
 a.btn-light-red, a.btn-light-red:hover, a.btn-light-red:active, a.btn-light-red:focus{
     color: #ffffff;    
     text-transform: uppercase;
-    padding-left: 4rem;
+    /* padding-left: 4rem;
     padding-right: 4rem;
     padding-top: 2rem;
-    padding-bottom: 2rem;    
+    padding-bottom: 2rem;    */
+    
+    padding-top: 13px;
+    padding-right: 27px;
+    padding-left: 27px;
+
+    box-shadow: 2px 16px 37px 0 #ddd8d8;
+    font-family: Sfcompactdisplay, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
+
+
 
 a.btn-small, 
 a.btn-small:hover{
@@ -147,15 +165,34 @@ a.btn-with-radius{
 /*** END PLUGINS **/
 
 /*********** NAVBAR ***********/
-.navbar{
-    min-height: 117px;
-    background-color: #ffffff;
-    padding-top: 20px;
-    margin-bottom: 0px;
+.navbar img{
+    width: 250px;
 }
 
-.navbar-right{
-    padding-top: 20px;
+.navbar{
+    height: 100px;
+    background-color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+    box-shadow: 1px 1px 23px 0 rgba(0, 0, 0, .09);
+}
+
+.navbar.navbar-default .navbar-collapse.collapse.in{
+    margin-top: 20px;    
+}
+
+/* .navbar-collapse.collapse.in ul{
+    margin-top: 40px;
+} */
+
+.navbar.navbar-default .navbar-collapse, 
+.navbar.navbar-default .navbar-form{
+    background-color: #ffffff;
+}
+
+.navbar .navbar-right{
+    padding-top: 15px;
 }
 
 a.dashoard-signup-link{
@@ -168,24 +205,31 @@ a.dashoard-signup-link{
     -khtml-border-radius: 100px; 
 }
 
-.navbar-nav > li > a{
+.navbar .navbar-nav > li > a{
     text-transform: uppercase;
     padding-top: 10px;
     padding-bottom: 10px;
+    font-family: Sfcompactdisplay, sans-serif;
+    color: #616161;
+    font-size: 13px;
+    font-weight: 200;
+    letter-spacing: 1.1px;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
-.navbar-nav > li:last-child{
+.navbar .navbar-nav > li:last-child{
     padding-left: 50px;
     text-align: right;
 }
 
-.navbar-nav > li > a.dashoard-signup-link:hover,
-.navbar-nav > li > a.dashoard-signup-link:focus {
+.navbar .navbar-nav > li > a.dashoard-signup-link:hover,
+.navbar .navbar-nav > li > a.dashoard-signup-link:focus {
     color: #ffffff;
     background-color: #F05A22;    
 }
 
-.navbar-nav > li > a.dashoard-signup-link{
+.navbar .navbar-nav > li > a.dashoard-signup-link{
     color:#ffffff !important;
 }
 /*** END NAVBAR ***/
