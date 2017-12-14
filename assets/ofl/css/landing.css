@@ -29,7 +29,8 @@
     font-size: 2rem;
     color: rgba(136, 136, 136, 0.75);
     padding-top: 20px;
-    font-family:  Sfcompactdisplay, sans-serif;
+    font-family:  Sfcompacttext, sans-serif;
+    padding-bottom: 10px;
 }
 /*** END BANNER SECTION **/
 
