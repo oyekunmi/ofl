@@ -266,7 +266,7 @@
 /***** ENGAGE **/
 .engage{
     background-color: #ffffff;
-    background-image: url("../img/engage_bg.png");
+    background-image: url("../img/engage_bg.svg");
     padding-top: 50px;
     background-size: cover;
 }
@@ -560,7 +560,7 @@
 /** PRODUCT **/
 .products{
     background-color: #ffffff;
-    background-image: url("../img/products_packages_1.png");
+    background-image: url("../img/products_packages_04.png");
     background-size: 50%;
 
     /* height: 800px; */
@@ -569,7 +569,7 @@
 
 .products .bg_right{
     background-position: right;
-    background-image: url("../img/products_packages_2.png");
+    background-image: url("../img/products_packages_03.png");
     background-position-y: 10%;
     background-size: 30%;
     background-repeat: no-repeat;    
