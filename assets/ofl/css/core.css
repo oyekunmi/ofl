@@ -290,7 +290,6 @@ a.dashoard-signup-link{
 }
 
 .searh-bar select.form-control {
-    appearance: none !important;
     -webkit-appearance: none !important;
     -moz-appearance: none !important;
     border: none;
@@ -299,6 +298,16 @@ a.dashoard-signup-link{
     background-image: url('../img/bPolygon.svg');
     background-repeat: no-repeat;
     background-position: 88% ;
+  }
+  .searh-bar select.form-control.small {
+    width: 40%;
+  }
+  
+  @media (max-width: 768px) {
+    .searh-bar select.form-control, .searh-bar select.form-control.small {
+        width: 70%;        
+    }
+    
   }
 
   /**** END OF SEARCHBAR ***/
