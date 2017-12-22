@@ -4,8 +4,8 @@
     background-image: url("../img/banner-bg.png");
     background-size: cover;
     background-position: 100% 50%;
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 250px;
+    /* padding-bottom: 150px; */
     height: 700px;
 }
 
