@@ -307,8 +307,14 @@ a.dashoard-signup-link{
     .searh-bar select.form-control, .searh-bar select.form-control.small {
         width: 70%;        
     }
-    
   }
+  
+  @media (max-width: 500px) {
+    .searh-bar select.form-control, .searh-bar select.form-control.small {
+        width: 160%;        
+    }
+  }
+
 
   /**** END OF SEARCHBAR ***/
 
