@@ -34,8 +34,15 @@
 .search-page .page-title h2{
     font-size: 36px;
     line-height: 42px;
-    font-family: Sfcompactdisplay, sans-serif;
-    /* letter-spacing: -3px; */
+    font-family: Sfcompacttext, sans-serif;
+    letter-spacing: -0.25px;
+
+    padding-left: 88px;
+    background-image: url("http://uploads.webflow.com/5a14bb8012d5720001cf27e5/5a3a1185bf53560001f7bbe8_Line.svg");
+    background-position: 0px 50%;
+    background-size: 65px;
+    background-repeat: no-repeat;
+
 }
 
 .search-page .page-title h2 span.line{
@@ -96,16 +103,24 @@
 .search-page .result-section .show-all-btn{
     background: #FFFFFF;
     color: #424242;
-    border: none !important;
-    border-radius: 0px !important;
     margin-top:10px;
+    /* padding-right: 37px;
+    padding-left: 22px; */
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, .07);
+    border-radius: 5px;
+    font-family: Sfcompacttext, sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
 }
 
 .search-page .search-category-result .result-card{
     background-color: #ffffff;
     height: 140px;
-    /* display: flex;    
-    display: -ms-flexbox; */
+    border: 1px rgba(229, 225, 225, 0.25);
+    border-radius: 10px;
+    
 }
 
 .search-page .result-item-content .bank-icon
@@ -142,6 +157,7 @@
     color: #B8B8B8;
     font-weight: bold;
     opacity: 0.6;
+    font-family: Sfcompacttext, sans-serif;
 }
 
 .search-page .result-item-content.middle .badge{
@@ -155,4 +171,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.result-page .sidebar{
+    border: 1px #E8E2E2 solid;
 }
