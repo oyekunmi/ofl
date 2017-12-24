@@ -70,7 +70,7 @@ body{
 
 .light-red{
     color: #F05A22;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     text-decoration: none;
 }
 
