@@ -25,12 +25,50 @@ body{
     line-height: 20px;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 992px) { */
     html, body {
-    width: auto !important;
-    overflow-x: hidden !important;
+        width: auto !important;
+        overflow-x: hidden !important;
     }
-}
+/* } */
+
+/* @media (min-width: 768px) and (max-width: 1000px) { */
+    @media (max-width: 769px) {
+        /* .navbar-header {
+            float: none;
+        }
+        .navbar-left,.navbar-right {
+            float: none !important;
+        }
+        .navbar-toggle {
+            display: block;
+        }
+        .navbar-collapse {
+            border-top: 1px solid transparent;
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+        }
+        .navbar-fixed-top {
+            top: 0;
+            border-width: 0 0 1px;
+        }
+        .navbar-collapse.collapse {
+            display: none!important;
+        }
+        .navbar-nav {
+            float: none!important;
+            margin-top: 7.5px;
+        }
+        .navbar-nav>li {
+            float: none;
+        }
+        .navbar-nav>li>a {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .collapse.in{
+            display:block !important;
+        } */
+    }
 /**
  * Removed the borders that comes by default
  * with bxslider
@@ -303,7 +341,7 @@ a.dashoard-signup-link{
     width: 40%;
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 769px) {
     .searh-bar select.form-control, .searh-bar select.form-control.small {
         width: 70%;        
     }
