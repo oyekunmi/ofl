@@ -593,23 +593,31 @@
 
   
 /** PRODUCT **/
-.products{
-    background-color: #ffffff;
-    background-image: url("../img/products_packages_04.png");
-    background-size: 50%;
-
-    /* height: 800px; */
-    background-repeat: no-repeat;
-}
 
 .products .bg_right{
-    background-position: right;
+    /* background-position: right;
     background-image: url("../img/products_packages_03.png");
     background-position-y: 10%;
     background-size: 30%;
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;     */
 }
 
+.products{
+    height: 450px;
+    padding-top: 27px;
+    background-image: url("http://uploads.webflow.com/5a14bb8012d5720001cf27e5/5a1ef8a40c00b2000112bb40_image%202.1.png"), url("http://uploads.webflow.com/5a14bb8012d5720001cf27e5/5a1ef8a50953be00015e3a90_o.png");
+    background-position: 100% 50%, 0px 50%;
+    background-size: 350px, contain;
+    background-repeat: no-repeat, no-repeat;
+    background-color: #ffffff;
+}
+
+@media (max-width:991px){
+    .products{
+        background-position: 119% 50%, -257px 0px;
+        background-size: 350px, contain;
+    }
+}
 
 /*** END PRODUCT **/
 
