@@ -38,8 +38,12 @@
 }
 
 @media (max-width: 769px){
-    .banner{
+    .banner, .partners, .quiz{
         text-align: center;
+    }
+
+    .engage .content .compare {
+        padding-left: 0px;
     }
 
 }
@@ -329,8 +333,21 @@
     padding-left: 150px;    
 }
 
+
+@media (max-width: 769px){
+    .engage .content .compare {
+        padding-left: 0px;
+    }
+}
+
 .engage .content .partners-img img{
     height: 300px;
+}
+
+@media (max-width: 769px){
+    .engage .content .options-img img{
+        width: 400px;
+    }
 }
 
 .engage .content .options-img img{
@@ -695,6 +712,13 @@
 .quiz{
     background-image: url("../img/quiz_bg.png");
     background-size: cover;
+}
+
+@media(max-width: 376px){
+    .quiz{
+        background-position: 50% 100%;
+    }
+    
 }
 
 .quiz .content, .products .content{
