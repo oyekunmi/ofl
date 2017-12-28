@@ -363,6 +363,15 @@ footer {
     color: #ffffff;
 }
 
+
+@media (max-width: 769px){
+    footer{
+        text-align: center;
+    }
+
+}
+ 
+
 footer .content{
     padding-top: 100px;
     padding-bottom: 100px;

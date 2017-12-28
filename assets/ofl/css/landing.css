@@ -37,6 +37,14 @@
 
 }
 
+@media (max-width: 769px){
+    .banner{
+        text-align: center;
+    }
+
+}
+ 
+
 .banner .title{
     font-family: Sfcompactdisplay, sans-serif;
     color: #585757;
@@ -284,6 +292,13 @@
 /*** END FEATURED ***/
 
 /***** ENGAGE **/
+@media (max-width: 769px){
+    .engage{
+        text-align: center;
+    }
+
+}
+
 .engage{
     background-color: #ffffff;
     background-image: url("../img/engage_bg.svg");
