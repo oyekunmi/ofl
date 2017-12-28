@@ -445,10 +445,32 @@
     background:#F9F9FB;
 }
 
+@media (max-width: 769px){
+    .articles{
+        text-align: center;
+    }
+}
+
 .articles .nav-tabs,
 .featured .nav-tabs{
     border: none;
     margin-top: 20px;
+}
+
+@media (max-width: 769px){
+
+    .articles .nav-tabs > li, 
+    .articles .nav-pills > li {
+        float:none;
+        display:inline-block;
+        *display:inline; /* ie7 fix */
+        zoom:1; /* hasLayout ie7 trigger */
+    }
+
+    .articles .nav-tabs, 
+    .articles .nav-pills {
+        text-align:center;
+    }
 }
 
 /* .articles .nav-tabs,
