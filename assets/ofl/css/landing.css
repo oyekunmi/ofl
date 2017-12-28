@@ -460,7 +460,8 @@
 @media (max-width: 769px){
 
     .articles .nav-tabs > li, 
-    .articles .nav-pills > li {
+    .articles .nav-pills > li,
+    .featured .nav-tabs > li {
         float:none;
         display:inline-block;
         *display:inline; /* ie7 fix */
@@ -468,7 +469,8 @@
     }
 
     .articles .nav-tabs, 
-    .articles .nav-pills {
+    .articles .nav-pills,
+    .featured .nav-tabs {
         text-align:center;
     }
 }
@@ -519,6 +521,15 @@
     /* letter-spacing: -1.25%; */
     /* font-weight: bolder; */
     
+}
+
+
+@media (max-width: 769px){
+
+    .articles .header h2, 
+    .featured .header h2{
+        text-align: center;
+    }
 }
 
 .articles .content,
