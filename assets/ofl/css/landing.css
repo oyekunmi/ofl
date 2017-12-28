@@ -344,14 +344,16 @@
     height: 300px;
 }
 
-@media (max-width: 769px){
-    .engage .content .options-img img{
-        width: 400px;
-    }
-}
 
 .engage .content .options-img img{
     height: 500px;
+}
+
+
+@media (max-width: 376px){
+    .engage .content .options-img img{
+        width: 350px ;
+    }
 }
 
 /*** END ENGAGE **/
