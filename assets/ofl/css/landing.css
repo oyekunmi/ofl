@@ -948,7 +948,6 @@
     width: 100%;
     float: left;
     font-size: 19px;
-    /* font-family: 'Lora', serif; */
     font-weight: 400;
     cursor: pointer;
     color: #fff;
@@ -957,4 +956,20 @@
     margin-top: 3px;
     display: block;
     border: none;
+    height: 45px;
+    padding-top: 8px;
+}
+
+@media (max-width:376px){
+    .newsletter .content .field input{
+        width: 100%;
+    }
+    .newsletter .content .submit{
+        margin-left: -30%;
+        width: 30%;
+    }
+
+    .newsletter .content .submit a {
+        font-size: 13px;
+    }
 }
