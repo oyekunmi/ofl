@@ -443,6 +443,7 @@
     background-image: url("http://uploads.webflow.com/5a14bb8012d5720001cf27e5/5a3bb949706df50001a31d4d_Optionsfinder.svg");
     background-position: 50% 50%;
     background-size: 2144px;
+    border-top: 1px solid #f1ecec;
 }
 
 .articles{
