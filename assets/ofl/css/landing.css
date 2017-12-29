@@ -413,6 +413,7 @@
 /* #A4A4A4 */
 
 
+
 .featured .featured-item .list-group .list-group-item .badge{
     margin-top: 30px;
     margin-bottom: 30px;
@@ -439,10 +440,14 @@
 
 .featured{
     background: #ffffff;
+    background-image: url("http://uploads.webflow.com/5a14bb8012d5720001cf27e5/5a3bb949706df50001a31d4d_Optionsfinder.svg");
+    background-position: 50% 50%;
+    background-size: 2144px;
 }
 
 .articles{
     background:#F9F9FB;
+     
 }
 
 @media (max-width: 769px){
