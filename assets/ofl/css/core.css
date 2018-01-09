@@ -214,7 +214,7 @@ a.btn-transparent:focus
     width: 250px;
 }
 
-@media (max-width: 767px){
+@media (max-width: 467px){
     .navbar img{
         width: 150px;
     }
