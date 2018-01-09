@@ -13,6 +13,7 @@
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
   <link href="assets/vendor/bxslider/jquery.bxslider.min.css" rel="stylesheet" />
   <link href="assets/vendor/bootstrap/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/vendor/ExpandingSearchBar/css/component.css" rel="stylesheet">
 
   <link href="assets/ofl/css/core.css" rel="stylesheet">
   <link href="assets/ofl/css/site.css" rel="stylesheet">
@@ -33,21 +34,29 @@
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
-        
-        <a href="#" class="pull-right navbar-search-icon visible-sm">
-          <i class="fa fa-search"></i>&nbsp;
-        </a>
-        <a class="dashoard-signup-link pull-right navbar-search-icon link-navigation visible-sm" href="#">
-          Sign Up
-        </a>
 
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-          aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+        <div class="clearfix" style="float:right;">
+          <div id="sb-search1" class="sb-search visible-sm">
+            <form>
+              <input class="sb-search-input " placeholder="Enter your search term..." type="search" value="" name="search" id="search">
+              <input class="sb-search-submit" type="submit" value="">
+              <span class="sb-icon-search"></span>
+            </form>
+          </div>
+
+          <a class="dashoard-signup-link pull-right navbar-search-icon link-navigation visible-sm" href="#">
+            Sign Up
+          </a>
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+            aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
 
         <a class="navbar-brand" href="index.html">
           <img alt="Brand" src="assets/ofl/img/logo-colored.png">
@@ -55,6 +64,15 @@
       </div>
 
       <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+        
+        <div id="sb-search2" class="sb-search navbar-form navbar-right clearfix hidden-sm hidden-xs" style="max-width:600px;">
+          <form>
+            <input class="sb-search-input" placeholder="Enter your search term..." type="search" value="" name="search" id="search">
+            <input class="sb-search-submit" type="submit" value="">
+            <span class="sb-icon-search"></span>
+          </form>
+        </div>
+
         <ul class="nav navbar-nav navbar-right">
           <li>
             <a href="Categories.html">Categories</a>
@@ -68,15 +86,17 @@
           <li>
             <a href="#">Blog</a>
           </li>
-          <li class="hidden-xs">
+          <li class="hidden-xs hidden-sm">
             <a class="dashoard-signup-link" href="#">Sign Up</a>
           </li>
-          <li class="hidden-xs">
-            <a href="#">
-              <i class="fa fa-search"></i>&nbsp;</a>
-          </li>
+
         </ul>
+
+
+
+
       </div>
+
 
     </div>
   </nav>
@@ -963,8 +983,6 @@
     </div>
 
   </section>
-
-
 
   <section class="articles">
 
@@ -2198,8 +2216,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/vendor/bxslider/jquery.bxslider.min.js"></script>
+  <script src="assets/vendor/ExpandingSearchBar/js/classie.js"></script>
+  <script src="assets/vendor/ExpandingSearchBar/js/uisearch.js"></script>
   <script src="assets/ofl/js/script.js"></script>
-  <!-- <script src="vendor/twbsPagination/jquery.twbsPagination.min.js"></script> -->
+  <script>
+    new UISearch(document.getElementById('sb-search1'));
+    new UISearch(document.getElementById('sb-search2'));
+
+  </script>
 
 </body>
 
