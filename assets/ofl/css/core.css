@@ -214,6 +214,15 @@ a.btn-transparent:focus
     width: 250px;
 }
 
+@media (max-width: 767px){
+    .navbar img{
+        width: 150px;
+    }
+
+    .navbar-brand{
+        margin-top: 10px;
+    }
+}
 .navbar{
     height: 100px;
     background-color: #ffffff;
