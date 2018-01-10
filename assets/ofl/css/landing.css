@@ -310,7 +310,7 @@
 
 .engage{
     background-color: #ffffff;
-    background-image: url("../img/engage_bg.svg");
+    /* background-image: url("../img/engage_bg.svg"); */
     padding-top: 50px;
     background-size: cover;
 }
