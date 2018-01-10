@@ -83,7 +83,7 @@
 	border: none;
 	outline: none;
 	z-index: -1;
-	border-radius: 20px;
+	/* border-radius: 20px; */
 }
 
 .sb-icon-search {
@@ -98,8 +98,12 @@
 	font-variant: normal;
 	text-transform: none;
 	-webkit-font-smoothing: antialiased;
-	border: none;
-	/* border-radius: 20px; */
+	border-left: none;
+	border-top: none;
+	border-bottom: none;
+
+	/* border-bottom-right-radius: 20px; 
+	border-top-right-radius: 20px;  */
 
 }
 

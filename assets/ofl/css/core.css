@@ -532,3 +532,7 @@ footer .copyright{
     left: initial;
     font-size: 14px;
   }
+.add-border-radius{
+    border-bottom-right-radius: 20px; 
+    border-top-right-radius: 20px;
+}

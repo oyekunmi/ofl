@@ -110,7 +110,9 @@
 		open : function() {
 			var self = this;
 			classie.add( this.el, 'sb-search-open' );
-			$(".navbar .navbar-right").removeClass("add-top-padding");
+			$(".navbar .navbar-right").removeClass('add-top-padding');
+			$('.sb-icon-search').addClass('add-border-radius');
+			
 
 			// $(".sb-search").siblings().not("").hide();
 			// focus the input
@@ -130,6 +132,8 @@
 			// $(".sb-search").siblings().show();
 			// $(".navbar-toggle collapsed")
 			$(".navbar .navbar-right").addClass("add-top-padding");
+			$('.sb-icon-search').removeClass('add-border-radius');
+
 			this.inputEl.blur();
 			classie.remove( this.el, 'sb-search-open' );
 
