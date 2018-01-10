@@ -251,7 +251,7 @@ a.btn-transparent:focus
 }
 
 .navbar.navbar-default .navbar-collapse.collapse.in{
-    margin-top: 20px;    
+    /* margin-top: 20px;     */
 }
 
 /* .navbar-collapse.collapse.in ul{
@@ -263,7 +263,11 @@ a.btn-transparent:focus
     background-color: #ffffff;
 }
 
-.navbar .navbar-right{
+/* .navbar .navbar-right{
+    padding-top: 15px;
+} */
+
+.add-top-padding{
     padding-top: 15px;
 }
 
@@ -300,8 +304,8 @@ a.dashoard-signup-link.link-navigation{
 }
 
 .navbar .navbar-nav > li:last-child{
-    padding-left: 50px;
-    text-align: right;
+    /* padding-left: 50px;
+    text-align: right; */
 }
 
 
@@ -528,4 +532,3 @@ footer .copyright{
     left: initial;
     font-size: 14px;
   }
-      

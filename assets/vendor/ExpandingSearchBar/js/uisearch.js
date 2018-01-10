@@ -110,7 +110,9 @@
 		open : function() {
 			var self = this;
 			classie.add( this.el, 'sb-search-open' );
-			$(".sb-search").siblings().hide();
+			$(".navbar .navbar-right").removeClass("add-top-padding");
+
+			// $(".sb-search").siblings().not("").hide();
 			// focus the input
 			if( !mobilecheck() ) {
 				this.inputEl.focus();
@@ -125,8 +127,9 @@
 			document.addEventListener( 'touchstart', bodyFn );
 		},
 		close : function() {
-			$(".sb-search").siblings().show();
-
+			// $(".sb-search").siblings().show();
+			// $(".navbar-toggle collapsed")
+			$(".navbar .navbar-right").addClass("add-top-padding");
 			this.inputEl.blur();
 			classie.remove( this.el, 'sb-search-open' );
 
