@@ -270,3 +270,45 @@
     font-size: 18px;
     letter-spacing: -1px;  
 }
+
+/*********** CONTACT PAGE **********/
+.contact-page{
+    font-family: Sfcompactdisplay, sans-serif;
+    background-color: #FFFFFF;
+}
+
+.contact-page .title{
+    height: 60px;
+    left: 69px;
+    top: 43px;
+    font-size: 40px;
+    letter-spacing: -0.03em;
+    position: relative;
+    color: #000000;
+}
+
+.line{
+    position: absolute;
+    width: 48px;
+    height: 0px;
+    left: 17px;
+    top: 83px;
+    border-top: 3px #5AE1E6 solid;
+}
+
+.contact-page .title-right{
+    width: 225px;
+    height: 85px;
+    left: 15px;
+    top: -38px;
+    position: relative;
+    font-size: 16px;
+    color: #484747;
+}
+
+.contact-page .fa-caret-down{
+    color: #F05A22;
+    margin-right: 10px;
+}
+
+/*********** CONTACT PAGE END **********/

@@ -577,3 +577,11 @@ footer .logo p{
     border-bottom-right-radius: 20px; 
     border-top-right-radius: 20px;
 }
+
+.manu-search{
+   max-width:600px;
+}
+
+.navbar-style{
+    height: 1px;
+}
