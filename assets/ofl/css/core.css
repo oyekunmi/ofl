@@ -480,17 +480,16 @@ footer .content .links .links-container h4{
     font-size: 15px;
     font-weight: 200;
     letter-spacing: 2px;
-    /* padding-bottom: 10px;
-    border-bottom: 2px solid #82e1e6;
-    font-family: Sfcompactdisplay, sans-serif;
-    color: #fff;
-    font-size: 15px;
-    font-weight: 200;
-    letter-spacing: 2px;
-    line-height: 24px;
-    margin-top: 10px;
-    margin-bottom: 10px; */
 }
+
+@media (max-width: 766px){
+
+    footer .content .links .links-container h4{
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
 
 footer .content .links .links-container ul{
     list-style: none;
