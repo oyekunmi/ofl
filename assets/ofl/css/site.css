@@ -311,4 +311,62 @@
     margin-right: 10px;
 }
 
+.contact-page .contact{
+    margin-top: 68px;
+    height: 380px;
+    border-bottom: 1px solid #F5F5F5;
+}
+
+.contact-page .contact .line{
+    left: 17px;
+    top: -5px;
+}
+
+.contact-page .contact .contact-detail{
+    left: 73px;
+    top: -13px;
+    font-size: 14px;
+    position: relative;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #F05A22;
+}
+
+.contact-page .contact h2{
+    position: relative;
+    left: 69px;
+    top: -26px;
+    line-height: normal;
+    font-size: 36px;
+    color: #000000;
+}
+
+.contact-page .contact h4{
+    position: relative;
+    left: 72px;
+    top: -15px;
+    line-height: normal;
+    font-size: 18px;
+    color: #8C8888;
+}
+
+.contact-page .contact h3{
+    position: relative;
+    left: 69px;
+    top: -34px;
+    line-height: normal;
+    color: #000000;
+}
+
+.contact-page .contact .social{
+    font-size: 20px;
+    position: relative;
+    left: 14.71%;
+}
+
+.contact-page .contact .social .fa{
+    color: #F05A22;
+    margin: 16px;
+}
+
 /*********** CONTACT PAGE END **********/
