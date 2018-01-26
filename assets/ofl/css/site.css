@@ -369,4 +369,110 @@
     margin: 16px;
 }
 
+.contact-page .contact-form{
+    height: 674px;
+}
+
+.contact-page .contact .group{
+    position: relative;
+    margin-bottom: 55px;
+    left: 68px;
+}
+
+.contact-page .contact input {
+    font-size: 18px;
+    padding: 5px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ACC3C4;
+    background: transparent;
+}
+
+.contact-page .contact textarea{
+    font-size: 18px;
+    display: block;
+    height: 35px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ACC3C4;
+    background: transparent;
+}
+
+.contact-page .contact input:focus  {
+    outline: none;
+}
+
+.contact-page .contact textarea:focus  {
+    outline: none;
+}
+
+.contact-page .contact label {
+    color: #B7B7B7;
+    font-size: 12px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+    text-transform: uppercase;
+}
+
+.contact-page .contact textarea:focus ~ label, textarea:valid ~ label {
+    top: -20px;
+    font-size: 10px;
+    color: #B7B7B7;
+}
+
+.contact-page .contact input:focus ~ label, input:valid ~ label {
+    top: -20px;
+    font-size: 10px;
+    color: #B7B7B7;
+}
+
+.contact-page .contact .bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.contact-page .contact .bar:before, .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #fff;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.contact-page .contact input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width: 50%;
+}
+
+.contact-page .contact .form-btn{
+    position: relative;
+    width: 265px;
+    height: 52px;
+    left: 70px;
+    top: -15px;
+    background: #49CCD1;
+    border-radius: 100px;
+}
+
+.contact-page .contact .request-btn{
+    position: relative;
+    width: 265px;
+    height: 52px;
+    left: 70px;
+    top: -15px;
+    background: #F05A22;
+    border-radius: 100px;
+}
+
 /*********** CONTACT PAGE END **********/
