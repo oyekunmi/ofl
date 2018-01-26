@@ -10,6 +10,7 @@
 
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/vendor/bootstrap/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/vendor/ExpandingSearchBar/css/component.css" rel="stylesheet">
 
     <link href="assets/ofl/css/core.css" rel="stylesheet">
     <link href="assets/ofl/css/site.css" rel="stylesheet">
@@ -23,29 +24,57 @@
     <![endif]-->
 </head>
 
-<body class="search-page">
+<body>
 
-    <nav class="navbar navbar-default">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-                    aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+
+                <div class="clearfix" style="float:right;">
+                    <div id="sb-search1" class="sb-search visible-sm">
+                        <form>
+                            <input class="sb-search-input " placeholder="Enter your search term..." type="search" value="" name="search" id="search">
+                            <input class="sb-search-submit" type="submit" value="">
+                            <span class="sb-icon-search"></span>
+                        </form>
+                    </div>
+
+                    <a class="dashoard-signup-link pull-right navbar-search-icon link-navigation visible-sm" href="#">
+                        Sign Up
+                    </a>
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                        aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+
                 <a class="navbar-brand" href="index.html">
                     <img alt="Brand" src="assets/ofl/img/logo-colored.png">
                 </a>
             </div>
+
             <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-                <ul class="nav navbar-nav navbar-right">
+
+                <div id="sb-search2" class="sb-search navbar-form navbar-right clearfix hidden-sm hidden-xs" style="max-width:600px;">
+                    <form>
+                        <input class="sb-search-input" placeholder="Enter your search term..." type="search" value="" name="search" id="search">
+                        <input class="sb-search-submit" type="submit" value="">
+                        <span class="sb-icon-search"></span>
+                    </form>
+                </div>
+
+                <ul class="nav navbar-nav navbar-right add-top-padding">
                     <li>
-                        <a href="categories.html">Categories</a>
+                        <a href="Categories.html">Categories</a>
                     </li>
                     <li>
-                        <a href="#">About Us</a>
+                        <a href="AboutUs.html">About Us</a>
                     </li>
                     <li>
                         <a href="#">Quiz & Polls</a>
@@ -53,15 +82,18 @@
                     <li>
                         <a href="#">Blog</a>
                     </li>
-                    <li>
+                    <li class="hidden-xs hidden-sm">
                         <a class="dashoard-signup-link" href="#">Sign Up</a>
                     </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-search"></i>&nbsp;</a>
-                    </li>
+
                 </ul>
+
+
+
+
             </div>
+
+
         </div>
     </nav>
 
@@ -136,7 +168,7 @@
 
                 <div class="row content">
 
-                    <div class="col-sm-3">
+                    <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-offset-0 col-md-3">
                         <div class="result-card">
 
                             <div class="col-xs-2 result-item-content">
@@ -156,7 +188,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-3">
+                    <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-offset-0 col-md-3">
                         <div class="result-card">
 
                             <div class="col-xs-2 result-item-content">
@@ -176,7 +208,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-3">
+                    <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-offset-0 col-md-3">
                         <div class="result-card">
 
                             <div class="col-xs-2 result-item-content">
@@ -196,7 +228,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-3">
+                    <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-offset-0 col-md-3">
                         <div class="result-card">
 
                             <div class="col-xs-2 result-item-content">
@@ -243,7 +275,8 @@
 
                 <div class="row content">
 
-                    <div class="col-sm-3">
+
+                    <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-offset-0 col-md-3">
                         <div class="result-card">
 
                             <div class="col-xs-2 result-item-content">
@@ -263,7 +296,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-3">
+                    <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-offset-0 col-md-3">
                         <div class="result-card">
 
                             <div class="col-xs-2 result-item-content">
@@ -283,7 +316,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-3">
+                    <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-offset-0 col-md-3">
                         <div class="result-card">
 
                             <div class="col-xs-2 result-item-content">
@@ -303,7 +336,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-3">
+                    <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-offset-0 col-md-3">
                         <div class="result-card">
 
                             <div class="col-xs-2 result-item-content">
@@ -322,6 +355,7 @@
 
                         </div>
                     </div>
+
 
                 </div>
 
@@ -351,7 +385,7 @@
 
                 <div class="row content">
 
-                    <div class="col-sm-3">
+                    <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-offset-0 col-md-3">
                         <div class="result-card">
 
                             <div class="col-xs-2 result-item-content">
@@ -371,7 +405,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-3">
+                    <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-offset-0 col-md-3">
                         <div class="result-card">
 
                             <div class="col-xs-2 result-item-content">
@@ -391,7 +425,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-3">
+                    <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-offset-0 col-md-3">
                         <div class="result-card">
 
                             <div class="col-xs-2 result-item-content">
@@ -411,7 +445,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-3">
+                    <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-offset-0 col-md-3">
                         <div class="result-card">
 
                             <div class="col-xs-2 result-item-content">
@@ -431,15 +465,14 @@
                         </div>
                     </div>
 
+
                 </div>
 
             </div>
 
-
-
-
         </div>
     </div>
+
 
     <footer>
 
@@ -448,7 +481,7 @@
 
                 <div class="row">
 
-                    <div class="col-md-6 col-sm-12 logo">
+                    <div class="col-md-6 col-sm-5 logo">
                         <p>
                             <img alt="Brand" src="assets/ofl/img/logo-white.png">
                         </p>
@@ -474,11 +507,11 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-sm-12 links">
+                    <div class="col-md-6 col-sm-7 links">
 
                         <div class="row">
 
-                            <div class="col-sm-4 col-sm-12">
+                            <div class="col-md-4 col-sm-4">
                                 <div class="links-container">
                                     <h4>Categories</h4>
                                     <ul>
@@ -497,7 +530,7 @@
 
                             </div>
 
-                            <div class="col-md-4 col-sm-12">
+                            <div class="col-md-4 col-sm-4">
                                 <div class="links-container">
                                     <h4>About Us</h4>
                                     <ul>
@@ -514,12 +547,12 @@
                                 </div>
                             </div>
 
-                            <div class="col-sm-4 col-sm-12">
+                            <div class="col-md-4 col-sm-4">
                                 <div class="links-container">
                                     <h4>Press</h4>
                                     <ul>
                                         <li>
-                                            <a href="#">News Letter</a>
+                                            <a href="#">NewsLetter</a>
                                         </li>
                                         <li>
                                             <a href="#">Blog</a>
@@ -555,6 +588,9 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/vendor/ExpandingSearchBar/js/classie.js"></script>
+    <script src="assets/vendor/ExpandingSearchBar/js/uisearch.js"></script>
+    <script src="assets/ofl/js/script.js"></script>
 
 </body>
 

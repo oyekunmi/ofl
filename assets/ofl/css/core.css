@@ -23,6 +23,7 @@ body{
     font-family: Sfcompacttext, sans-serif;
     font-size: 14px;
     line-height: 20px;
+    margin-top: 100px;
 }
 
 /* @media (max-width: 992px) { */
@@ -98,7 +99,7 @@ body{
 
 /*** GENERAL COLORS **/
 .btn{
-    height: 55px;
+    /* height: 55px; */
     line-height: 30px;
     border-radius: 20px;
 }
@@ -150,7 +151,7 @@ a.btn-transparent:focus
     padding-top: 2rem;
     padding-bottom: 2rem;    */
     
-    padding-top: 13px;
+    /* padding-top: 13px; */
     padding-right: 27px;
     padding-left: 27px;
 
@@ -214,13 +215,19 @@ a.btn-transparent:focus
     width: 250px;
 }
 
-@media (max-width: 467px){
+@media (max-width: 768px){
     .navbar img{
-        width: 150px;
+        width: 200px;
     }
 
     .navbar-brand{
         margin-top: 10px;
+    }
+}
+
+@media (max-width: 467px){
+    .navbar img{
+        width: 150px;
     }
 }
 .navbar{
@@ -250,10 +257,11 @@ a.btn-transparent:focus
     margin-top: 18px;
 }
 
-.navbar.navbar-default .navbar-collapse.collapse.in{
-    /* margin-top: 20px;     */
+@media (max-width: 768px){
+    .navbar.navbar-default .navbar-collapse.collapse.in{
+        margin-top: 20px;    
+    }
 }
-
 /* .navbar-collapse.collapse.in ul{
     margin-top: 40px;
 } */
@@ -472,17 +480,16 @@ footer .content .links .links-container h4{
     font-size: 15px;
     font-weight: 200;
     letter-spacing: 2px;
-    /* padding-bottom: 10px;
-    border-bottom: 2px solid #82e1e6;
-    font-family: Sfcompactdisplay, sans-serif;
-    color: #fff;
-    font-size: 15px;
-    font-weight: 200;
-    letter-spacing: 2px;
-    line-height: 24px;
-    margin-top: 10px;
-    margin-bottom: 10px; */
 }
+
+@media (max-width: 766px){
+
+    footer .content .links .links-container h4{
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
 
 footer .content .links .links-container ul{
     list-style: none;
@@ -576,12 +583,4 @@ footer .logo p{
 .add-border-radius{
     border-bottom-right-radius: 20px; 
     border-top-right-radius: 20px;
-}
-
-.manu-search{
-   max-width:600px;
-}
-
-.navbar-style{
-    height: 1px;
 }
