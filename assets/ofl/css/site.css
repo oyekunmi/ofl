@@ -1,7 +1,10 @@
 body{
     background-color: #f8f8f8;
     font-family: Sfcompactdisplay, sans-serif; 
+}
 
+.white-bg{
+    background-color: #ffffff;
 }
 
 .page-title{
@@ -10,6 +13,48 @@ body{
     background-color: #fff;   
 }
 
+.navbar{
+    box-shadow: none;
+}
+
+.page-title ul{
+    /* list-style: none;  */
+    /* list-style-position: outside; */
+
+}
+
+
+.page-title ul li::before{
+    /* content: "\f0dd";  */
+    color:#F05A22;
+    /* font-family: FontAwesome; */
+    /* left: 5px; */
+    /* position:absolute; */
+    /* top:0; */
+}
+
+.page-title ul li{
+    /* list-style-type: square; */
+    /* color:#F05A22; */
+    padding:5px;
+}
+
+
+.page-title .title.elastic{
+    padding-top:30px;
+    padding-bottom: 30px;   
+}
+
+.page-title ul.menu{
+    margin-top: 20px;
+}
+
+.page-title ul.menu li a{
+    color: #484747;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: Sfcompacttext, sans-serif;
+}
 
 /*********** SEARCH PAGE **********/
 .search-page{
@@ -35,14 +80,11 @@ body{
     padding-bottom: 30px;
 }
 
-
-
 .page-title h2{
     font-size: 36px;
     line-height: 42px;
     font-family: Sfcompacttext, sans-serif;
     letter-spacing: -0.25px;
-
     padding-left: 88px;
     background-image: url("http://uploads.webflow.com/5a14bb8012d5720001cf27e5/5a3a1185bf53560001f7bbe8_Line.svg");
     background-position: 0px 50%;
@@ -51,20 +93,8 @@ body{
 
 }
 
-
-
-.page-title h2 span.line{
-    width: 65px;
-    height: 0px;
-    /* left: 81px;
-    top: 308px; */
-    position: relative;
-    border-bottom: 3px solid #5AE1E6;
-
-    /* width: 112px;
-    height: 47px;
-    border-bottom: 1px solid black;
-    position: absolute; */
+.page-title h2.title{
+    font-weight: 600;
 }
 
 
@@ -82,6 +112,20 @@ body{
         font-size: 20px;
         background-size: 30px;
     }
+}
+
+.page-title h2 span.line{
+    width: 65px;
+    height: 0px;
+    /* left: 81px;
+    top: 308px; */
+    position: relative;
+    border-bottom: 3px solid #5AE1E6;
+
+    /* width: 112px;
+    height: 47px;
+    border-bottom: 1px solid black;
+    position: absolute; */
 }
 
 /* .search-category-result{
@@ -320,6 +364,7 @@ body{
     background-color: #FFFFFF;
 }
 
+/* 
 .contact-page .title{
     height: 60px;
     left: 69px;
@@ -328,31 +373,12 @@ body{
     letter-spacing: -0.03em;
     position: relative;
     color: #000000;
-}
+} */
 
-.line{
-    position: absolute;
-    width: 48px;
-    height: 0px;
-    left: 17px;
-    top: 83px;
-    border-top: 3px #5AE1E6 solid;
-}
-
-.contact-page .title-right{
-    width: 225px;
-    height: 85px;
-    left: 15px;
-    top: -38px;
-    position: relative;
-    font-size: 16px;
-    color: #484747;
-}
-
-.contact-page .fa-caret-down{
+/* .contact-page .fa-caret-down{
     color: #F05A22;
     margin-right: 10px;
-}
+} */
 
 .contact-page .contact{
     margin-top: 68px;
