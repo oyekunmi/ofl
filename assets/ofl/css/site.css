@@ -7,7 +7,6 @@ body{
     background-color: #ffffff;
 }
 
-
 .page-title{
     /* padding-top: 10px; */
     padding-bottom: 10px;
@@ -92,6 +91,46 @@ body{
     background-size: 65px;
     background-repeat: no-repeat;
 
+}
+
+.page-subtitle h2{
+    color: #F05A22;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 42px;
+    /* font-family: Sfcompacttext, sans-serif; */
+    padding-left: 88px;
+    background-image: url("http://uploads.webflow.com/5a14bb8012d5720001cf27e5/5a3a1185bf53560001f7bbe8_Line.svg");
+    background-position: 0px 50%;
+    background-size: 65px;
+    background-repeat: no-repeat;
+
+}
+
+.page-subtitle-content{
+    padding-left: 88px;
+}
+
+.page-subtitle-content h2{
+    font-size: 38px;
+    font-weight: 600;
+    margin-top: 0px !important;
+    line-height: 1;
+}
+
+.page-subtitle-content .item{
+    margin-top: 49px;
+    font-family: Sfcompacttext, sans-serif;
+}
+
+.page-subtitle-content .item h3{
+    color: #8C8888;
+    font-size: 28px;
+    font-weight: 600;
+}
+.page-subtitle-content .item p{
+    font-size: 28px;
 }
 
 .page-title h2.title{
@@ -436,6 +475,7 @@ body{
     font-size: 16px;
     letter-spacing: -1px;  
 }
+
 
 /*********** CONTACT PAGE **********/
 .contact-page{
