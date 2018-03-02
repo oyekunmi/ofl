@@ -311,12 +311,6 @@ a.dashoard-signup-link.link-navigation{
     text-transform: uppercase;
 }
 
-.navbar .navbar-nav > li:last-child{
-    /* padding-left: 50px;
-    text-align: right; */
-}
-
-
 /* 
 @media (max-width: 992px) {
     .navbar .navbar-nav > li:last-child{
@@ -380,7 +374,7 @@ a.dashoard-signup-link.link-navigation{
 
 .searh-bar .btn
 {
-    appearance: none;
+    /* appearance: none; */
     -webkit-appearance: none;
     -moz-appearance: none;
     background: transparent;

@@ -13,16 +13,13 @@ body{
     background-color: #fff;   
 }
 
+.border-bottom{
+    border-bottom: solid 1px #EBEAEA;
+}
+
 .navbar{
     box-shadow: none;
 }
-
-.page-title ul{
-    /* list-style: none;  */
-    /* list-style-position: outside; */
-
-}
-
 
 .page-title ul li::before{
     /* content: "\f0dd";  */
@@ -120,17 +117,38 @@ body{
 }
 
 .page-subtitle-content .item{
-    margin-top: 49px;
+    margin-top: 30px;
     font-family: Sfcompacttext, sans-serif;
 }
 
 .page-subtitle-content .item h3{
-    color: #8C8888;
-    font-size: 28px;
-    font-weight: 600;
+    color: #ADACAC;
+    font-size: 24px;
+    /* font-weight: 400; */
+    /* font-size: medium; */
+    line-height: 28px;
+    font-family: Sfcompactdisplay, sans-serif; 
+}
+
+.page-subtitle-content .item p.footnote{
+    font-size: 18px;
+    color: #9A9898;
+    line-height: 32px;
 }
 .page-subtitle-content .item p{
     font-size: 28px;
+}
+
+.page-subtitle-content .social ul{
+    font-size: 20px;
+}
+
+.page-subtitle-content .social ul li{
+    padding: 10px;
+    padding-right: 40px;
+}
+.page-subtitle-content .social ul li a{
+    color: #F05A22;
 }
 
 .page-title h2.title{
@@ -309,11 +327,6 @@ body{
     letter-spacing: -1px;
 }
 
-.smaller .result-item-content.middle h4{
-    /* font-size: 18px; */
-    /* letter-spacing: 0px; */
-} 
-
 @media (max-width: 481px) {
     .result-item-content.middle h4{
         letter-spacing: 1px;
@@ -476,191 +489,50 @@ body{
     letter-spacing: -1px;  
 }
 
-
-/*********** CONTACT PAGE **********/
-.contact-page{
-    font-family: Sfcompactdisplay, sans-serif;
-    background-color: #FFFFFF;
+/********* CONTACT PAGE *********/
+.contact{
+    padding-bottom: 40px;
 }
 
-/* 
-.contact-page .title{
-    height: 60px;
-    left: 69px;
-    top: 43px;
-    font-size: 40px;
-    letter-spacing: -0.03em;
-    position: relative;
-    color: #000000;
-} */
-
-/* .contact-page .fa-caret-down{
-    color: #F05A22;
-    margin-right: 10px;
-} */
-
-.contact-page .contact{
-    margin-top: 68px;
-    height: 380px;
-    border-bottom: 1px solid #F5F5F5;
+form.contact-form{
+    font-family: Sfcompactdisplay, sans-serif; 
+    margin-top: 40px;
+    
 }
 
-.contact-page .contact .line{
-    left: 17px;
-    top: -5px;
+form.contact-form .form-control{
+    border: none;
+    box-shadow: none;
+    border-bottom: 2px solid rgba(189, 190, 190, 0.6158);
+    border-radius: 0;
+    padding: 25px 0px;
+    font-size: 22px;
+    color: #747272;
+    font-weight: 500px;
 }
 
-.contact-page .contact .contact-detail{
-    left: 73px;
-    top: -13px;
+
+form.contact-form textarea.form-control {
+    height: 24px;
+    overflow: hidden;
+}
+
+form.contact-form .form-group label{
+    text-transform: uppercase;
+    color: #B7B7B7;
     font-size: 14px;
-    position: relative;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: #F05A22;
+    /* letter-spacing: 1px; */
 }
 
-.contact-page .contact h2{
-    position: relative;
-    left: 69px;
-    top: -26px;
-    line-height: normal;
-    font-size: 36px;
-    color: #000000;
-}
-
-.contact-page .contact h4{
-    position: relative;
-    left: 72px;
-    top: -15px;
-    line-height: normal;
-    font-size: 18px;
-    color: #8C8888;
-}
-
-.contact-page .contact h3{
-    position: relative;
-    left: 69px;
-    top: -34px;
-    line-height: normal;
-    color: #000000;
-}
-
-.contact-page .contact .social{
-    font-size: 20px;
-    position: relative;
-    left: 14.71%;
-}
-
-.contact-page .contact .social .fa{
-    color: #F05A22;
-    margin: 16px;
-}
-
-.contact-page .contact-form{
-    height: 674px;
-}
-
-.contact-page .contact .group{
-    position: relative;
-    margin-bottom: 55px;
-    left: 68px;
-}
-
-.contact-page .contact input {
-    font-size: 18px;
-    padding: 5px 10px 10px 5px;
-    display: block;
+form.contact-form button{
+    margin-top: 20px;
+    margin-bottom: 20px;
     width: 100%;
-    border: none;
-    border-bottom: 1px solid #ACC3C4;
-    background: transparent;
+    /* box-shadow: #000 #424242; */
 }
 
-.contact-page .contact textarea{
-    font-size: 18px;
-    display: block;
-    height: 35px;
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid #ACC3C4;
-    background: transparent;
-}
-
-.contact-page .contact input:focus  {
-    outline: none;
-}
-
-.contact-page .contact textarea:focus  {
-    outline: none;
-}
-
-.contact-page .contact label {
-    color: #B7B7B7;
-    font-size: 12px;
-    font-weight: normal;
-    position: absolute;
-    pointer-events: none;
-    left: 5px;
-    top: 10px;
-    transition: 0.2s ease all;
-    -moz-transition: 0.2s ease all;
-    -webkit-transition: 0.2s ease all;
-    text-transform: uppercase;
-}
-
-.contact-page .contact textarea:focus ~ label, textarea:valid ~ label {
-    top: -20px;
-    font-size: 10px;
-    color: #B7B7B7;
-}
-
-.contact-page .contact input:focus ~ label, input:valid ~ label {
-    top: -20px;
-    font-size: 10px;
-    color: #B7B7B7;
-}
-
-.contact-page .contact .bar {
-    position: relative;
-    display: block;
-    width: 100%;
-}
-
-.contact-page .contact .bar:before, .bar:after {
-    content: '';
-    height: 2px;
-    width: 0;
-    bottom: 1px;
-    position: absolute;
-    background: #fff;
-    transition: 0.2s ease all;
-    -moz-transition: 0.2s ease all;
-    -webkit-transition: 0.2s ease all;
-}
-
-.contact-page .contact input:focus ~ .bar:before, input:focus ~ .bar:after {
-    width: 50%;
-}
-
-.contact-page .contact .form-btn{
-    position: relative;
-    width: 265px;
-    height: 52px;
-    left: 70px;
-    top: -15px;
-    background: #49CCD1;
-    border-radius: 100px;
-}
-
-.contact-page .contact .request-btn{
-    position: relative;
-    width: 265px;
-    height: 52px;
-    left: 70px;
-    top: -15px;
-    background: #F05A22;
-    border-radius: 100px;
+.clarification{
+    background: url(../img/contact-footer.jpg) 0 100%/540px no-repeat, #000000;
 }
 
 /*********** CONTACT PAGE END **********/

@@ -18,12 +18,12 @@ body{
     }
 }
 @media (max-width: 769px){
-    .banner{
+    /* .banner{ */
         /* background-image:linear-gradient(86deg, #fff 6%, #fff 58%, hsla(0, 0%, 100%, .71) 61%, hsla(0, 0%, 60%, 0)),   */
         /* background-image:linear-gradient(to bottom , #fff, #fff, 6%, 10%),   */
         /* background-image: url("../img/banner-bg.png") ; */
 
-    }
+    /* } */
 
 
     /* .banner:before{
@@ -333,9 +333,6 @@ body{
     padding-bottom: 60px;
 }
 
-.engage .content .review{
-    /* padding-left: 150px; */
-}
 
 .engage .content .compare{
     padding-left: 150px;    
@@ -553,10 +550,6 @@ body{
     padding-bottom: 2rem;
 }
 
-.articles-item{
-
-}
-
 .articles .articles-item h2{
     font-size: 20px;
 }
@@ -660,13 +653,6 @@ body{
   
 /** PRODUCT **/
 
-.products .bg_right{
-    /* background-position: right;
-    background-image: url("../img/products_packages_03.png");
-    background-position-y: 10%;
-    background-size: 30%;
-    background-repeat: no-repeat;     */
-}
 
 .products{
     height: 450px;
@@ -814,17 +800,6 @@ body{
 
 }
 
-.quiz .content a.btn, 
-.engage .content a.btn,
-.products .content a.btn{
-    /* border-radius: 48px;
-    -moz-border-radius: 48px;
-    -webkit-border-radius: 48px;
-    -khtml-border-radius: 48px; 
-    text-transform: uppercase; */
-    
-    /* line-height: 40px; */
-}
 
 .quiz .content a.btn,
 .products .content a.btn,
@@ -837,12 +812,6 @@ body{
     width: 200px;
 }
 
-.quiz .content a.btn i, 
-.products .content a.btn i{
-    /* line-height: 40px; */
-    /* margin-right: 2rem;
-    margin-left: 10rem; */
-}
 /**** END QUIZ ***/
 
 /*** TESTIMONIES ****/
