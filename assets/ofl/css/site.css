@@ -531,8 +531,24 @@ form.contact-form button{
     /* box-shadow: #000 #424242; */
 }
 
+/*
 .clarification{
     background: url(../img/contact-footer.jpg) 0 100%/540px no-repeat, #000000;
+}
+*/
+
+.clarification {
+    background:linear-gradient(#fff 10%,transparent),
+               url(../img/contact-footer.jpg) no-repeat;
+    background-position: 0 41%;
+    background-size: cover;
+}
+.clarification > div{
+    height:400px;
+}
+.clarification > div > div >div > p {
+    color:#ADACAC;
+    letter-spacing:0.25em;
 }
 
 /*********** CONTACT PAGE END **********/
