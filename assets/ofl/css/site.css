@@ -165,6 +165,21 @@ body{
     }
 }
 
+@media (max-width: 481px){
+    .page-subtitle-content{
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+    }
+    .page-subtitle h2{
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    form.contact-form .form-control{
+        text-align: center;
+    }
+}
 @media (max-width: 467px){
     .page-title h2{
         font-size: 20px;
