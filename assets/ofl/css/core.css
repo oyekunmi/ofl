@@ -97,6 +97,12 @@ body{
     border: 1px solid #cccccc;
 } */
 
+
+.padding-v4{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 /*** GENERAL COLORS **/
 .btn{
     /* height: 55px; */
@@ -124,6 +130,10 @@ body{
 .btn-light-red{
     background-color: #F05A22;
     color: #fff;
+}
+
+.light-blue-bg{
+    background-color: #FAFCFD;
 }
 
 .btn-transparent{

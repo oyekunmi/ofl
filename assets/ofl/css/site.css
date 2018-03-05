@@ -641,3 +641,50 @@ form.contact-form button{
         font-size: 14px;
     }
 }
+
+/*************** FAQ PAGE ************/
+.faq, .faq *{
+    font-family:Sfcompactdisplay, sans-serif;
+}
+
+.faq .panel-group .panel+.panel{
+    margin-top: 0px;
+}
+
+.faq .panel-default{
+    border: none;
+    border-bottom: 1px solid #9EDBDC;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.faq .panel-default:last-child{
+    border-bottom: none;
+}
+
+.faq .panel-default .panel-heading{
+    color: #000000;
+    padding: 40px;
+    border: none;
+    background-color: #ffffff;
+}
+
+.faq .panel-group .panel:first-child .panel-heading{
+    border-radius: 20px 20px 0 0;
+}
+
+.faq .panel-group .panel:last-child .panel-heading{
+    border-radius: 0 0 20px 20px;
+}
+
+.faq .panel-default .panel-heading .panel-title{
+    font-size: 24px;
+}
+
+.faq .panel-default .panel-heading .panel-title a{
+    text-decoration: none;
+}
+
+.faq .panel-collapse{
+    background-color: #ffffff;
+}
