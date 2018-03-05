@@ -585,36 +585,46 @@ form.contact-form button{
 }
 .clarification > div{
     height:400px;
+    line-height: 39px;
 }
-.clarification > div > div >div > p {
+.clarification p {
     color:#ADACAC;
-    letter-spacing:0.24em;
+    /* letter-spacing: 1px; */
+    font-size: 20px;
     font-family:Sfcompactdisplay, sans-serif;
+    
 }
 
 @media (max-width: 442px){
-  .clarification > div > div >div > p {
-      letter-spacing:0;
-} 
+
+    .clarification > div > div >div > p {
+        letter-spacing:0;
+    } 
+
     .clarification > div{
-    height:200px;
-}
+        height:200px;
+    }
+
     .clarification {
-    background:linear-gradient(#fff 10%,rgba(255, 255, 255,0.6)),
-               url(../img/contact-footer.jpg) no-repeat;
-    background-position: 0 41%;
-    background-size: cover;
-}
+        background:linear-gradient(#fff 10%,rgba(255, 255, 255,0.6)),
+                url(../img/contact-footer.jpg) no-repeat;
+        background-position: 0 41%;
+        background-size: cover;
+    }
+
 }
 
 @media (max-width: 991px){
-          .clarification > div > div >div > p {
-      letter-spacing:0;
-} 
+
     .clarification > div{
-     height:300px;
-}  
+        height:300px;
+    }
+    
+    .clarification > p {
+        letter-spacing:0;
+    } 
 }
+
 /*********** CONTACT PAGE END **********/
 .search-category-result .sidebar .checkbox-label {
     padding-left: 5px;
