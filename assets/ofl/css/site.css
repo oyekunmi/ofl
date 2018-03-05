@@ -49,8 +49,8 @@ body{
 .page-title ul.menu li a{
     color: #484747;
     text-decoration: none;
-    font-size: 24px;
-    font-family: Sfcompacttext, sans-serif;
+    font-size: 21px;
+    font-family: Sfcompactdisplay, sans-serif;
 }
 
 /*********** SEARCH PAGE **********/
@@ -130,6 +130,7 @@ body{
     font-family: Sfcompactdisplay, sans-serif; 
 }
 
+
 .page-subtitle-content .item p.footnote{
     font-size: 18px;
     color: #9A9898;
@@ -137,6 +138,7 @@ body{
 }
 .page-subtitle-content .item p{
     font-size: 28px;
+    /* font-size: 1.5em; */
 }
 
 .page-subtitle-content .social ul{
@@ -155,6 +157,29 @@ body{
     font-weight: 600;
 }
 
+
+@media (max-width: 481px) {
+    .page-subtitle h2,
+    .page-subtitle-content{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .page-subtitle-content .item h3{
+        font-size: 18px;
+    }
+    .page-subtitle-content h2{
+        font-size: 28px;
+    }
+
+    .page-subtitle-content .item p{
+        font-size: 24px;
+    }
+
+    .page-subtitle-content .item p.footnote{
+        font-size: 14px;
+    }
+}
 
 @media (max-width: 991px){
     .page-title h2{
@@ -560,10 +585,44 @@ form.contact-form button{
 }
 .clarification > div{
     height:400px;
+    line-height: 39px;
 }
-.clarification > div > div >div > p {
+.clarification p {
     color:#ADACAC;
-    letter-spacing:0.25em;
+    /* letter-spacing: 1px; */
+    font-size: 20px;
+    font-family:Sfcompactdisplay, sans-serif;
+    
+}
+
+@media (max-width: 442px){
+
+    .clarification > p {
+        letter-spacing:0;
+    } 
+
+    .clarification > div{
+        height:200px;
+    }
+
+    .clarification {
+        background:linear-gradient(#fff 10%,rgba(255, 255, 255,0.6)),
+                url(../img/contact-footer.jpg) no-repeat;
+        background-position: 0 41%;
+        background-size: cover;
+    }
+
+}
+
+@media (max-width: 991px){
+
+    .clarification > div{
+        height:300px;
+    }
+
+    .clarification > p {
+        letter-spacing:0;
+    } 
 }
 
 /*********** CONTACT PAGE END **********/
