@@ -190,6 +190,21 @@ body{
     }
 }
 
+@media (max-width: 481px){
+    .page-subtitle-content{
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+    }
+    .page-subtitle h2{
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    form.contact-form .form-control{
+        text-align: center;
+    }
+}
 @media (max-width: 467px){
     .page-title h2{
         font-size: 20px;
@@ -556,17 +571,50 @@ form.contact-form button{
     /* box-shadow: #000 #424242; */
 }
 
-
-@media (max-width: 481px) {
-    form.contact-form .form-control{
-        font-size: 16px;
-    }
-}
-
+/*
 .clarification{
     background: url(../img/contact-footer.jpg) 0 100%/540px no-repeat, #000000;
 }
+*/
 
+.clarification {
+    background:linear-gradient(#fff 10%,transparent),
+               url(../img/contact-footer.jpg) no-repeat;
+    background-position: 0 41%;
+    background-size: cover;
+}
+.clarification > div{
+    height:400px;
+}
+.clarification > div > div >div > p {
+    color:#ADACAC;
+    letter-spacing:0.24em;
+    font-family:Sfcompactdisplay, sans-serif;
+}
+
+@media (max-width: 442px){
+  .clarification > div > div >div > p {
+      letter-spacing:0;
+} 
+    .clarification > div{
+    height:200px;
+}
+    .clarification {
+    background:linear-gradient(#fff 10%,rgba(255, 255, 255,0.6)),
+               url(../img/contact-footer.jpg) no-repeat;
+    background-position: 0 41%;
+    background-size: cover;
+}
+}
+
+@media (max-width: 991px){
+          .clarification > div > div >div > p {
+      letter-spacing:0;
+} 
+    .clarification > div{
+     height:300px;
+}  
+}
 /*********** CONTACT PAGE END **********/
 .search-category-result .sidebar .checkbox-label {
     padding-left: 5px;
