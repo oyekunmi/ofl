@@ -724,3 +724,16 @@ form.contact-form button{
     margin-bottom: 20px;
     color: #000000;
 }
+
+@media (max-width: 442px){
+    .faq .panel-default .panel-heading .panel-title{
+        font-size: 18px;
+    }
+
+    .faq .panel-collapse{
+        font-size: 14px;
+    }
+    .faq .panel-collapse h3.title{
+        font-size: 20px;
+    }
+}
