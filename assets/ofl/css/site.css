@@ -643,10 +643,6 @@ form.contact-form button{
 }
 
 /*************** FAQ PAGE ************/
-.faq, .faq *{
-    font-family:Sfcompactdisplay, sans-serif;
-}
-
 .faq .panel-group .panel+.panel{
     margin-top: 0px;
 }
@@ -664,27 +660,67 @@ form.contact-form button{
 
 .faq .panel-default .panel-heading{
     color: #000000;
-    padding: 40px;
+    padding: 20px;
     border: none;
     background-color: #ffffff;
 }
 
 .faq .panel-group .panel:first-child .panel-heading{
     border-radius: 20px 20px 0 0;
+    
 }
 
 .faq .panel-group .panel:last-child .panel-heading{
     border-radius: 0 0 20px 20px;
+    
 }
 
 .faq .panel-default .panel-heading .panel-title{
     font-size: 24px;
+    line-height: 28px;
+    font-family:Sfcompactdisplay, sans-serif;
+    height: 72px;
 }
 
 .faq .panel-default .panel-heading .panel-title a{
     text-decoration: none;
+    color: #000000;
+}
+
+.faq .panel-default .panel-heading .panel-title i{
+    color: #F4F3F3;
+}
+
+.faq .panel-default .panel-heading .panel-title a.light-red i {
+    color: #F05A22;
+    /* text-transform: uppercase; */
+    text-decoration: none;
+}
+
+.faq .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 
 .faq .panel-collapse{
-    background-color: #ffffff;
+    background-color: #FBF9F9;
+    font-size: 20px;
+    line-height: 35px;
+    color: #737272;
+    font-weight: 300;
+}
+
+.faq .panel-default>.panel-heading+.panel-collapse>.panel-body{
+    border-top: none;
+}
+
+.faq .panel-collapse h3.title{
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #000000;
 }

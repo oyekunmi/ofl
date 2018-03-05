@@ -22,4 +22,12 @@ $('#sidebar-group .collapse')
         .addClass("fa-plus");
     });
 
+ //FAQ Page
+ $('#faq-group .collapse')
+.on('shown.bs.collapse', function() {
+    // console.log( $(this).parent().find('.fa-plus-circle').attr("class"));
+    $(this).parent().find('.fa-plus-circle').parent().addClass("light-red");})
+.on('hidden.bs.collapse', function() {
+    $(this).parent().find('.fa-plus-circle').parent().removeClass("light-red");});
+
 });
