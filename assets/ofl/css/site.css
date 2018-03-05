@@ -597,7 +597,7 @@ form.contact-form button{
 
 @media (max-width: 442px){
 
-    .clarification > div > div >div > p {
+    .clarification > p {
         letter-spacing:0;
     } 
 
@@ -619,7 +619,7 @@ form.contact-form button{
     .clarification > div{
         height:300px;
     }
-    
+
     .clarification > p {
         letter-spacing:0;
     } 
