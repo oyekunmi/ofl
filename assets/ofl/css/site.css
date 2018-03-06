@@ -49,8 +49,8 @@ body{
 .page-title ul.menu li a{
     color: #484747;
     text-decoration: none;
-    font-size: 24px;
-    font-family: Sfcompacttext, sans-serif;
+    font-size: 21px;
+    font-family: Sfcompactdisplay, sans-serif;
 }
 
 /*********** SEARCH PAGE **********/
@@ -130,6 +130,7 @@ body{
     font-family: Sfcompactdisplay, sans-serif; 
 }
 
+
 .page-subtitle-content .item p.footnote{
     font-size: 18px;
     color: #9A9898;
@@ -137,6 +138,7 @@ body{
 }
 .page-subtitle-content .item p{
     font-size: 28px;
+    /* font-size: 1.5em; */
 }
 
 .page-subtitle-content .social ul{
@@ -155,6 +157,29 @@ body{
     font-weight: 600;
 }
 
+
+@media (max-width: 481px) {
+    .page-subtitle h2,
+    .page-subtitle-content{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .page-subtitle-content .item h3{
+        font-size: 18px;
+    }
+    .page-subtitle-content h2{
+        font-size: 28px;
+    }
+
+    .page-subtitle-content .item p{
+        font-size: 24px;
+    }
+
+    .page-subtitle-content .item p.footnote{
+        font-size: 14px;
+    }
+}
 
 @media (max-width: 991px){
     .page-title h2{
@@ -560,10 +585,44 @@ form.contact-form button{
 }
 .clarification > div{
     height:400px;
+    line-height: 39px;
 }
-.clarification > div > div >div > p {
+.clarification p {
     color:#ADACAC;
-    letter-spacing:0.25em;
+    /* letter-spacing: 1px; */
+    font-size: 20px;
+    font-family:Sfcompactdisplay, sans-serif;
+    
+}
+
+@media (max-width: 442px){
+
+    .clarification > p {
+        letter-spacing:0;
+    } 
+
+    .clarification > div{
+        height:200px;
+    }
+
+    .clarification {
+        background:linear-gradient(#fff 10%,rgba(255, 255, 255,0.6)),
+                url(../img/contact-footer.jpg) no-repeat;
+        background-position: 0 41%;
+        background-size: cover;
+    }
+
+}
+
+@media (max-width: 991px){
+
+    .clarification > div{
+        height:300px;
+    }
+
+    .clarification > p {
+        letter-spacing:0;
+    } 
 }
 
 /*********** CONTACT PAGE END **********/
@@ -583,3 +642,213 @@ form.contact-form button{
     }
 }
 
+/*************** FAQ PAGE ************/
+.faq .panel-group .panel+.panel{
+    margin-top: 0px;
+}
+
+.faq .panel-default{
+    border: none;
+    border-bottom: 1px solid #9EDBDC;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.faq .panel-default:last-child{
+    border-bottom: none;
+}
+
+.faq .panel-default .panel-heading{
+    color: #000000;
+    padding: 20px;
+    border: none;
+    background-color: #ffffff;
+}
+
+.faq .panel-group .panel:first-child .panel-heading{
+    border-radius: 20px 20px 0 0;
+    
+}
+
+.faq .panel-group .panel:last-child .panel-heading{
+    border-radius: 0 0 20px 20px;
+    
+}
+
+.faq .panel-default .panel-heading .panel-title{
+    font-size: 24px;
+    line-height: 28px;
+    font-family:Sfcompactdisplay, sans-serif;
+    height: 72px;
+}
+
+.faq .panel-default .panel-heading .panel-title a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.faq .panel-default .panel-heading .panel-title i{
+    color: #F4F3F3;
+}
+
+.faq .panel-default .panel-heading .panel-title a.light-red i {
+    color: #F05A22;
+    /* text-transform: uppercase; */
+    text-decoration: none;
+}
+
+.faq .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.faq .panel-collapse{
+    background-color: #FBF9F9;
+    font-size: 20px;
+    line-height: 35px;
+    color: #737272;
+    font-weight: 300;
+}
+
+.faq .panel-default>.panel-heading+.panel-collapse>.panel-body{
+    border-top: none;
+}
+
+.faq .panel-collapse h3.title{
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+@media (max-width: 442px){
+    .faq .panel-default .panel-heading .panel-title{
+        font-size: 18px;
+    }
+
+    .faq .panel-collapse{
+        font-size: 14px;
+    }
+    .faq .panel-collapse h3.title{
+        font-size: 20px;
+    }
+}
+
+.faq_banner {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    height: 327px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background: url(../img/faq_banner.jpg);
+    background-position: -390px;
+}
+
+.faq_banner .searh-bar input.form-control{
+    border-left: 0;
+}
+
+.searh-bar .search{
+/*    height:100%;*/
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-end;
+}
+.searh-bar .search > div{
+    width:20%;
+    display:flex;
+    flex-direction:row;
+    align-content: center;
+    margin-left:0.7em;
+}
+.banner_offset{
+    display: flex;
+    flex-direction: column;
+    font-family: Sfcompacttext, sans-serif;
+    color:#B1ACAC;
+    font-size:1.8em;
+    font-weight:bold;
+    height: 317px;
+    padding-right:0.3em;
+    border-right:1px solid #B1ACAC;
+    top: 0px;
+    position: absolute;
+    z-index: 800;
+    margin-top:5px;
+    justify-content: space-around;
+
+}
+#bankIt{
+    align-self: center;
+    position: absolute;
+    color:#B1ACAC;
+    font-size:18px;
+    font-weight:semibold;
+    font-family: Sfcompacttext, sans-serif;
+    height: 327px;
+    z-index: 800;
+    justify-content:flex-start;
+    top: 0px;
+    padding-left:2.5em; 
+     padding-top:2.5em; 
+}
+
+.faq_form{
+    width:54%;
+}
+
+
+
+/*********** ABOUT PAGE **********/
+ul.about_us_submenu li{
+     list-style-type: none; 
+    /* color:#F05A22; */
+/*    padding-left:5px;*/
+}
+
+ul.about_us_submenu li::before {
+    content: " ";
+    border-width: 0.7em 0.4em 0.4em;
+    border-style: solid;
+    border-color: #F05A22 transparent transparent transparent;
+    position: relative;
+    top: 12px;
+    left: -1em;
+}
+
+/*
+.about_banner {
+    height: 400px;
+    background: url(../img/about_us_banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+*/
+
+.about_banner {
+    height: 440px;
+    background: url(../img/about_us_banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -61px;
+}
+
+
+
+/*
+.page-title ul li::before1{
+    content: " ";
+    border-width:1em 0.7em 0 0.7em;
+    border-style: solid;
+    border-color:orange transparent transparent transparent;
+}
+*/
+
+
+
+/*********** ABOUT PAGE END**********/
