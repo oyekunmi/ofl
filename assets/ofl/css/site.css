@@ -737,3 +737,67 @@ form.contact-form button{
         font-size: 20px;
     }
 }
+
+.faq_banner {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    height: 327px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background: url(../img/faq_banner.jpg);
+    background-position: -390px;
+}
+
+.faq_banner .searh-bar input.form-control{
+    border-left: 0;
+}
+
+.searh-bar .search{
+/*    height:100%;*/
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-end;
+}
+.searh-bar .search > div{
+    width:20%;
+    display:flex;
+    flex-direction:row;
+    align-content: center;
+    margin-left:0.7em;
+}
+.banner_offset{
+    display: flex;
+    flex-direction: column;
+    font-family: Sfcompacttext, sans-serif;
+    color:#B1ACAC;
+    font-size:1.8em;
+    font-weight:bold;
+    height: 317px;
+    padding-right:0.3em;
+    border-right:1px solid #B1ACAC;
+    top: 0px;
+    position: absolute;
+    z-index: 800;
+    margin-top:5px;
+    justify-content: space-around;
+
+}
+#bankIt{
+    align-self: center;
+    position: absolute;
+    color:#B1ACAC;
+    font-size:18px;
+    font-weight:semibold;
+    font-family: Sfcompacttext, sans-serif;
+    height: 327px;
+    z-index: 800;
+    justify-content:flex-start;
+    top: 0px;
+    padding-left:2.5em; 
+     padding-top:2.5em; 
+}
+
+.faq_form{
+    width:54%;
+}
