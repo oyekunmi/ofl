@@ -737,3 +737,46 @@ form.contact-form button{
         font-size: 20px;
     }
 }
+
+
+.faq_banner,
+.searh-bar .search,
+.searh-bar .search > div{
+  display:flex;
+}
+
+.searh-bar .search,
+.searh-bar .search > div{
+    flex-direction:row;
+}
+
+.faq_banner {
+   
+    flex-direction:column;
+    justify-content:center;
+    height: 327px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background: url(../img/faq_banner.jpg);
+    background-position: -390px;
+}
+
+.faq_banner .searh-bar input.form-control{
+    border-left: 0;
+}
+
+.searh-bar .search{
+    justify-content: flex-end;
+}
+.searh-bar .search > div{
+    width:20%;
+    align-content: center;
+    margin-left:0.7em;
+}
+
+.faq_form{
+    width:54%;
+    position: relative;
+    top: 18px;
+}
+}
