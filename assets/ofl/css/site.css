@@ -805,10 +805,28 @@ form.contact-form button{
 
 
 /*********** ABOUT PAGE **********/
+
 ul.about_us_submenu li{
      list-style-type: none; 
-    /* color:#F05A22; */
-/*    padding-left:5px;*/
+}
+
+
+.about_section{
+    font-size:19px;
+    font-family:Sfcompacttext,sans-serif;
+    line-height: 28px;
+    margin-top:3em;
+    margin-bottom:7em;
+}
+
+.about_section > p,
+.about_section > ol > p,
+.nested > p{
+   margin-bottom:2em;
+}
+
+.about_page_list > li:not(.nested_header){
+    margin-bottom:0.7em;
 }
 
 ul.about_us_submenu li::before {
@@ -821,14 +839,6 @@ ul.about_us_submenu li::before {
     left: -1em;
 }
 
-/*
-.about_banner {
-    height: 400px;
-    background: url(../img/about_us_banner.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-*/
 
 .about_banner {
     height: 440px;
@@ -838,17 +848,56 @@ ul.about_us_submenu li::before {
     background-position-y: -61px;
 }
 
-
-
-/*
-.page-title ul li::before1{
-    content: " ";
-    border-width:1em 0.7em 0 0.7em;
-    border-style: solid;
-    border-color:orange transparent transparent transparent;
+.about_search{
+    position:absolute;
+    left:-1em;
+    color:#F05A22;
 }
-*/
+.about_banner >div > div >div {
+    font-size:21px;
+    height:471px;
+    width:374px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    line-height: 40px;
+    margin-left: 134px;
+}
+
+.about_banner >div > div >div >p>span{
+    color:#F05A22;
+}
+ol {
+    counter-reset: item;
+}
+
+ol > li {
+    display: block;
+    position: relative;
+}
+
+ol > li:before {
+    content: counters(item, ".")".";
+    counter-increment: item;
+    position: absolute;
+    margin-right: 100%;
+    right: 10px;
+}
 
 
+.nested_header,
+ol.about_page_list > li{
+  font-size:30px;  
+}
+
+.nested_header > ol{
+    margin-top:-1em;
+    margin-bottom:2em;
+    font-size: 19px;
+}
+
+li > ol{
+margin-left:-1.8em;
+}
 
 /*********** ABOUT PAGE END**********/
