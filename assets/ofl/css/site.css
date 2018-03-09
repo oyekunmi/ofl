@@ -738,20 +738,8 @@ form.contact-form button{
     }
 }
 
-
-.faq_banner,
-.searh-bar .search,
-.searh-bar .search > div{
-  display:flex;
-}
-
-.searh-bar .search,
-.searh-bar .search > div{
-    flex-direction:row;
-}
-
 .faq_banner {
-   
+    display:flex;
     flex-direction:column;
     justify-content:center;
     height: 327px;
@@ -766,17 +754,155 @@ form.contact-form button{
 }
 
 .searh-bar .search{
+/*    height:100%;*/
+    display:flex;
+    flex-direction:row;
     justify-content: flex-end;
 }
 .searh-bar .search > div{
     width:20%;
+    display:flex;
+    flex-direction:row;
     align-content: center;
     margin-left:0.7em;
+}
+.banner_offset{
+    display: flex;
+    flex-direction: column;
+    font-family: Sfcompacttext, sans-serif;
+    color:#B1ACAC;
+    font-size:1.8em;
+    font-weight:bold;
+    height: 317px;
+    padding-right:0.3em;
+    border-right:1px solid #B1ACAC;
+    top: 0px;
+    position: absolute;
+    z-index: 800;
+    margin-top:5px;
+    justify-content: space-around;
+
+}
+#bankIt{
+    align-self: center;
+    position: absolute;
+    color:#B1ACAC;
+    font-size:18px;
+    font-weight:semibold;
+    font-family: Sfcompacttext, sans-serif;
+    height: 327px;
+    z-index: 800;
+    justify-content:flex-start;
+    top: 0px;
+    padding-left:2.5em; 
+     padding-top:2.5em; 
 }
 
 .faq_form{
     width:54%;
+}
+
+
+
+/*********** ABOUT PAGE **********/
+
+ul.about_us_submenu li{
+     list-style-type: none; 
+}
+
+
+.about_section{
+    font-size:19px;
+    font-family:Sfcompacttext,sans-serif;
+    line-height: 28px;
+    margin-top:3em;
+    margin-bottom:7em;
+}
+
+.about_section > p,
+.about_section > ol > p,
+.nested > p{
+   margin-bottom:2em;
+}
+
+.about_page_list > li:not(.nested_header){
+    margin-bottom:0.7em;
+}
+
+ul.about_us_submenu li::before {
+    content: " ";
+    border-width: 0.7em 0.4em 0.4em;
+    border-style: solid;
+    border-color: #F05A22 transparent transparent transparent;
     position: relative;
-    top: 18px;
+    top: 12px;
+    left: -1em;
 }
+
+
+.about_banner {
+    height: 440px;
+    background: url(../img/about_us_banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -61px;
 }
+
+.about_search{
+    position:absolute;
+    left:-1em;
+    color:#F05A22;
+}
+.about_banner >div > div >div {
+    font-size:21px;
+    height:471px;
+    width:374px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    line-height: 40px;
+    margin-left: 134px;
+}
+
+.about_banner >div > div >div >p>span{
+    color:#F05A22;
+}
+ol {
+    counter-reset: item;
+}
+
+ol > li {
+    display: block;
+    position: relative;
+}
+
+ol > li:before {
+    content: counters(item, ".")".";
+    counter-increment: item;
+    position: absolute;
+    margin-right: 100%;
+    right: 10px;
+}
+
+
+.nested_header,
+ol.about_page_list > li{
+  font-size:30px;  
+}
+
+.nested_header > ol{
+    margin-top:-1em;
+    margin-bottom:2em;
+    font-size: 19px;
+}
+
+li > ol{
+margin-left:-1.8em;
+}
+
+@media(max-width:489px){
+    .about_banner > div> div >div{
+        margin-left:0;
+    }
+}
+/*********** ABOUT PAGE END**********/
