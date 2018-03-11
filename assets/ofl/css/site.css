@@ -1066,7 +1066,7 @@ ul.about_us_submenu li::before {
    margin-top:1px;
 }
 
-.insight + h1:not(#principles_of_operations){
+.insight + h1:not(".principles_of_operations >h1"){
     font-weight:bold;
 }
 
@@ -1075,7 +1075,10 @@ ul.about_us_submenu li::before {
     line-height: 59px;
     width:90%;
 }
-#principles_of_operations{
+.principles_of_operations{
+ margin-top:3em;
+}
+.principles_of_operations > h1{
     color:#595959;
 }
 #who_we_are{
@@ -1084,7 +1087,7 @@ ul.about_us_submenu li::before {
 }
 #who_we_are > div > div > div > p{
     font-size:18px;
-    font-family:Sfcompacttext,sans-serif;
+    font-family:Sfcompactdisplay,sans-serif;
     color:rgba(126, 124, 124, 0.93);
     line-height: 30px;
     width:95%;
@@ -1093,12 +1096,27 @@ ul.about_us_submenu li::before {
 
 .benefits > div > h4,
 .benefits > div > div > h4{
+    display:inline-block;
+    margin-bottom:2em;
     letter-spacing:7.2px;
     color:#0C0C0C;
     font-weight:bold;
     text-transform:uppercase;
     line-height:21px;
+    position: relative;
+    left: -24px;
 }
+
+.benefits > div > hr {
+    display:inline-block;
+    display: inline-block;
+    width: 65px;
+    border: 2px solid #5AE1E6;
+    position: relative;
+    top: 1em;
+    left: -60px;
+}
+
 
 .benefits:not(.guiding_principle){
     margin-bottom:9em;
