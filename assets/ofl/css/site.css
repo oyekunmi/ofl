@@ -1069,18 +1069,18 @@ ul.about_us_submenu li::before {
     color:#0C0C0C;
     font-weight:bold;
     text-transform:uppercase;
-    line-height:21px;";
+    line-height:21px;
 }
 
 .benefits_to_user > div > div{
-    height:350px
+    height:350px;
 }
-.benefits_to_user > div > div > div{
+/* .benefits_to_user > div > div > div{
  display: flex;
     justify-content: flex-start;
     align-items: center;
     height:348px;
-}
+} */
  .right_of_benefits{
    width:86%;
 }
@@ -1089,7 +1089,7 @@ ul.about_us_submenu li::before {
     font-size:19px;
     font-family:Sfcompactdisplay,sans-serif;
     color:rgba(126, 124, 124, 0.93);
-    line-height: 30px;"
+    line-height: 30px;
 }
 
 .right_of_benefits > div > button{
@@ -1145,7 +1145,11 @@ color:#fff;
 #perspective > div > div > div > p:nth-child(2){
 width:95%;
 }    
-
+@media(max-width:467px){
+.about_banner > div{
+    margin:0 auto;
+}
+}
 .about_partners > div:nth-child(1){
     display:flex;
     align-items: center;
