@@ -994,7 +994,7 @@ ul.about_us_submenu li::before {
         }
     }
 .details > div > div > i{
-    margin-right:1.5em;
+    /* margin-right:1em; */
     font-size:1.5em;
     color: #F05A22;  
 }
@@ -1007,9 +1007,52 @@ ul.about_us_submenu li::before {
 .details > div > div + div{
     color:#959999;
     font-size:16px;
-    display:flex;
-    justify-content: center;
+    display:inline-block;
+    border:1px solid red;
+    /* display:flex; */
+    /* justify-content: center; */
 }
+
+@media(max-width:990px){
+    .details > div > div + div{
+        border:1px solid red;
+    }
+    .details > div > div > span{
+        font-size:2.5em;
+        border:1px solid green;
+        position:relative;
+    }
+    .details > div > div + div,
+    .details > div > div > span{
+        position:relative;
+        left:17%;
+    }
+
+}
+
+@media(max-width:468px){
+    .details > div > div + div,
+    .details > div > div > span{
+        position: relative;
+        left:30%;
+    }
+}
+
+@media(min-width:991px) AND (max-width:1199px){
+    .details > div > div > span{
+        font-size: 2.5em;
+    }
+    .details > div > div + div{
+        font-size:1em;
+    }
+    .details > div > div + div,
+    .details > div > div > span{
+        position:relative;
+        left:20%;
+    }
+
+}
+
 
 .side_picture {
     display: block;
@@ -1059,6 +1102,8 @@ ul.about_us_submenu li::before {
 .insight{
     font-size:12px;
     color:#F05A22;
+    letter-spacing:3.6px;
+    text-transform: uppercase;
 }
 
 .insight + h2,
@@ -1066,7 +1111,7 @@ ul.about_us_submenu li::before {
    margin-top:1px;
 }
 
-.insight + h1:not(".principles_of_operations >h1"){
+.insight + h1:not(.principle_side_header){
     font-weight:bold;
 }
 
@@ -1107,14 +1152,24 @@ ul.about_us_submenu li::before {
     left: -24px;
 }
 
+
 .benefits > div > hr {
-    display:inline-block;
     display: inline-block;
     width: 65px;
     border: 2px solid #5AE1E6;
     position: relative;
     top: 1em;
     left: -60px;
+}
+
+@media(max-width:659px){
+    .benefits > div > h4,
+    .benefits > div > div > h4{
+        left: 0;
+    }
+    .benefits > div > hr{
+        display: none;
+    }
 }
 
 
@@ -1245,3 +1300,96 @@ width:95%;
     z-index: 1000;
 }
 /*************ABOUT PAGE END************/
+
+
+/*************QUIZ PAGE END************/
+.quiz {
+    background: url(../img/quiz_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: 104%;
+    height: 380px;
+    width: 100%;
+}
+
+.featured_quizzes {
+    height: 87%;
+    background:linear-gradient(to top,rgba(0,0,0,0.7) 50%,rgba(0,0,0,0.7) 50%), 
+    url(../img/brainstorm.jpg);
+    background-size: 160% 118%;
+    background-position: -91px -28px;
+    background-repeat: no-repeat;
+}
+
+/* .featured_quizzes1 {
+    height: 87%;
+    background: url(../img/business_man.jpg);
+    background-size: 160% 118%;
+    background-position: -91px -28px;
+    background-repeat: no-repeat;
+} */
+
+.featured_quizzes1 {
+    height: 87%;
+    background:linear-gradient(to top,rgba(0,0,0,0.7) 50%,rgba(0,0,0,0.7) 50%),
+    url(../img/business_man.jpg);
+    background-size: 242% 164%;
+    background-position: -190px -162px;
+    background-repeat: no-repeat;
+}
+
+.featured_quizzes2 {
+    height: 87%;
+    background: linear-gradient(to top,rgba(0,0,0,0.7) 50%,rgba(0,0,0,0.7) 50%),
+    url(../img/happiness.jpg);
+    background-size: 160% 118%;
+    background-position: -91px -28px;
+    background-repeat: no-repeat;
+}
+
+.take_a_quiz{
+    margin-top:4em;
+}
+.quiz_slider > div{
+display:flex;
+justify-content:center;
+}
+.member_slider{
+ position:absolute;
+ height:80%;
+ display:flex;
+ flex-direction:column;
+ align-items:flex-start;
+}
+
+.member_slider > div:nth-child(1){
+   margin-bottom:auto;
+   width:20%;
+   display:flex;
+   justify-content:space-between;
+   position:relative;
+   top:2em;
+   left:2em;
+}
+
+.member_slider > div:nth-child(1) > i{
+    color:#fff;
+    font-size:1.5em;
+}
+
+.member_slider > div:nth-child(2) > h3{
+font-weight:bold;
+color:#fff;
+width:70%;
+margin-left:1em;
+line-height:28px;
+}
+
+[class^="featured"] + span{
+  font-size:14px;
+  color:#F05A22;
+  letter-spacing:1.4882px;
+  position:relative;
+  top:1em;
+  left:33%;
+}
+/*************QUIZ PAGE END************/
