@@ -1392,4 +1392,18 @@ line-height:28px;
   top:1em;
   left:33%;
 }
+
+
+@media(min-width:995px){
+.quiz_panel> div > div{
+    position:relative;
+    left:9em;
+}
+}
+@media(min-width:1200px){
+.quiz_panel> div > div{
+    position:relative;
+    left:10.5em;
+}
+}
 /*************QUIZ PAGE END************/
