@@ -1388,9 +1388,80 @@ line-height:28px;
   font-size:14px;
   color:#F05A22;
   letter-spacing:1.4882px;
-  position:relative;
-  top:1em;
-  left:33%;
+  position:absolute;
+/*  top:1em;*/
+  left:37%;
+}
+
+.quiz_panel{
+ margin-bottom:3em;
+ margin-top:3em;   
+}
+
+/*
+.quiz_panel:nth-child(1){
+margin-top:7em;    
+}
+*/
+
+.featuredQ_heading{
+ padding-left:0 ;   
+}
+ .featuredQ_heading > h1{
+    letter-spacing:0.45px;
+    color:#787878;  
+}
+
+.featuredQ_heading + div > form{
+    padding-right:0;
+    font-size:18px;
+    color:#000;
+    text-transform: uppercase;
+    font-weight:bold;
+}
+
+.featuredQ_heading + div > form > select{
+    text-transform:uppercase;
+    letter-spacing: 1.9134px;
+}
+
+.featuredQ_heading + div > form > hr{
+    border-width: 1px;
+    width: 4em;
+    position: absolute;
+    transform: rotate(90deg);
+    left: 57%;
+    margin:0;  
+}
+
+
+.quiz_panel > div > div > div > div,
+.quiz_slider > div > div{
+    height:310px;
+}
+
+
+.searh-bar select.form-control.fq_form{
+    background-image: none;
+    
+}
+
+
+.featuredQ_heading + div > form > span{
+    content: " ";
+    border-width: 0.7em 0.4em 0.4em;
+    border-style: solid;
+    border-color: #C4C4C4 transparent transparent transparent;
+    position: absolute;
+    left:78%;
+    margin-top:0.4em;
+}
+    
+    
+@media(max-width:990px){
+[class^="featured"] + span{
+  left:43%;
+}
 }
 
 
@@ -1406,4 +1477,6 @@ line-height:28px;
     left:10.5em;
 }
 }
+
+
 /*************QUIZ PAGE END************/

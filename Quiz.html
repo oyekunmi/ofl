@@ -118,21 +118,18 @@
         </div>
     </section>
     
-    <section class="quiz_panel" style="margin-top:2em;">
+    <section class="quiz_panel">
        <div class="container">
          <div class="row">
-            <div class="col-md-6" style="padding-left:0;">
-            <h1 style="letter-spacing:0.45px;color:#787878;">Featured Quizzes</h1>    
+            <div class="col-md-6 featuredQ_heading">
+            <h1>Featured Quizzes</h1>    
             </div> 
             
-            <div class="col-md-3 searh-bar" style="broder:1px solid red;">
-                <form class="form-div" action="search.html" style="padding-right:0;">
-                <hr style="border-width: 0.2em;
-                    width: 4em;
-                    position: absolute;
-                    transform: rotate(90deg);
-                    left: 57%;margin:0;">
-                <select id="category" name="select" data-name="category" class="form-control">
+            <div class="col-md-3 searh-bar">
+                <form class="form-div" action="search.html">
+                <span></span>
+                <hr>
+                <select id="category" name="select" data-name="category" class="form-control fq_form">
                 <option value="all">BANKING</option>
                 <option value="banking">Banking</option>
                 <option value="telecomms">Telecommunictions</option>
@@ -180,7 +177,7 @@
                                         <div class="featured_quizzes1"></div>
                                         <span>TAKE QUIZ</span>
                                     </div>
-                                    <div class="col-xs-12 col-md-3" style="height:310px;">
+                                    <div class="col-xs-12 col-md-3">
                                         <div class="member_slider">
                                             <div>
                                                 <i class="fa fa-facebook-square"></i>
@@ -200,7 +197,7 @@
                          <li>
                             <div class="links quiz_slider">
                                 <div class="row">
-                                    <div class="col-xs-12 col-md-3" style="height:310px;">
+                                    <div class="col-xs-12 col-md-3">
                                         <div class="member_slider">
                                             <div>
                                                 <i class="fa fa-facebook-square"></i>
@@ -226,7 +223,7 @@
                                         <div class="featured_quizzes1"></div>
                                         <span>TAKE QUIZ</span>
                                     </div>
-                                    <div class="col-xs-12 col-md-3 hidden-xs" style="height:310px;">
+                                    <div class="col-xs-12 col-md-3 hidden-xs">
                                         <div class="member_slider">
                                             <div>
                                                 <i class="fa fa-facebook-square"></i>
@@ -246,7 +243,7 @@
                             <div class="links quiz_slider">
                                 <div class="row">
                                     
-                                    <div class="col-xs-12 col-md-3" style="height:310px;">
+                                    <div class="col-xs-12 col-md-3">
                                         <div class="member_slider">
                                             <div>
                                                 <i class="fa fa-facebook-square"></i>
@@ -270,12 +267,12 @@
     </section>
 
 
-    <section class="quiz_panel" style="margin-bottom:7em;margin-top:3em;">
+    <section class="quiz_panel">
         <div class="container">
             <div class="row">
 
                 <div class="row">
-                    <div class="col-xs-12 col-md-3" style="height:310px;">
+                    <div class="col-xs-12 col-md-3">
                         <div class="member_slider">
                             <div>
                                 <i class="fa fa-facebook-square"></i>
@@ -289,7 +286,7 @@
                         <span>TAKE QUIZ</span>
                     </div>
                     
-                    <div class="col-xs-12 col-md-3" style="height:310px;">
+                    <div class="col-xs-12 col-md-3">
                         <div class="member_slider">
                             <div>
                                 <i class="fa fa-facebook-square"></i>
@@ -303,7 +300,7 @@
                         <span>TAKE QUIZ</span>
                     </div>
                     
-                    <div class="col-xs-12 col-md-3" style="height:310px;">
+                    <div class="col-xs-12 col-md-3">
                         <div class="member_slider">
                             <div>
                                 <i class="fa fa-facebook-square"></i>
@@ -438,6 +435,15 @@
     <script src="assets/vendor/ExpandingSearchBar/js/uisearch.js"></script>
     <script src="assets/ofl/js/script.js"></script>
     <script src="assets/ofl/js/landing.js"></script>
+    
+    <script>
+      $('.bxslider').bxSlider({
+      auto: true,
+      stopAutoOnClick: true,
+      pager: true,
+      responsive:true
+      });
+    </script>
 
 </body>
 
