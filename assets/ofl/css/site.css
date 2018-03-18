@@ -1422,7 +1422,7 @@ margin-top:7em;
 
 .featuredQ_heading + div > form > select{
     text-transform:uppercase;
-    letter-spacing: 1.9134px;
+    letter-spacing: 1.2134px;
 }
 
 .featuredQ_heading + div > form > hr{
@@ -1443,12 +1443,14 @@ margin-top:7em;
 
 .searh-bar select.form-control.fq_form{
     background-image: none;
-    
+    z-index:100;
+    background: transparent;
 }
 
 
 .featuredQ_heading + div > form > span{
     content: " ";
+    z-index: 10;
     border-width: 0.7em 0.4em 0.4em;
     border-style: solid;
     border-color: #C4C4C4 transparent transparent transparent;
