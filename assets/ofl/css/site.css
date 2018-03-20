@@ -805,13 +805,13 @@ form.contact-form button{
 }
 
 .faq_contact_support {
-    height:350px;
-    margin-bottom:4em;
-    background: url(../img/products_packages_5.png);
+    height: 389px;
+    margin-bottom: 4em;
+    background: url(../img/products_packages_5.png),white;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 100%;
-    background-size: 517px 444px;
+    background-position: 100% -35px;
+    background-size: 517px 417px;
 }
 
 .faq_footer_banner,
