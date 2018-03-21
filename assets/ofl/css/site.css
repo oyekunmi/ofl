@@ -725,7 +725,7 @@ form.contact-form button {
 .login-page .form-background {
     margin-top: 75px;
     width: 393px;
-    height: 568px;
+    height: 600px;
     background: #FFFFFF;
     box-shadow: 0px 10px 90px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -741,13 +741,93 @@ form.contact-form button {
     line-height: 5em;
 }
 
-.login-page .form-background h6 {
-    font-size: 14px;
-    letter-spacing: 0.008em;
-    text-transform: capitalize;
+.login-page .form-background .text {
+    font-size: 1.1em;
     color: #9F9D9D;
     text-align: center;
     margin-left: -124px;
+    margin-top: -60px;
 }
 
+.login-page .join-us {
+    font-size: 3em;
+    margin-top: -416px;
+    margin-left: 753px;
+    margin-bottom: 0.5em;
+}
+
+.login-page .write-up {
+    line-height: 1.4em;
+    font-size: 1.2em;
+    margin-left: 45em;
+    margin-bottom: 3em;
+}
+
+.login-page .login .btn-text {
+    color: #F05A22;
+}
+
+.login-page .login .sign-up-btn {
+    width: 178px;
+    height: 50px;
+    background: #FFFFFF;
+    border-radius: 100px;
+    margin-left: 30em;
+}
+
+.login-page .login-btn{
+    margin-top: 1em;
+    margin-left: 4em;
+    width: 13em;
+    height: 3em;
+    background: #F05A22;
+}
+
+.login-page .login-btn-text{
+    color: #FFFFFF
+}
+
+.login-page .fa-angle-right{
+    font-size: 1.5em;
+    color: #FFFFFF
+}
+
+.login-page .login-with {
+    position: absolute;
+    top: 5em;
+    right: -2em;
+    color: #9F9D9D;
+    display: block;
+    font-size: 1.2em;
+}
+
+.login-page .fa-icon{
+    position: absolute;
+    top: 49em;
+    margin-left: 5em;
+    justify-content: space-around;
+    display: flex;
+    width: 19em;
+}
+
+.login-page .fa-3x{
+    color: #5DE1E6;
+}
+
+.login-page .live-chat{
+    position: absolute;
+    width: 190px;
+    height: 65px;
+    left: 1312px;
+    top: 777px;
+    background: #5DE3E7;
+    border-radius: 10px;
+}
+
+.login-page .live-chat h4{
+    margin-top: 1em;
+    margin-left: 3.5em;
+    color: #FFFFFF;
+    font-size: 21px;
+}
 /*** END LOGIN PAGE ***/
