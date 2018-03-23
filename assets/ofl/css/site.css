@@ -1506,7 +1506,24 @@ margin-top:7em;
     height: 300px;
 }
 
+#product_comparison_banner > div > div{
+    min-height:300px;
+    display:flex;
+    align-items:center;
+}
 
+#product_comparison_banner > div > div > div{
+    margin-left:8em;
+}
+#product_comparison_banner > div > div > div > h1{
+    font-size:46px;
+    font-weight:bold;
+}
+
+#product_comparison_banner > div > div > div > h4{
+    font-size:1.5em;
+    width:126%;
+}
 .product_comparison_theader{
     height:63px;
     border-bottom:1px solid #EEEBEB;
@@ -1534,6 +1551,13 @@ color:#4F4D4D;
     letter-spacing:-0.4995px;
     color:#000;
     font-weight:bold;
+}
+
+.acct_keeping_fee::after{
+    content:'4 MONTHS';
+    font-size:0.6em;
+    margin-left:3px;
+    color:#818181;
 }
 
 .product_comparison_theader + div.row{
@@ -1583,5 +1607,116 @@ align-items:center;
 font-size:22px;
 letter-spacing:-0.4995px;
 color:#464646;
+}
+
+.product_comp_acct{
+    height:238px;
+    border-top:1px solid rgba(151, 151, 151, 0.2198);
+    border-bottom:1px solid rgba(151, 151, 151, 0.2198);
+    background-color:#F9F9F9;
+}
+
+.product_comp_acct > div{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:238px;
+    border:1px solid rgba(151, 151, 151, 0.2198);
+}
+
+.product_comp_acct > div > div{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    height:80%;
+    width:90%;
+    border:1px solid rgba(77, 218, 223, 0.4584);
+    border-radius:7px;
+    background-color:#fff;
+}
+
+.product_comp_acct > div > div > span{
+    align-self:flex-end;
+    margin:1em;
+    height:2em;
+    width:1.5em;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#020202;
+    font-style:rounded;
+    background-color:#F5F3F3;
+    font-size:0.9em;
+}
+
+.product_comp_acct > div > div > div{
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+}
+
+.product_comp_acct > div > div > div > p{
+    font-size:17px;color:#4F4D4D;letter-spacing:-0.5661px;
+}
+.promote_productc{
+    margin:1em 0;
+    height:30px;
+    width:60%;
+    border:1px solid #D1CDCD;
+    border-radius:3px;
+    text-transform:uppercase;
+    color:#828282;font-size:12px;
+    letter-spacing:1.7148px;   
+}
+.product_comp_acct > div > div > div > button,
+.product_summary> div > button{
+    background-color:#F05A22;
+    height:38px;
+    width:134px;
+    border-radius:91px;
+    border-style:none;
+    color:#fff;
+    font-size:13px;
+    letter-spacing:0.9997px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+}
+.coporate_panel_uba {
+    background: url(../img/uba_logo.png);
+    background-repeat: no-repeat;
+    background-position: 15px 33px;
+}
+.coporate_panel_skye {
+    background: url('../img/skye_logo.png');
+    background-repeat: no-repeat;
+    background-size:102px 48px;
+    background-position: 15px 33px;
+}
+
+.checked{
+    color:#7ED321 !important;
+}
+.crossed{
+    color:#BC2B43 !important;
+}
+
+.product_summary{
+background-color:#f9f9f9;
+height:101px;
+margin-bottom:4em;
+}
+
+@media(max-width:768px){
+    #product_comparison_banner > div > div > div{
+        margin-left:0;
+    }
+    #product_comparison_banner > div > div > div > h4{
+        width:100%;
+    }
 }
 /*************PRODUCT COMPARISON PAGE END************/
