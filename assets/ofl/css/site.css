@@ -1616,6 +1616,7 @@ color:#464646;
     background-color:#F9F9F9;
 }
 
+
 .product_comp_acct > div{
     display:flex;
     justify-content:center;
@@ -1687,7 +1688,7 @@ color:#464646;
     align-items:center;
 }
 .coporate_panel_uba {
-    background: url(../img/uba_logo.png);
+    background: url('../img/uba_logo.png');
     background-repeat: no-repeat;
     background-position: 15px 33px;
 }
@@ -1717,6 +1718,45 @@ margin-bottom:4em;
     }
     #product_comparison_banner > div > div > div > h4{
         width:100%;
+    }
+}
+
+@media(max-width:990px){
+    .product_comp_acct{
+        height:700px;
+        border-top:0;
+        border-bottom:0;
+    }
+    .product_comp_acct > div{
+        border:none;
+    }
+
+    .product_comparison_body > div > span{
+        font-size:1em;
+    }
+    .product_comparison_theader + div.row{
+        font-size:0.9em;
+    }
+    .product_comparison_body > div:nth-child(1) > div {
+        width: 100%;
+    }
+    .product_comparison_theader > div > div > span{
+        margin-left:-4.5em;
+    }
+    .product_comparison_theader > div > div > span{
+        border:none !important;
+       
+    }
+}
+
+@media(min-width:991px) AND (max-width:1174px){
+    .product_comp_acct > div > div > div > p{
+        font-size:0.9em;
+        margin-left:1em;
+        /* padding:0; */
+    }
+    .promote_productc{
+        font-size:0.7em;
     }
 }
 /*************PRODUCT COMPARISON PAGE END************/
