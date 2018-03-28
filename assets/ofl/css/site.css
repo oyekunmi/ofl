@@ -1459,3 +1459,19 @@ line-height:28px;
     }
 }
 /*************QUIZ PAGE END************/
+
+/***************************Sign Up **************************/
+
+
+#signUp {
+    /* border:1px solid red; */
+    height: 90vh;
+    background:linear-gradient(to left,#CCD6E2 20%,transparent 30%), 
+    url(../img/signUp.jpg);
+    background-size: 138% 200%;
+    background-repeat: no-repeat;
+    background-position: -789px -358px;
+}
+
+
+/***************************End of Sign Up ******************/
