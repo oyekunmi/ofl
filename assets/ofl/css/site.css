@@ -1523,7 +1523,9 @@ border-radius:10px;
     border-radius:0;
 }
 
-
+.signUp_and_signIn_form > form > div > input:focus{
+    box-shadow: none !important;
+}
 .signUp_email,
 .signUp_password{
     position:relative;
