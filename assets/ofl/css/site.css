@@ -1464,7 +1464,6 @@ line-height:28px;
 
 
 #signUp {
-    /* border:1px solid red; */
     height: 90vh;
     background:linear-gradient(to left,#CCD6E2 20%,transparent 30%), 
     url(../img/signUp.jpg);
@@ -1473,5 +1472,30 @@ line-height:28px;
     background-position: -789px -358px;
 }
 
+.signUp_email,
+.signUp_password{
+    position:relative;
+}
+
+.signUp_email::before,
+.signUp_password::before{
+font-family: 'FontAwesome';
+color:#CCD6E2;
+font-size:1.3em;
+position:absolute;
+left:90%;
+top:2em; 
+}
+
+.signUp_email::before{
+    content:'\f0e0';
+}
+
+.signUp_password::before{
+content:'\f023';
+}
+input:-webkit-autofill{   
+    background-color: none !important;
+}
 
 /***************************End of Sign Up ******************/
