@@ -1472,6 +1472,58 @@ line-height:28px;
     background-position: -789px -358px;
 }
 
+
+#signUp > div > div > div{
+   min-height:100vh;
+}
+.signUp_and_signIn_form{
+display:flex;
+flex-direction:column;
+justify-content:center;
+margin-top:2em;
+background-color:#fff;
+height:540px;
+max-width:426px;
+border-radius:10px;
+}
+
+.signUp_and_signIn_form > h5{
+    font-size:24px;
+    line-height:28px;
+    letter-spacing:0.144px;
+     text-align:center;
+}
+.signUp_and_signIn_form > h5 + span{
+    font-size:14px;
+    line-height:16px;
+    color:#9F9D9D;
+    text-align:center;
+}
+
+.signUp_and_signIn_form > form{
+    width:80%;
+    margin:0 auto;
+}
+.signUp_and_signIn_form > form > div > label{
+    color:#B7B7B7;
+    font-weight:bold;
+    font-size:13px;
+    letter-spacing:0.0325px; 
+}
+
+.signUp_and_signIn_form > form > div:nth-child(1) > label{
+    margin-top:2em;color:#B7B7B7;font-weight:bold;font-size:13px;letter-spacing:0.0325px;  
+}
+
+.signUp_and_signIn_form > form > div > input{
+    border-top:none !important;
+    border-left:none !important;
+    border-right:none !important;
+    box-shadow:none;
+    border-radius:0;
+}
+
+
 .signUp_email,
 .signUp_password{
     position:relative;
@@ -1496,6 +1548,42 @@ content:'\f023';
 }
 input:-webkit-autofill{   
     background-color: none !important;
+}
+
+.signUp_signIn,
+.signUp_next{
+   margin-top:1em;
+   width:100%;
+   height:50px;
+   border-radius:100px;
+   border-style:none;
+   font-size:14px;
+   letter-spacing:0.14px; 
+}
+.signUp_next + span{
+ color:#9F9D9D;
+ font-size:14px;
+ letter-spacing:0.14px;
+ display:block;
+ text-align:center;
+ margin-top:1em;
+}
+.signUp_next{
+    color:#fff;
+    background-color:#F05A22;
+}
+
+.signUp_signIn{
+ color:#F05A22;
+ background-color:#fff;
+ border:1px solid #EAE9E9;
+ transition:background-color 1s linear 0.3s,
+            color 0.5s linear 0.2s;
+}
+
+.signUp_signIn:hover{
+    background-color:#F05A22;
+    color:#fff;
 }
 
 /***************************End of Sign Up ******************/
