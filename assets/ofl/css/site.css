@@ -1573,6 +1573,7 @@ input:-webkit-autofill{
 .signUp_next{
     color:#fff;
     background-color:#F05A22;
+    filter:drop-shadow(0px 5px 9px #F05A22);
 }
 
 .signUp_signIn{
