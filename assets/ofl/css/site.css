@@ -1490,10 +1490,13 @@ border-radius:10px;
 .signUp_and_signIn_form > h5{
     font-size:24px;
     line-height:28px;
+    font-family:Sfcompactdisplay,sans-serif;
     letter-spacing:0.144px;
      text-align:center;
+     color:#0B0B0B;
 }
 .signUp_and_signIn_form > h5 + span{
+    font-family:Sfcompactdisplay,sans-serif;
     font-size:14px;
     line-height:16px;
     color:#9F9D9D;
@@ -1512,7 +1515,11 @@ border-radius:10px;
 }
 
 .signUp_and_signIn_form > form > div:nth-child(1) > label{
-    margin-top:2em;color:#B7B7B7;font-weight:bold;font-size:13px;letter-spacing:0.0325px;  
+    margin-top:3em;
+    color:#B7B7B7;
+    font-weight:bold;
+    font-size:13px;
+    letter-spacing:0.0325px;  
 }
 
 .signUp_and_signIn_form > form > div > input{
@@ -1537,7 +1544,7 @@ font-family: 'FontAwesome';
 color:#CCD6E2;
 font-size:1.3em;
 position:absolute;
-left:90%;
+left:93%;
 top:2em; 
 }
 
@@ -1559,7 +1566,7 @@ input:-webkit-autofill{
    height:50px;
    border-radius:100px;
    border-style:none;
-   font-size:14px;
+   font-size:18px;
    letter-spacing:0.14px; 
 }
 .signUp_next + span{
@@ -1571,12 +1578,14 @@ input:-webkit-autofill{
  margin-top:1em;
 }
 .signUp_next{
+    font-family:Sfcompactdisplay,sans-serif;
     color:#fff;
     background-color:#F05A22;
-    filter:drop-shadow(0px 5px 9px #F05A22);
+    filter:drop-shadow(0px 2px 6px #F05A22);
 }
 
 .signUp_signIn{
+ font-family:Sfcompactdisplay,sans-serif;
  color:#F05A22;
  background-color:#fff;
  border:1px solid #EAE9E9;
