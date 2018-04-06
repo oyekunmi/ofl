@@ -1599,3 +1599,18 @@ input:-webkit-autofill{
 }
 
 /***************************End of Sign Up ******************/
+
+/***************************Review And Compare  *************************/
+
+#reviewAndCompare {
+    height: 400px;
+    width: 100%;
+    background: url(../img/reviewAndCompare.jpg);
+    background-size: 138% 338%;
+    background-repeat: no-repeat;
+    background-position: 0 -668px;
+    /* border: 1px solid red; */
+}
+
+
+/***************************End of Review And Compare  ******************/
