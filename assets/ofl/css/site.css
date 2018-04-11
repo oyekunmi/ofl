@@ -1612,5 +1612,30 @@ input:-webkit-autofill{
     /* border: 1px solid red; */
 }
 
+.comp_skye {
+    background: url(../img/skye_logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
+.comp_uba {
+    background: url('../img/uba_logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.comp_firstBank{
+    background: url('../img/first_logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;   
+}
+.comp_diamond{
+    background: url('../img/first_logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;   
+}
+.comp_access{
+    background: url('../img/access_logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;   
+}
 /***************************End of Review And Compare  ******************/
