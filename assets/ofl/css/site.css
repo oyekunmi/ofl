@@ -1614,28 +1614,53 @@ input:-webkit-autofill{
 
 .comp_skye {
     background: url(../img/skye_logo.png);
-    background-size: contain;
+    background-position: 50% 50%;
     background-repeat: no-repeat;
 }
 
 .comp_uba {
-    background: url('../img/uba_logo.png');
-    background-size: contain;
+    background: url(../img/uba_logo.png);
+    background-position: 50% 50%;
     background-repeat: no-repeat;
 }
 .comp_firstBank{
     background: url('../img/first_logo.png');
-    background-size: contain;
+    /* background-size: contain; */
+    background-position: 50% 50%;
     background-repeat: no-repeat;   
 }
-.comp_diamond{
-    background: url('../img/first_logo.png');
-    background-size: contain;
+.comp_diamond {
+    background: url(../img/first_logo.png);
+    /* background-size: contain; */
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.comp_access {
+    background: url(../img/access_logo.png);
+    background-position: 33% 2%;
+    background-repeat: no-repeat;
+}
+.comp_wema{
+    background: url('../img/wema_logo.png');
+    /* background-size: contain; */
+    background-position:50%;
     background-repeat: no-repeat;   
 }
-.comp_access{
-    background: url('../img/access_logo.png');
-    background-size: contain;
+.comp_gtBank {
+    background: url(../img/gtb_logo.png);
+    /* background-size: contain; */
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.comp_unity{
+    background: url('../img/unity_logo.png');
+    background-position: 50% 50%;
     background-repeat: no-repeat;   
 }
+.comp_standard{
+    background: url('../img/standard_logo.png');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;   
+}
+
 /***************************End of Review And Compare  ******************/
