@@ -1663,4 +1663,220 @@ input:-webkit-autofill{
     background-repeat: no-repeat;   
 }
 
+.reviewAndCompCatS{
+    background-color:#fff;
+    min-height:92px;
+    display:flex;
+    align-items:center;
+    border-radius:13px;
+}
+
+.reviewAndCompCatS select{
+    height:60px;
+    border-radius:6px;
+}
+
+.reviewAndCompCatS button{
+    height:60px;
+    border-radius:100px;
+    background-color:#F05A22;
+    color:#fff;
+    font-size:18px;
+    letter-spacing:-0.72px;
+    border-style:none; 
+}
+
+.reviewSavingsAcct{
+    border:1px solid #EDE9E9;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    min-height:100px;
+    color:rgba(56, 56, 56, 0.9145);
+}
+.reviewAndCompCount{
+    font-size:36px;
+    font-weight:bold;
+}
+.reviewAndCompCount + span{
+    display:block;
+    font-size:20px;
+}
+
+.reviewAndCompInst{
+ font-size:18px;
+}
+
+.reviewAndCompInst > span{
+  position:relative;
+  top:1em; 
+}
+
+.reviewAndCompInst > span > span{
+    font-weight:bold;
+    color:#000; 
+}
+
+.reviewAndCompTableh{
+ display:flex;
+ justify-content:flex-start;
+ border:1px solid #EDE9E9;
+ min-height:69px;
+}
+
+.reviewAndCompTabler{
+display:flex;
+justify-content:flex-start;
+border:1px solid #EDE9E9;
+min-height:87px;
+background-color:#fff;
+}
+.reviewAndCompTabled{
+    width:12.5%;
+    border:1px solid #EDE9E9;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+}
+
+.reviewAndCompTabled > input{
+height:31.29px;
+width:31px;
+border-radius:6px;
+border:1px solid #EAEAEA;
+}
+
+.reviewAndCompTabled > span{
+    font-size:15px;
+    color:#838383;
+}
+
+.reviewAndCompTabled ~ div{
+  width:12.5%;
+  border:1px solid #EDE9E9;
+}
+
+.reviewAndCompTableCompany{
+  width:25% !important;
+  border:1px solid #EDE9E9;
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+}
+.reviewAndCompTableCompany > div{
+    width:50%;
+    font-size:20px;
+    letter-spacing:-0.666px;
+    color:#4F4D4D;
+}
+
+.reviewAndCompTableCompany > span{
+    width:30%;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    border-radius:100px;
+    background-color:#D8D8D8;
+    color:#fff;
+    font-size:13px;
+}
+
+.reviewAndCompActiveInfo{
+    background-color:rgba(2, 205, 219, 0.9973) !important;
+}
+
+.reviewAndCompTabledata{
+    width:12.5%;
+    border:1px solid #EDE9E9;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviewAndCompTabledata > span{
+    font-size:20px;
+    letter-spacing:-0.666px;
+    font-weight:bold;
+    color:#000;  
+}
+
+.reviewAndCompTabledata > button{
+height:35px;
+width:90%;
+background-color:#F05A22;
+border-radius:91px;
+border-style: none;
+color:#fff;
+font-size:13px;
+letter-spacing: 0.9997px;
+display:flex;
+justify-content: space-around;
+align-items: center;
+}
+
+@media(max-width:992px){
+.reviewAndCompTabled > span{
+    display:none;
+}
+
+.reviewSavingsAcct{
+display:flex;
+flex-direction:column;
+justify-content: center;
+padding:2em 0;
+}
+
+.reviewSavingsAcct > div:nth-child(1){
+    display:flex;
+    flex-direction:column;
+    padding-bottom:1em;
+    width:100%;
+    text-align: center;
+    border-bottom:1px solid #EDE9E9;
+}
+
+.reviewSavingsAcct > div:nth-child(1) span{
+    margin-bottom:0.5em;
+}
+}
+
+@media(max-width:768px){
+    .reviewAndCompTableh{
+        display:none;
+    }
+    .reviewAndCompTabled {
+        display:flex;
+        flex-direction:row;
+    }    
+.reviewAndCompTabled > span{
+    display:block !important;
+    margin-left:5px;
+}
+.reviewAndCompTabler{
+    flex-direction:column;
+    margin:2em;
+}
+
+.reviewAndCompTabler > div:empty{
+    height:100px;
+}
+.reviewAndCompTabler > div{
+    width:60% !important;
+    padding:1.5em 0;
+    margin:0 auto;
+}
+.reviewAndCompTabledata > button{
+    width:50%;
+}
+.reviewAndCompTableCompany > div{
+    width:40%;
+}
+}
+
+@media(max-width:411px){
+.reviewAndCompInst{
+    font-size:0.9em;
+}
+}
 /***************************End of Review And Compare  ******************/
