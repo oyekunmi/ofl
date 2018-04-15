@@ -1614,55 +1614,60 @@ input:-webkit-autofill{
 
 .comp_skye {
     background: url(../img/skye_logo.png);
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
 }
 
 .comp_uba {
     background: url(../img/uba_logo.png);
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
 }
 .comp_firstBank{
-    background: url('../img/first_logo.png');
-    /* background-size: contain; */
-    background-position: 50% 50%;
-    background-repeat: no-repeat;   
+    background: url('../img/first_logo.png');   
 }
 .comp_diamond {
     background: url(../img/first_logo.png);
-    /* background-size: contain; */
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
 }
 .comp_access {
     background: url(../img/access_logo.png);
-    background-position: 33% 2%;
-    background-repeat: no-repeat;
+    background-position: 26% 100%;
 }
 .comp_wema{
-    background: url('../img/wema_logo.png');
-    /* background-size: contain; */
-    background-position:50%;
-    background-repeat: no-repeat;   
+    background: url('../img/wema_logo.png');  
 }
 .comp_gtBank {
     background: url(../img/gtb_logo.png);
-    /* background-size: contain; */
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
 }
 .comp_unity{
-    background: url('../img/unity_logo.png');
-    background-position: 50% 50%;
-    background-repeat: no-repeat;   
+    background: url('../img/unity_logo.png');  
 }
 .comp_standard{
-    background: url('../img/standard_logo.png');
-    background-position: 50% 50%;
-    background-repeat: no-repeat;   
+    background: url('../img/standard_logo.png');  
 }
 
+.comp_skye,
+.comp_uba ,
+.comp_firstBank,
+.comp_diamond,
+.comp_access,
+.comp_wema,
+.comp_gtBank,
+.comp_unity,
+.comp_standard{
+    background-position: 50% 50%;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
+.revieAndCompFeatured .comp_skye,
+.revieAndCompFeatured .comp_uba,
+.revieAndCompFeatured .comp_firstBank,
+.revieAndCompFeatured .comp_diamond,
+.revieAndCompFeatured .comp_access,
+.revieAndCompFeatured .comp_wema,
+.revieAndCompFeatured .comp_gtBank,
+.revieAndCompFeatured .comp_unity,
+.revieAndCompFeatured .comp_standard
+{
+    background-size: 50%;
+}
 .reviewAndCompCatS{
     background-color:#fff;
     min-height:92px;
