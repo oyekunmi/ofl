@@ -1846,7 +1846,7 @@ padding:2em 0;
 }
 }
 
-@media(max-width:768px){
+@media(max-width:767px){
     .reviewAndCompTableh{
         display:none;
     }
@@ -1864,10 +1864,10 @@ padding:2em 0;
 }
 
 .reviewAndCompTabler > div:empty{
-    height:100px;
+    min-height:112px;
 }
 .reviewAndCompTabler > div{
-    width:60% !important;
+    width:100% !important;
     padding:1.5em 0;
     margin:0 auto;
 }
