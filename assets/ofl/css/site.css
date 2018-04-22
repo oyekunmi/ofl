@@ -1884,4 +1884,24 @@ padding:2em 0;
     font-size:0.9em;
 }
 }
+
+.reviewMeter{
+    background: #C3BEBE;
+    display: inline-block;
+    height: 20px;
+    position: relative;
+    width: 8px;
+  }
+  .reviewMeter:before {
+    border-top: 8px solid #C3BEBE;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: 20px;
+    width: 0;
+  }
+
 /***************************End of Review And Compare  ******************/
