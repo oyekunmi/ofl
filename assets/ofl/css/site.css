@@ -1024,15 +1024,18 @@ ul.about_us_submenu li::before {
 }
 
 .about_details > div > div > span {
-    font-size: 49px;
+    font-size: 40px;
     font-family: Sfcompactdisplay, sans-serif;
     color: #575757;
+    padding-left: 20px;
 }
 
 .about_details > div > div + div {
     color: #959999;
     font-size: 16px;
     display: inline-block;
+    width: 100%;
+    text-align: center;
     /*    border:1px solid red;*/
 }
 
